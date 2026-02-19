@@ -1,0 +1,148 @@
+Analiza la siguiente sentencia del Consejo de Estado siguiendo el formato estructurado establecido. Identifica el tipo de tutela y aplica el análisis correspondiente según la clasificación. Realiza un examen exhaustivo, crítico y académicamente riguroso de la providencia.
+
+TEXTO DE LA SENTENCIA:
+{{TEXT}}
+
+INSTRUCCIONES ESTRICTAS DE FORMATO Y ANÁLISIS:
+1. Genera SIEMPRE la respuesta en formato JSON válido y completo
+2. Incluye TODAS las 15 claves solicitadas, sin excepción alguna
+3. Usa arrays JSON para campos múltiples (hechos, problemas_juridicos, etc.)
+4. Si la información no existe, usa "No consta" (nunca valores nulos, undefined o vacíos)
+5. Mantén la estructura exacta de objetos anidados especificada
+6. Proporciona análisis crítico y profundo, no solo descriptivo
+7. Incluye citas textuales cuando sea relevante para el soporte
+8. Evalúa el impacto jurisprudencial de la decisión
+
+METODOLOGÍA DE ANÁLISIS REQUERIDA:
+Paso 1: Identificación y clasificación tipológica de la tutela
+Paso 2: Evaluación exhaustiva de requisitos de procedencia
+Paso 3: Análisis detallado de problemas jurídicos sustanciales
+Paso 4: Reconstrucción completa de la ratio decidendi
+Paso 5: Evaluación de precedentes y contexto normativo
+Paso 6: Identificación de órdenes y efectos prácticos
+Paso 7: Síntesis crítica con implicaciones jurisprudenciales
+
+Proporciona el análisis completo en formato JSON con las siguientes claves OBLIGATORIAS Y ESTRUCTURA FIJA:
+{
+  "clasificacion_organo": {
+    "organismo": "string",
+    "seccion": "string",
+    "sala": "string",
+    "tipo_providencia": "string"
+  },
+  "tipo_tutela": {
+    "categoria": "string",
+    "subcategoria": "string",
+    "regimen_procedencia": "string"
+  },
+  "actos_cuestionados": {
+    "descripcion": "string",
+    "naturaleza": "string",
+    "fecha_acto": "string",
+    "autor_acto": "string"
+  },
+  "hechos": [
+    {
+      "descripcion": "string",
+      "fecha": "string",
+      "relevancia_juridica": "string"
+    }
+  ],
+  "problemas_juridicos": [
+    {
+      "problema": "string",
+      "derechos_involucrados": ["string"],
+      "cuestion_juridica": "string"
+    }
+  ],
+  "ratio_regla": {
+    "regla_general": "string",
+    "alcance": "string",
+    "limitaciones": "string"
+  },
+  "ratio_premisas": [
+    {
+      "premisa": "string",
+      "tipo": "factiva/juridica",
+      "fundamento": "string"
+    }
+  ],
+  "obiter": {
+    "descripcion": "string",
+    "relevancia": "string",
+    "posible_evolucion": "string"
+  },
+  "c590_generales": {
+    "relevancia_constitucional": "string",
+    "subsidiariedad": "string",
+    "inmediatez": "string",
+    "identificacion_hechos_derechos": "string",
+    "no_sentencia_tutela": "string",
+    "legitimacion_activa": "string",
+    "legitimacion_pasiva": "string"
+  },
+  "c590_especificos": {
+    "defecto_organico": "string",
+    "defecto_procedimental": "string",
+    "defecto_factico": "string",
+    "defecto_material": "string",
+    "error_inducido": "string",
+    "decision_sin_motivacion": "string",
+    "desconocimiento_precedente": "string",
+    "violacion_constitucion": "string"
+  },
+  "decision_resuelve": {
+    "texto_completo": "string",
+    "numero_puntos": "number",
+    "naturaleza_decision": "string"
+  },
+  "precedente_normas": {
+    "precedentes": [
+      {
+        "tipo": "string",
+        "numero": "string",
+        "anio": "number",
+        "relacion_caso": "string"
+      }
+    ],
+    "normas_interpretadas": [
+      {
+        "tipo": "string",
+        "numero": "string",
+        "articulo": "string",
+        "interpretacion": "string"
+      }
+    ],
+    "doctrina_relevante": [
+      {
+        "autor": "string",
+        "obra": "string",
+        "relacion": "string"
+      }
+    ]
+  },
+  "ordenes": {
+    "sujetos_obligados": ["string"],
+    "actuaciones_ordenadas": ["string"],
+    "plazos": ["string"],
+    "consecuencias_incumplimiento": "string"
+  },
+  "observaciones": {
+    "criticas_constitucionales": "string",
+    "tensiones_normativas": "string",
+    "vacios_juridicos": "string",
+    "implicaciones_practicas": "string"
+  },
+  "sintesis": {
+    "resumen_ejecutivo": "string",
+    "impacto_jurisprudencial": "string",
+    "recomendaciones": "string"
+  }
+}
+
+RECORDATORIO CRÍTICO:
+- NO omitas ninguna clave bajo ninguna circunstancia
+- NO uses valores null, undefined o vacíos
+- SIEMPRE proporciona análisis crítico y profundo
+- INCLUYE citas textuales cuando sea relevante
+- EVALÚA el impacto y precedentes de la decisión
