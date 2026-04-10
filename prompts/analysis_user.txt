@@ -137,6 +137,11 @@ Proporciona el análisis completo en formato JSON con las siguientes claves OBLI
     "resumen_ejecutivo": "string",
     "impacto_jurisprudencial": "string",
     "recomendaciones": "string"
+  },
+  "materia": {
+    "materia_principal": "string",
+    "submateria": "string",
+    "derechos_invocados": ["string"]
   }
 }
 
@@ -146,3 +151,4 @@ RECORDATORIO CRÍTICO:
 - SIEMPRE proporciona análisis crítico y profundo
 - INCLUYE citas textuales cuando sea relevante
 - EVALÚA el impacto y precedentes de la decisión
+- En "materia" usa EXCLUSIVAMENTE los valores del catálogo definido en el system prompt. Nunca inventes categorías nuevas.

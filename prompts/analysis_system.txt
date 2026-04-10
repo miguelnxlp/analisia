@@ -128,3 +128,97 @@ Entregables (formato de salida JSON - SIEMPRE IGUAL)
     - resumen_ejecutivo: [Resumen conciso del caso, decisión y regla]
     - impacto_jurisprudencial: [relevancia para el desarrollo jurisprudencial]
     - recomendaciones: [sugerencias para futuros casos o litigios]
+
+16) materia
+    Clasificación temática del caso. Usar EXCLUSIVAMENTE los valores del catálogo siguiente.
+    - materia_principal: una sola categoría de la lista MATERIAS_PRINCIPALES
+    - submateria: una sola categoría de la lista SUBMATERIAS correspondiente
+    - derechos_invocados: array con los derechos de la lista DERECHOS_FUNDAMENTALES que se alegan en el caso
+
+    MATERIAS_PRINCIPALES (elegir exactamente una):
+      "Pensional"
+      "Empleo Público"
+      "Salud"
+      "Responsabilidad del Estado"
+      "Proceso Judicial"
+      "Desacato / Cumplimiento"
+      "Disciplinario"
+      "Político / Electoral"
+      "Contratación Pública"
+      "Otro"
+
+    SUBMATERIAS por materia_principal:
+      Pensional →
+        "Reliquidación pensional - docentes"
+        "Reliquidación pensional - servidores públicos"
+        "Prescripción de mesadas pensionales"
+        "Indexación primera mesada"
+        "Factores salariales en IBL"
+        "Pensión congresistas"
+        "Pensión post-mortem / sustitución"
+        "Pensión - otro"
+      Empleo Público →
+        "Provisionalidad y desvinculación"
+        "Nombramiento / concurso de méritos"
+        "Encargo y terminación de encargo"
+        "Carrera judicial"
+        "Prestaciones laborales"
+        "Requisitos para ejercer el cargo"
+        "Empleo público - otro"
+      Salud →
+        "Prestaciones EPS"
+        "Servicios de salud Fuerzas Militares"
+        "Atención médica a menores"
+        "Salud - otro"
+      Responsabilidad del Estado →
+        "Reparación directa"
+        "Error judicial"
+        "Acción de grupo"
+        "Daño emergente / lucro cesante"
+        "Responsabilidad - otro"
+      Proceso Judicial →
+        "Caducidad de la acción"
+        "Notificación y vinculación"
+        "Medidas cautelares"
+        "Impedimentos y recusaciones"
+        "Legitimación activa / pasiva"
+        "Jurisdicción y competencia"
+        "Valoración probatoria"
+        "Arbitraje / laudo arbitral"
+        "Aclaración / corrección de sentencia"
+        "Proceso judicial - otro"
+      Desacato / Cumplimiento →
+        "Incidente de desacato"
+        "Carencia actual de objeto - hecho superado"
+        "Desacato - otro"
+      Disciplinario →
+        "Sanción disciplinaria abogados"
+        "Sanción disciplinaria funcionarios"
+        "Disciplinario - otro"
+      Político / Electoral →
+        "Elección de alcalde"
+        "Participación política"
+        "Electoral - otro"
+      Contratación Pública →
+        "Proceso licitatorio"
+        "Contratación - otro"
+      Otro →
+        "Hacinamiento carcelario"
+        "Minería"
+        "Derecho de petición"
+        "Otro"
+
+    DERECHOS_FUNDAMENTALES (puede ser vacío o múltiples):
+      "Debido proceso"
+      "Igualdad"
+      "Acceso a la administración de justicia"
+      "Seguridad social"
+      "Salud"
+      "Trabajo"
+      "Mínimo vital"
+      "Dignidad humana"
+      "Petición"
+      "Participación política"
+      "Defensa"
+      "Propiedad privada"
+      "Otro derecho fundamental"

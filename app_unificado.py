@@ -1,937 +1,771 @@
+"""
+AnalisIA v2.1 — app_unificado.py
+Sin dependencias de archivos iCloud en el startup path.
+"""
 from pathlib import Path
 import os
 import csv
-import tempfile
 import json
+import tempfile
 
 import streamlit as st
-from streamlit_file_browser import st_file_browser
 
-from utils.env import load_env
-from utils.extract_text import convert_file_to_txt
-from utils.analysis import collect_txt_files, analyze_to_csv, analyze_sentencia_juridica, extract_metadata_ia
-from utils.classify import classify_tutela, read_txt
-from utils.labeling import label_from_text
-from utils.zip_extractor import extract_zip_files, scan_zip_directory, clean_extracted_directory, get_supported_files_from_extracted
+# ── Único import de utils disponible localmente ───────────────────────────────
+from utils.parser import parse_analysis
 
-
-def ui_mod0():
-    st.header("Módulo 0: Descompresión Masiva de ZIP 📦")
-    
-    # Opción de selección de carpeta
-    selection_method = st.radio(
-        "Método de selección de carpeta:",
-        ["Escribir ruta manualmente", "Explorar carpetas"],
-        horizontal=True,
-        key="mod0_selection"
-    )
-    
-    source_dir_str = ""
-    if selection_method == "Escribir ruta manualmente":
-        source_dir_str = st.text_input("Carpeta con archivos ZIP", value="", key="mod0_path")
-    else:
-        st.write("**Explorar carpetas:**")
-        selected_path = st_file_browser(
-            path=".",
-            key="mod0_browser"
-        )
-        if selected_path:
-            source_dir_str = str(selected_path)
-            st.success(f"Carpeta seleccionada: {source_dir_str}")
-    
-    source_dir = Path(source_dir_str).expanduser() if source_dir_str else None
-    
-    if source_dir and source_dir.exists():
-        # Escanear archivos ZIP
-        zip_info = scan_zip_directory(source_dir)
-        
-        st.subheader("📊 Información de archivos ZIP encontrados")
-        col1, col2, col3 = st.columns(3)
-        with col1:
-            st.metric("Total ZIPs", zip_info['total_zips'])
-        with col2:
-            st.metric("Tamaño total", f"{zip_info['total_size_mb']:.1f} MB")
-        with col3:
-            st.metric("Estado", "✅ Listo" if zip_info['total_zips'] > 0 else "❌ Sin ZIPs")
-        
-        if zip_info['zip_details']:
-            st.subheader("📋 Detalle de archivos ZIP")
-            for detail in zip_info['zip_details']:
-                status_icon = "✅" if detail['status'] == 'OK' else "❌"
-                st.write(f"{status_icon} **{detail['name']}** - {detail['size_mb']} MB - {detail['file_count']} archivos")
-        
-        col1, col2 = st.columns(2)
-        with col1:
-            extract_btn = st.button("🔓 Descomprimir todos los ZIPs", type="primary")
-        with col2:
-            clean_btn = st.button("🗑️ Limpiar archivos extraídos")
-        
-        # Directorio de extracción
-        extract_dir = source_dir / "extracted"
-        
-        if extract_btn:
-            with st.spinner("Descomprimiendo archivos ZIP..."):
-                extracted_files, errors = extract_zip_files(source_dir, extract_dir)
-                
-                if extracted_files:
-                    st.success(f"✅ Se extrajeron {len(extracted_files)} archivos en total")
-                    
-                    # Mostrar resumen por tipo de archivo
-                    doc_count = len([f for f in extracted_files if f.suffix.lower() in ['.doc', '.docx']])
-                    pdf_count = len([f for f in extracted_files if f.suffix.lower() == '.pdf'])
-                    txt_count = len([f for f in extracted_files if f.suffix.lower() == '.txt'])
-                    
-                    col1, col2, col3 = st.columns(3)
-                    with col1:
-                        st.metric("Word", doc_count)
-                    with col2:
-                        st.metric("PDF", pdf_count)
-                    with col3:
-                        st.metric("TXT", txt_count)
-                    
-                    st.info(f"📁 Los archivos fueron extraídos en: {extract_dir}")
-                    
-                    # Botón para continuar al módulo 1 con los archivos extraídos
-                    if st.button("🔄 Ir al Módulo 1 con archivos extraídos"):
-                        st.session_state.mod1_extracted_dir = str(extract_dir)
-                        st.rerun()
-                
-                if errors:
-                    st.error("❌ Errores encontrados:")
-                    for error in errors:
-                        st.error(error)
-        
-        if clean_btn:
-            with st.spinner("Limpiando archivos extraídos..."):
-                if clean_extracted_directory(extract_dir):
-                    st.success("✅ Directorio de archivos extraídos limpiado")
-                else:
-                    st.error("❌ Error al limpiar el directorio")
-    
-    elif source_dir_str:
-        st.error("❌ La carpeta no existe")
-
-
-def ui_mod1():
-    st.header("Módulo 1: Conversión a .txt 🧾")
-    
-    # Verificar si hay archivos extraídos del Módulo 0
-    extracted_dir = None
-    if hasattr(st.session_state, 'mod1_extracted_dir'):
-        extracted_dir = st.session_state.mod1_extracted_dir
-        st.success(f"📁 Usando archivos extraídos de: {extracted_dir}")
-    
-    # Opción de selección de carpeta
-    selection_method = st.radio(
-        "Método de selección de carpeta:",
-        ["Usar archivos extraídos", "Escribir ruta manualmente", "Explorar carpetas"] if extracted_dir else ["Escribir ruta manualmente", "Explorar carpetas"],
-        horizontal=True
-    )
-    
-    source_dir_str = ""
-    if selection_method == "Usar archivos extraídos" and extracted_dir:
-        source_dir_str = extracted_dir
-    elif selection_method == "Escribir ruta manualmente":
-        source_dir_str = st.text_input("Carpeta de origen (doc, docx, pdf, txt)", value="")
-    else:
-        st.write("**Explorar carpetas:**")
-        selected_path = st_file_browser(
-            path=".",
-            key="mod1_browser"
-        )
-        if selected_path:
-            source_dir_str = str(selected_path)
-            st.success(f"Carpeta seleccionada: {source_dir_str}")
-    
-    col1, col2 = st.columns(2)
-    with col1:
-        scan_btn = st.button("Escanear origen")
-    with col2:
-        run_btn = st.button("Convertir a .txt")
-
-    source_dir = Path(source_dir_str).expanduser() if source_dir_str else None
-
-    if scan_btn and source_dir and source_dir.exists():
-        # Función para recopilar archivos soportados
-        def collect_input_files(source_dir: Path) -> list[Path]:
-            files: list[Path] = []
-            for root, _dirs, filenames in os.walk(source_dir):
-                for name in filenames:
-                    path = Path(root) / name
-                    if path.suffix.lower() in {".txt", ".doc", ".docx", ".pdf"}:
-                        files.append(path)
-            return files
-
-        files = collect_input_files(source_dir)
-        st.session_state["m1_files"] = files
-        st.success(f"Encontrados {len(files)} archivo(s) soportados.")
-        if files:
-            st.dataframe({
-                "archivo": [str(p.relative_to(source_dir)) for p in files],
-                "formato": [p.suffix.lower() for p in files],
-            })
-    elif scan_btn:
-        st.error("La carpeta de origen no existe o no fue proporcionada.")
-
-    files = st.session_state.get("m1_files", [])
-
-    if run_btn:
-        if not source_dir or not source_dir.exists():
-            st.error("La carpeta de origen no existe o no fue proporcionada.")
-            return
-        target_dir = source_dir / "archvos .txt"
-        target_dir.mkdir(parents=True, exist_ok=True)
-        if not files:
-            # Función para recopilar archivos soportados
-            def collect_input_files(source_dir: Path) -> list[Path]:
-                files: list[Path] = []
-                for root, _dirs, filenames in os.walk(source_dir):
-                    for name in filenames:
-                        path = Path(root) / name
-                        if path.suffix.lower() in {".txt", ".doc", ".docx", ".pdf"}:
-                            files.append(path)
-                return files
-
-            files = collect_input_files(source_dir)
-        if not files:
-            st.warning("No se encontraron archivos soportados.")
-            return
-        progress = st.progress(0, text="Iniciando…")
-        ok = 0
-        rows: list[dict[str, str]] = []
-        for idx, path in enumerate(files, start=1):
-            try:
-                out_txt = convert_file_to_txt(path, target_dir)
-                ok += 1
-                rows.append({"archivo_origen": str(path), "archivo_txt": str(out_txt), "estado": "OK", "mensaje": ""})
-            except Exception as e:  # noqa: BLE001
-                rows.append({"archivo_origen": str(path), "archivo_txt": "", "estado": "ERROR", "mensaje": str(e)})
-            progress.progress(idx / len(files), text=f"Procesando {idx}/{len(files)}: {path.name}")
-        progress.empty()
-        log_path = target_dir / "log.csv"
-        with log_path.open("w", newline="", encoding="utf-8") as f:
-            writer = csv.DictWriter(f, fieldnames=["archivo_origen", "archivo_txt", "estado", "mensaje"])
-            writer.writeheader()
-            for r in rows:
-                writer.writerow(r)
-        st.success(f"Completado: {ok}/{len(files)} convertidos. Log: {log_path}")
-        st.dataframe(rows)
-
-
-def ui_mod2():
-    st.header("Módulo 2: Filtro de Tutela 🔎")
-    
-    # Opción de selección de carpeta
-    selection_method = st.radio(
-        "Método de selección de carpeta:",
-        ["Escribir ruta manualmente", "Explorar carpetas"],
-        horizontal=True,
-        key="m2_selection"
-    )
-    
-    source_dir_str = ""
-    if selection_method == "Escribir ruta manualmente":
-        source_dir_str = st.text_input("Carpeta con .txt", key="m2_src", value="")
-    else:
-        st.write("**Explorar carpetas:**")
-        selected_path = st_file_browser(
-            path=".",
-            key="mod2_browser"
-        )
-        if selected_path:
-            source_dir_str = str(selected_path)
-            st.success(f"Carpeta seleccionada: {source_dir_str}")
-    
-    out_csv_str = st.text_input("CSV de salida", key="m2_csv", value="")
-    col1, col2 = st.columns(2)
-    with col1:
-        scan_btn = st.button("Escanear .txt", key="m2_scan")
-    with col2:
-        run_btn = st.button("Clasificar con OpenAI", key="m2_run")
-
-    source_dir = Path(source_dir_str).expanduser() if source_dir_str else None
-    out_csv = Path(out_csv_str).expanduser() if out_csv_str else None
-
-    if scan_btn and source_dir and source_dir.exists():
-        files = collect_txt_files(source_dir)
-        st.session_state["m2_files"] = files
-        st.success(f"Encontrados {len(files)} archivo(s) .txt.")
-        if files:
-            st.dataframe({
-                "archivo": [str(p.relative_to(source_dir)) for p in files],
-                "tamano_bytes": [p.stat().st_size for p in files],
-            })
-    elif scan_btn:
-        st.error("La carpeta de origen no existe o no fue proporcionada.")
-
-    files = st.session_state.get("m2_files", [])
-
-    if run_btn:
-        if not source_dir or not source_dir.exists():
-            st.error("La carpeta de origen no existe o no fue proporcionada.")
-            return
-        # Guardar carpeta de origen para uso en Módulo 3
-        st.session_state["m2_source_dir"] = str(source_dir)
-        # Si no se indicó CSV de salida, crear uno por defecto dentro de la carpeta de origen
-        if not out_csv:
-            default_dir = source_dir / "resultados"
-            default_dir.mkdir(parents=True, exist_ok=True)
-            out_csv = default_dir / "clasificacion.csv"
-            st.info(f"No se indicó CSV. Se usará: {out_csv}")
-        if not files:
-            files = collect_txt_files(source_dir)
-        if not files:
-            st.warning("No hay archivos .txt para clasificar.")
-            return
-        # Crear contenedores para la barra de progreso y estadísticas
-        progress_container = st.container()
-        stats_container = st.container()
-        
-        with progress_container:
-            progress_bar = st.progress(0, text="Iniciando clasificación...")
-            status_text = st.empty()
-        
-        with stats_container:
-            col1, col2, col3 = st.columns(3)
-            with col1:
-                processed_counter = st.metric("Procesados", "0")
-            with col2:
-                success_counter = st.metric("Exitosos", "0")
-            with col3:
-                error_counter = st.metric("Errores", "0")
-        
-        rows: list[dict[str, str]] = []
-        success_count = 0
-        error_count = 0
-        
-        for idx, path in enumerate(files, start=1):
-            try:
-                # Actualizar estado
-                status_text.text(f"Leyendo archivo: {path.name}")
-                text = read_txt(path)
-                
-                status_text.text(f"Clasificando con OpenAI: {path.name}")
-                result = classify_tutela(text)
-                
-                if result.get("error"):
-                    error_count += 1
-                    rows.append({
-                        "archivo": str(path),
-                        "is_tutela_contra_providencia": "",
-                        "confidence": "",
-                        "reason": "",
-                        "error": result.get("error", ""),
-                    })
-                else:
-                    success_count += 1
-                    rows.append({
-                        "archivo": str(path),
-                        "is_tutela_contra_providencia": str(result.get("is_tutela_contra_providencia")),
-                        "confidence": str(result.get("confidence")),
-                        "reason": result.get("reason", ""),
-                        "error": "",
-                    })
-            except Exception as e:  # noqa: BLE001
-                error_count += 1
-                rows.append({
-                    "archivo": str(path),
-                    "is_tutela_contra_providencia": "",
-                    "confidence": "",
-                    "reason": "",
-                    "error": str(e),
-                })
-            
-            # Actualizar progreso y métricas
-            progress = idx / len(files)
-            progress_bar.progress(progress, text=f"Procesando {idx}/{len(files)}: {path.name}")
-            processed_counter.metric("Procesados", str(idx))
-            success_counter.metric("Exitosos", str(success_count))
-            error_counter.metric("Errores", str(error_count))
-        
-        # Limpiar elementos de progreso
-        progress_bar.empty()
-        status_text.empty()
-        out_csv.parent.mkdir(parents=True, exist_ok=True)
-        with out_csv.open("w", newline="", encoding="utf-8") as f:
-            writer = csv.DictWriter(f, fieldnames=["archivo", "is_tutela_contra_providencia", "confidence", "reason", "error"])
-            writer.writeheader()
-            for r in rows:
-                writer.writerow(r)
-        st.success(f"Clasificación completa. CSV: {out_csv}")
-        st.dataframe(rows)
-
-
-def ui_mod3():
-    st.header("Módulo 3: Análisis Completo con IA 🧠")
-    st.caption("Análisis jurídico completo + extracción de metadatos estructurados")
-    
-    # Usar la misma carpeta del Módulo 2 si está disponible
-    m2_source = st.session_state.get("m2_source_dir", "")
-    
-    # Opción de selección de carpeta fuente
-    st.subheader("Carpeta con archivos .txt")
-    source_selection_method = st.radio(
-        "Método de selección:",
-        ["Escribir ruta manualmente", "Explorar carpetas"],
-        horizontal=True,
-        key="m3_source_selection"
-    )
-    
-    source_dir_str = ""
-    if source_selection_method == "Escribir ruta manualmente":
-        source_dir_str = st.text_input("Carpeta con .txt", key="m3_src", value=m2_source)
-    else:
-        st.write("**Explorar carpetas:**")
-        selected_path = st_file_browser(
-            path=".",
-            key="mod3_source_browser"
-        )
-        if selected_path:
-            source_dir_str = str(selected_path)
-            st.success(f"Carpeta seleccionada: {source_dir_str}")
-    
-    # CSV de clasificación del Módulo 2
-    classification_csv_str = st.text_input("CSV de clasificación (Módulo 2)", key="m3_classification", value="")
-    
-    out_csv_str = st.text_input("CSV de salida análisis", key="m3_csv", value="")
-    
-    # Opción de selección de carpeta de prompts
-    st.subheader("Carpeta de prompts")
-    prompts_selection_method = st.radio(
-        "Método de selección de prompts:",
-        ["Escribir ruta manualmente", "Explorar carpetas"],
-        horizontal=True,
-        key="m3_prompts_selection"
-    )
-    
-    prompts_dir_str = ""
-    if prompts_selection_method == "Escribir ruta manualmente":
-        prompts_dir_str = st.text_input("Carpeta de prompts", key="m3_prompts", value="prompts")
-    else:
-        st.write("**Explorar carpetas de prompts:**")
-        selected_prompts_path = st_file_browser(
-            path=".",
-            key="mod3_prompts_browser"
-        )
-        if selected_prompts_path:
-            prompts_dir_str = str(selected_prompts_path)
-            st.success(f"Carpeta de prompts seleccionada: {prompts_dir_str}")
-    
-    model_name = st.selectbox("Modelo OpenAI", ["gpt-4o-mini", "gpt-4o", "gpt-3.5-turbo"], key="m3_model")
-    
-    # Opciones de análisis
-    st.subheader("Opciones de Análisis")
-    col1, col2 = st.columns(2)
-    with col1:
-        include_metadata = st.checkbox("Incluir extracción de metadatos con IA", value=True, key="m3_metadata")
-    with col2:
-        include_juridical = st.checkbox("Incluir análisis jurídico completo", value=True, key="m3_juridical")
-    
-    # Análisis individual
-    st.subheader("Análisis Individual")
-    individual_btn = st.button("Análisis individual", key="m3_individual")
-    
-    if individual_btn:
-        st.subheader("Análisis Individual de Sentencia")
-        
-        # Opción 1: Subir archivo
-        uploaded_file = st.file_uploader(
-            "Subir archivo de sentencia (.txt, .doc, .docx, .pdf)",
-            type=["txt", "doc", "docx", "pdf"],
-            help="Selecciona un archivo para analizar individualmente",
-            key="m3_upload"
-        )
-        
-        # Opción 2: Pegar texto
-        st.subheader("O pegar texto directamente:")
-        sentencia_text = st.text_area(
-            "Texto de la sentencia",
-            height=200,
-            placeholder="Pega aquí el texto completo de la sentencia a analizar...",
-            help="Puedes copiar y pegar el texto de cualquier sentencia del Consejo de Estado",
-            key="m3_text"
-        )
-        
-        if st.button("Analizar sentencia", key="m3_analyze"):
-            text_to_analyze = ""
-            
-            if uploaded_file:
-                # Procesar archivo subido
-                try:
-                    if uploaded_file.name.endswith('.txt'):
-                        text_to_analyze = str(uploaded_file.read(), "utf-8")
-                    else:
-                        # Convertir otros formatos
-                        import tempfile
-                        with tempfile.NamedTemporaryFile(delete=False, suffix=uploaded_file.name) as tmp_file:
-                            tmp_file.write(uploaded_file.getbuffer())
-                            tmp_path = Path(tmp_file.name)
-                        
-                        from utils.extract_text import extract_text_from_path
-                        text_to_analyze = extract_text_from_path(tmp_path)
-                        tmp_path.unlink()  # Limpiar archivo temporal
-                except Exception as e:
-                    st.error(f"Error procesando archivo: {e}")
-                    return
-            elif sentencia_text.strip():
-                text_to_analyze = sentencia_text.strip()
-            else:
-                st.warning("Debes subir un archivo o pegar texto para analizar")
-                return
-            
-            if not text_to_analyze:
-                st.warning("No se pudo extraer texto para analizar")
-                return
-            
-            # Mostrar progreso
-            with st.spinner("Analizando sentencia con IA..."):
-                # Extraer metadatos si está habilitado
-                if include_metadata:
-                    metadata = extract_metadata_ia(text_to_analyze, model=model_name)
-                    if "error" not in metadata:
-                        st.success("Metadatos extraídos exitosamente")
-                        
-                        # Mostrar metadatos en columnas
-                        col1, col2 = st.columns(2)
-                        
-                        with col1:
-                            st.subheader("📋 Información General")
-                            st.write(f"**Consejero Ponente:** {metadata.get('consejero_ponente', 'No consta')}")
-                            st.write(f"**Radicación:** {metadata.get('radicacion', 'No consta')}")
-                            st.write(f"**Fecha:** {metadata.get('fecha', 'No consta')}")
-                            st.write(f"**Ciudad:** {metadata.get('ciudad', 'No consta')}")
-                        
-                        with col2:
-                            st.subheader("🏛️ Información Judicial")
-                            st.write(f"**Sala:** {metadata.get('sala', 'No consta')}")
-                            st.write(f"**Sección:** {metadata.get('seccion', 'No consta')}")
-                            st.write(f"**Tipo de Proceso:** {metadata.get('tipo_proceso', 'No consta')}")
-                        
-                        st.subheader("👥 Partes del Proceso")
-                        st.write(f"**Actor:** {metadata.get('actor', 'No consta')}")
-                        st.write(f"**Demandado:** {metadata.get('demandado', 'No consta')}")
-                        
-                        st.markdown("---")
-                    else:
-                        st.warning(f"Error extrayendo metadatos: {metadata['error']}")
-                
-                # Análisis jurídico si está habilitado
-                if include_juridical:
-                    resultado = analyze_sentencia_juridica(text_to_analyze, model=model_name)
-                    
-                    if resultado.startswith("Error:"):
-                        st.error(resultado)
-                    else:
-                        st.success("Análisis jurídico completado")
-                        st.markdown("---")
-                        st.markdown("## 📖 Análisis Jurídico Completo")
-                        st.markdown(resultado)
-                        
-                        # Opción para descargar análisis jurídico
-                        st.download_button(
-                            label="Descargar análisis jurídico en TXT",
-                            data=resultado,
-                            file_name=f"analisis_juridico_{st.session_state.get('analysis_counter', 1)}.txt",
-                            mime="text/plain"
-                        )
-                        st.session_state["analysis_counter"] = st.session_state.get("analysis_counter", 1) + 1
-    
-    col1, col2 = st.columns(2)
-    with col1:
-        run_btn = st.button("Ejecutar análisis", key="m3_run")
-    with col2:
-        cache_btn = st.button("Limpiar cache", key="m3_cache")
-
-    if cache_btn:
-        cache_dir = Path(source_dir_str).expanduser() / "cache_analisis" if source_dir_str else None
-        if cache_dir and cache_dir.exists():
-            import shutil
-            shutil.rmtree(cache_dir)
-            st.success("Cache eliminado")
-        else:
-            st.info("No hay cache para limpiar")
-
-    if run_btn:
-        source_dir = Path(source_dir_str).expanduser() if source_dir_str else None
-        classification_csv = Path(classification_csv_str).expanduser() if classification_csv_str else None
-        out_csv = Path(out_csv_str).expanduser() if out_csv_str else None
-        prompts_dir = Path(prompts_dir_str).expanduser() if prompts_dir_str else None
-        
-        if not source_dir or not source_dir.exists():
-            st.error("La carpeta de origen no existe o no fue proporcionada.")
-            return
-        if not classification_csv or not classification_csv.exists():
-            st.error("Debe indicar el CSV de clasificación del Módulo 2.")
-            return
-        # Si no se indicó CSV de salida, crear uno por defecto
-        if not out_csv:
-            default_dir = source_dir / "resultados"
-            default_dir.mkdir(parents=True, exist_ok=True)
-            out_csv = default_dir / "analisis_tutelas.csv"
-            st.info(f"No se indicó CSV. Se usará: {out_csv}")
-        if not prompts_dir or not prompts_dir.exists():
-            st.error("La carpeta de prompts no existe.")
-            return
-        
-        try:
-            # Leer CSV de clasificación y filtrar solo tutelas contra providencia
-            import pandas as pd
-            df_classification = pd.read_csv(classification_csv)
-            tutela_files = df_classification[
-                df_classification['is_tutela_contra_providencia'].astype(str).str.lower().isin(['true', '1', 'sí', 'si', 'yes'])
-            ]['archivo'].tolist()
-            
-            if not tutela_files:
-                st.warning("No se encontraron sentencias clasificadas como 'Tutela contra providencia judicial'")
-                return
-            
-            st.info(f"Se analizarán {len(tutela_files)} sentencias de tutela contra providencia")
-            
-            # Crear directorio de cache
-            cache_dir = source_dir / "cache_analisis"
-            cache_dir.mkdir(exist_ok=True)
-            
-            # Procesar solo los archivos filtrados
-            progress = st.progress(0, text="Iniciando análisis...")
-            results = []
-            
-            for idx, archivo_path in enumerate(tutela_files, 1):
-                archivo_path = Path(archivo_path)
-                if not archivo_path.exists():
-                    continue
-                    
-                # Verificar cache
-                cache_file = cache_dir / f"{archivo_path.stem}_analisis.json"
-                if cache_file.exists():
-                    try:
-                        with cache_file.open('r', encoding='utf-8') as f:
-                            content = f.read().strip()
-                            if content:  # Verificar que no esté vacío
-                                cached_result = json.loads(content)
-                                results.append(cached_result)
-                                progress.progress(idx / len(tutela_files), text=f"Usando cache: {archivo_path.name}")
-                                continue
-                            else:
-                                # Archivo vacío, eliminarlo y procesar
-                                cache_file.unlink()
-                    except (json.JSONDecodeError, Exception):
-                        # JSON corrupto, eliminarlo y procesar
-                        cache_file.unlink()
-                
-                # Leer archivo
-                text = read_txt(archivo_path)
-                
-                # Inicializar fila base
-                row = {
-                    "archivo": str(archivo_path),
-                    "clasificacion_organo": "Consejo de Estado",
-                    "tipo_tutela": "Tutela contra providencia judicial",  # Ya filtrado
-                }
-                
-                # Extraer metadatos con IA si está habilitado
-                if include_metadata:
-                    metadata = extract_metadata_ia(text, model=model_name)
-                    if "error" not in metadata:
-                        # Asegurar que el radicado siempre esté presente (nombre del archivo)
-                        metadata["radicado"] = archivo_path.stem.strip()
-                        row.update({
-                            "radicado": metadata["radicado"],
-                            "consejero_ponente": metadata.get("consejero_ponente", "No consta"),
-                            "radicacion": metadata.get("radicacion", "No consta"),
-                            "actor": metadata.get("actor", "No consta"),
-                            "demandado": metadata.get("demandado", "No consta"),
-                            "fecha": metadata.get("fecha", "No consta"),
-                            "sala": metadata.get("sala", "No consta"),
-                            "seccion": metadata.get("seccion", "No consta"),
-                            "ciudad": metadata.get("ciudad", "No consta"),
-                            "tipo_proceso": metadata.get("tipo_proceso", "No consta"),
-                        })
-                    else:
-                        st.warning(f"Error extrayendo metadatos para {archivo_path.name}: {metadata['error']}")
-                        # Asegurar que el radicado siempre esté presente (nombre del archivo)
-                        row.update({
-                            "radicado": archivo_path.stem.strip(),
-                            "consejero_ponente": "Error",
-                            "radicacion": "Error",
-                            "actor": "Error",
-                            "demandado": "Error",
-                            "fecha": "Error",
-                            "sala": "Error",
-                            "seccion": "Error",
-                            "ciudad": "Error",
-                            "tipo_proceso": "Error",
-                        })
-                else:
-                    # Usar metadatos básicos si no se usa IA
-                    from utils.analysis import extract_prelim_metadata
-                    prelim = extract_prelim_metadata(archivo_path, text)
-                    print(f"RADICADO EN APP: {prelim.get('radicado', 'NO ENCONTRADO')}")  # Debug
-                    row.update(prelim)
-                
-                # Análisis jurídico completo si está habilitado
-                if include_juridical:
-                    analysis_result = analyze_sentencia_juridica(text, model=model_name)
-                    row.update({
-                        "analisis_completo": analysis_result,
-                    "actos_cuestionados": "Ver análisis completo",
-                    "hechos": "Ver análisis completo", 
-                    "problemas_juridicos": "Ver análisis completo",
-                    "ratio_regla": "Ver análisis completo",
-                    "ratio_premisas": "Ver análisis completo",
-                    "obiter": "Ver análisis completo",
-                    "c590_generales": "Ver análisis completo",
-                    "c590_especificos": "Ver análisis completo",
-                    "decision_resuelve": "Ver análisis completo",
-                    "precedente_normas": "Ver análisis completo",
-                    "ordenes": "Ver análisis completo",
-                    "observaciones": "Ver análisis completo",
-                    "sintesis": "Ver análisis completo",
-                    })
-                else:
-                    row.update({
-                        "analisis_completo": "Análisis jurídico deshabilitado",
-                        "actos_cuestionados": "No procesado",
-                        "hechos": "No procesado", 
-                        "problemas_juridicos": "No procesado",
-                        "ratio_regla": "No procesado",
-                        "ratio_premisas": "No procesado",
-                        "obiter": "No procesado",
-                        "c590_generales": "No procesado",
-                        "c590_especificos": "No procesado",
-                        "decision_resuelve": "No procesado",
-                        "precedente_normas": "No procesado",
-                        "ordenes": "No procesado",
-                        "observaciones": "No procesado",
-                        "sintesis": "No procesado",
-                    })
-                
-                row["llm_error"] = ""
-                
-                # Guardar en cache
-                try:
-                    with cache_file.open('w', encoding='utf-8') as f:
-                        json.dump(row, f, ensure_ascii=False, indent=2)
-                except Exception as e:
-                    st.warning(f"Error guardando cache para {archivo_path.name}: {e}")
-                
-                results.append(row)
-                progress.progress(idx / len(tutela_files), text=f"Analizando {idx}/{len(tutela_files)}: {archivo_path.name}")
-            
-            progress.empty()
-            
-            # Escribir CSV final
-            out_csv.parent.mkdir(parents=True, exist_ok=True)
-            with out_csv.open("w", newline="", encoding="utf-8") as f:
-                if results:
-                    # Asegurar que todas las filas tengan las mismas columnas
-                    all_columns = set()
-                    for row in results:
-                        all_columns.update(row.keys())
-                    
-                    writer = csv.DictWriter(f, fieldnames=sorted(all_columns))
-                    writer.writeheader()
-                    for row in results:
-                        writer.writerow(row)
-            
-            # Exportar análisis individuales en TXT
-            txt_export_dir = source_dir / "analisis_individuales"
-            txt_export_dir.mkdir(exist_ok=True)
-            
-            txt_count = 0
-            for row in results:
-                try:
-                    # Crear nombre de archivo basado en radicado
-                    radicado = row.get('radicado', 'sin_radicado')
-                    txt_file = txt_export_dir / f"{radicado}_analisis.txt"
-                    
-                    # Usar el análisis completo en lugar de campos individuales
-                    analisis_completo = row.get('analisis_completo', 'No se pudo generar análisis')
-                    
-                    # Crear contenido del análisis
-                    content = f"""ANÁLISIS JURÍDICO COMPLETO - SENTENCIA
-{'='*60}
-
-RADICADO: {row.get('radicado', 'No consta')}
-CONSEJERO PONENTE: {row.get('consejero_ponente', 'No consta')}
-SALA: {row.get('sala', 'No consta')}
-SECCIÓN: {row.get('seccion', 'No consta')}
-FECHA: {row.get('fecha', 'No consta')}
-
-{'='*60}
-
-{analisis_completo}
-
-{'='*60}
-Generado automáticamente por AnalisIA
-Análisis jurídico completo con prompt especializado
+# ── CSS verde oscuro ──────────────────────────────────────────────────────────
+CSS = """
+<style>
+[data-testid="stAppViewContainer"] { background-color: #0d2818; }
+[data-testid="stSidebar"] { background-color: #0a1f12; border-right: 1px solid #2d5a3d; }
+[data-testid="stHeader"] { background-color: #0a1f12; border-bottom: 1px solid #2d5a3d; }
+html, body, [class*="css"] { color: #e8f5e9; }
+[data-testid="metric-container"] {
+    background-color: #1a3a2a; border: 1px solid #2d5a3d;
+    border-radius: 8px; padding: 12px;
+}
+[data-testid="stTextInput"] input, textarea {
+    background-color: #1a3a2a !important; color: #e8f5e9 !important;
+    border: 1px solid #2d5a3d !important;
+}
+[data-testid="stButton"] button[kind="primary"] { background-color: #2e7d32; color: white; border: none; }
+[data-testid="stButton"] button[kind="primary"]:hover { background-color: #388e3c; }
+[data-testid="stButton"] button { background-color: #1a3a2a; color: #a5d6a7; border: 1px solid #2d5a3d; }
+[data-testid="stTabs"] [data-baseweb="tab"] { background-color: #1a3a2a; color: #a5d6a7; }
+[data-testid="stTabs"] [data-baseweb="tab"][aria-selected="true"] {
+    border-bottom: 2px solid #4CAF50; color: #e8f5e9;
+}
+[data-testid="stExpander"] { background-color: #1a3a2a; border: 1px solid #2d5a3d; border-radius: 8px; }
+hr { border-color: #2d5a3d; }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0d2818; }
+::-webkit-scrollbar-thumb { background: #2d5a3d; border-radius: 3px; }
+</style>
 """
-                    
-                    with txt_file.open('w', encoding='utf-8') as f:
-                        f.write(content)
-                    txt_count += 1
-                    
-                except Exception as e:
-                    st.warning(f"Error exportando TXT para {row.get('radicado', 'desconocido')}: {e}")
-            
-            st.success(f"Análisis completo. {len(results)} sentencias procesadas.")
-            st.info(f"📊 CSV: {out_csv}")
-            st.info(f"📄 TXT individuales: {txt_count} archivos en {txt_export_dir}")
-            st.info(f"💾 Cache: {cache_dir}")
-            
-        except Exception as e:  # noqa: BLE001
-            st.error(f"Error: {str(e)}")
-            import traceback
-            st.code(traceback.format_exc())
+
+# ── Constantes ────────────────────────────────────────────────────────────────
+LOCAL_CONFIG = Path.home() / ".analisia" / "config.env"
+APP_DIR = Path(__file__).parent
+
+MODELOS = [
+    "gpt-4.1-nano",
+    "gpt-4o-mini",
+    "gpt-4.1-mini",
+    "gpt-4.1",
+    "gpt-4o",
+]
 
 
-def ui_mod4():
-    st.header("Módulo 4: Etiquetado 🏷️")
-    
-    # Opción de selección de carpeta
-    selection_method = st.radio(
-        "Método de selección de carpeta:",
-        ["Escribir ruta manualmente", "Explorar carpetas"],
-        horizontal=True,
-        key="m4_selection"
-    )
-    
-    source_dir_str = ""
-    if selection_method == "Escribir ruta manualmente":
-        source_dir_str = st.text_input("Carpeta con .txt", key="m4_src", value="")
-    else:
-        st.write("**Explorar carpetas:**")
-        selected_path = st_file_browser(
-            path=".",
-            key="mod4_browser"
-        )
-        if selected_path:
-            source_dir_str = str(selected_path)
-            st.success(f"Carpeta seleccionada: {source_dir_str}")
-    
-    out_csv_str = st.text_input("CSV de etiquetas", key="m4_csv", value="")
-    run_btn = st.button("Etiquetar con OpenAI", key="m4_run")
+# ── API key local ─────────────────────────────────────────────────────────────
 
-    if run_btn:
-        source_dir = Path(source_dir_str).expanduser() if source_dir_str else None
-        out_csv = Path(out_csv_str).expanduser() if out_csv_str else None
-        if not source_dir or not source_dir.exists():
-            st.error("La carpeta de origen no existe o no fue proporcionada.")
-            return
-        if not out_csv:
-            st.error("Debe indicar CSV de salida.")
-            return
-        files = collect_txt_files(source_dir)
-        if not files:
-            st.warning("No hay archivos .txt para etiquetar.")
-            return
-        progress = st.progress(0, text="Iniciando…")
-        rows: list[dict[str, str]] = []
-        for idx, p in enumerate(files, start=1):
-            try:
-                text = read_txt(p)
-                res = label_from_text(text)
-                rows.append({
-                    "archivo": str(p),
-                    "categorias": ", ".join(res.get("categorias", [])),
-                    "temas": ", ".join(res.get("temas", [])),
-                    "decisiones": ", ".join(res.get("decisiones", [])),
-                    "partes": ", ".join(res.get("partes", [])),
-                    "error": res.get("error", ""),
-                })
-            except Exception as e:  # noqa: BLE001
-                rows.append({"archivo": str(p), "categorias": "", "temas": "", "decisiones": "", "partes": "", "error": str(e)})
-            progress.progress(idx / len(files), text=f"Procesando {idx}/{len(files)}: {p.name}")
-        progress.empty()
-        out_csv.parent.mkdir(parents=True, exist_ok=True)
-        with out_csv.open("w", newline="", encoding="utf-8") as f:
-            writer = csv.DictWriter(f, fieldnames=["archivo", "categorias", "temas", "decisiones", "partes", "error"])
-            writer.writeheader()
-            for r in rows:
-                writer.writerow(r)
-        st.success(f"Etiquetado completo. CSV: {out_csv}")
-        st.dataframe(rows)
+def _load_local_key() -> str:
+    if LOCAL_CONFIG.exists():
+        for line in LOCAL_CONFIG.read_text(encoding="utf-8").splitlines():
+            line = line.strip()
+            if line.startswith("OPENAI_API_KEY="):
+                return line.split("=", 1)[1].strip().strip('"').strip("'")
+    return ""
 
 
-def ui_mod5():
-    st.header("Módulo 5: Visualización 📊")
-    
-    # Opción de selección de archivo CSV
-    selection_method = st.radio(
-        "Método de selección de archivo CSV:",
-        ["Escribir ruta manualmente", "Explorar archivos"],
-        horizontal=True,
-        key="m6_selection"
-    )
-    
-    csv_path_str = ""
-    if selection_method == "Escribir ruta manualmente":
-        csv_path_str = st.text_input("CSV para dashboard", key="m6_csv", value="")
-    else:
-        st.write("**Explorar archivos CSV:**")
-        selected_file = st_file_browser(
-            path=".",
-            key="mod6_browser",
-            file_extensions=[".csv"]
-        )
-        if selected_file:
-            csv_path_str = str(selected_file)
-            st.success(f"Archivo seleccionado: {csv_path_str}")
-    
-    if st.button("Cargar dashboard", key="m6_run"):
-        csv_path = Path(csv_path_str).expanduser() if csv_path_str else None
-        if not csv_path or not csv_path.exists():
-            st.error("CSV no existe.")
-            return
-        import pandas as pd  # type: ignore
-
-        df = pd.read_csv(csv_path)
-        st.dataframe(df.head(50))
-        # Gráficos básicos si columnas presentes
-        if "is_tutela_contra_providencia" in df.columns:
-            st.bar_chart(df["is_tutela_contra_providencia"].value_counts())
-        if "categorias" in df.columns:
-            # Conteo simple de top categorías
-            exploded = df.assign(categorias=df["categorias"].fillna("").astype(str).str.split(", ")).explode("categorias")
-            top = exploded["categorias"].value_counts().head(10)
-            st.bar_chart(top)
+def _save_local_key(key: str):
+    LOCAL_CONFIG.parent.mkdir(parents=True, exist_ok=True)
+    LOCAL_CONFIG.write_text(f"OPENAI_API_KEY={key}\n", encoding="utf-8")
+    LOCAL_CONFIG.chmod(0o600)
 
 
-def main():
-    load_env()
-    st.set_page_config(page_title="AnalisIA - App Unificada", page_icon="🧠", layout="wide")
-    st.title("AnalisIA - Aplicación Unificada 🧠")
-    # Cargar OPENAI_API_KEY desde backend: .env (utils/env) y/o .streamlit/secrets.toml
+def _init_key():
+    """Carga la key solo desde fuentes locales — nunca toca iCloud."""
+    if not os.getenv("OPENAI_API_KEY"):
+        key = _load_local_key()
+        if key:
+            os.environ["OPENAI_API_KEY"] = key
     if not os.getenv("OPENAI_API_KEY"):
         try:
-            # st.secrets requiere que exista .streamlit/secrets.toml
-            secret_key = st.secrets.get("OPENAI_API_KEY")  # type: ignore[attr-defined]
-            if secret_key:
-                os.environ["OPENAI_API_KEY"] = str(secret_key)
+            key = st.secrets.get("OPENAI_API_KEY", "")
+            if key:
+                os.environ["OPENAI_API_KEY"] = str(key)
         except Exception:
             pass
 
-    with st.sidebar:
-        st.subheader("Configuración")
-        if os.getenv("OPENAI_API_KEY"):
-            st.caption("OPENAI_API_KEY cargada desde backend (.env o secrets).")
+
+# ── OpenAI directo (sin pasar por utils/analysis.py) ─────────────────────────
+
+def _load_prompts() -> tuple[str, str]:
+    """Lee los prompts desde disco. Solo se llama al analizar, no en startup."""
+    pd = APP_DIR / "prompts"
+    system = (pd / "analysis_system.txt").read_text(encoding="utf-8")
+    user   = (pd / "analysis_user.txt").read_text(encoding="utf-8")
+    return system, user
+
+
+def _analyze(text: str, model: str) -> str:
+    """Llama a OpenAI directamente y devuelve el texto crudo de la respuesta."""
+    from openai import OpenAI
+    system_prompt, user_template = _load_prompts()
+    user_prompt = user_template.replace("{{TEXT}}", text[:40000])  # límite seguro
+
+    client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+    resp = client.chat.completions.create(
+        model=model,
+        messages=[
+            {"role": "system", "content": system_prompt},
+            {"role": "user",   "content": user_prompt},
+        ],
+        temperature=0.1,
+        max_tokens=4096,
+    )
+    return resp.choices[0].message.content
+
+
+def _extract_metadata(text: str, model: str) -> dict:
+    """Extrae metadatos básicos con una llamada ligera."""
+    from openai import OpenAI
+    prompt = """Extrae los siguientes metadatos de la sentencia en JSON estricto:
+{
+  "radicado": "string",
+  "consejero_ponente": "string",
+  "sala": "string",
+  "seccion": "string",
+  "fecha": "YYYY-MM-DD o No consta",
+  "ciudad": "string",
+  "actor": "string",
+  "demandado": "string"
+}
+Si no encuentras un dato, usa "No consta". Solo devuelve el JSON, sin texto adicional.
+
+SENTENCIA:
+""" + text[:8000]
+
+    client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+    resp = client.chat.completions.create(
+        model=model,
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0,
+        max_tokens=400,
+    )
+    raw = resp.choices[0].message.content
+    import re
+    m = re.search(r"\{.*\}", raw, re.DOTALL)
+    if m:
+        try:
+            return json.loads(m.group(0))
+        except Exception:
+            pass
+    return {}
+
+
+def _read_txt(path: Path) -> str:
+    return path.read_text(encoding="utf-8", errors="replace")
+
+
+def _collect_txt(directory: Path) -> list[Path]:
+    return sorted(directory.glob("*.txt"))
+
+
+# ── Pipeline status ───────────────────────────────────────────────────────────
+
+def _pipeline_status(base: Path):
+    """Solo glob — nunca lee contenido."""
+    dirs = {
+        "TXT":        (base / "archivos_txt",         "*.txt"),
+        "Caché":      (base / "cache_analisis",        "*_analisis.json"),
+        "Exportados": (base / "analisis_individuales", "*_analisis.txt"),
+    }
+    cols = st.columns(len(dirs))
+    for (label, (d, pat)), col in zip(dirs.items(), cols):
+        try:
+            count = len(list(d.glob(pat))) if d.exists() else 0
+        except Exception:
+            count = 0
+        with col:
+            st.metric(label, count)
+
+
+def get_base_dir() -> Path | None:
+    raw = st.session_state.get("base_dir", "")
+    if not raw:
+        return None
+    p = Path(raw).expanduser()
+    return p if p.exists() else None
+
+
+# ── Consolidar CSV desde caché ────────────────────────────────────────────────
+
+def _consolidar_csv(cache_dir: Path, res_dir: Path):
+    rows, all_keys = [], []
+    for jf in sorted(cache_dir.glob("*_analisis.json")):
+        try:
+            data = json.loads(jf.read_text(encoding="utf-8"))
+            parsed = data.get("parsed", {})
+            if not parsed:
+                continue
+            rows.append(parsed)
+            for k in parsed:
+                if k not in all_keys:
+                    all_keys.append(k)
+        except Exception:
+            continue
+    if not rows:
+        return 0
+    res_dir.mkdir(parents=True, exist_ok=True)
+    # Guardar en res_dir (puede ser base o resultados/)
+    csv_path = res_dir / "analisis_consolidado.csv"
+    with csv_path.open("w", newline="", encoding="utf-8-sig") as f:
+        writer = csv.DictWriter(f, fieldnames=all_keys, extrasaction="ignore")
+        writer.writeheader()
+        for r in rows:
+            writer.writerow(r)
+    return len(rows)
+
+
+# ══ MÓDULOS ═══════════════════════════════════════════════════════════════════
+
+def ui_mod0():
+    """Descompresión ZIP."""
+    st.subheader("Descompresión masiva de ZIP")
+    base = get_base_dir()
+    if not base:
+        st.info("Configura el directorio del proyecto en el panel izquierdo.")
+        return
+
+    try:
+        from utils.zip_extractor import extract_zip_files, scan_zip_directory, clean_extracted_directory
+    except Exception:
+        st.error("No se pudo cargar el módulo de ZIP.")
+        return
+
+    zip_info = scan_zip_directory(base)
+    c1, c2, c3 = st.columns(3)
+    with c1: st.metric("ZIPs", zip_info["total_zips"])
+    with c2: st.metric("Tamaño", f"{zip_info['total_size_mb']:.1f} MB")
+    with c3: st.metric("Estado", "Listo" if zip_info["total_zips"] > 0 else "Sin ZIPs")
+
+    if zip_info.get("zip_details"):
+        with st.expander("Detalle"):
+            for d in zip_info["zip_details"]:
+                st.write(f"{'✅' if d['status']=='OK' else '❌'} **{d['name']}** — {d['size_mb']} MB")
+
+    c1, c2 = st.columns(2)
+    with c1:
+        if st.button("Descomprimir todos", type="primary", disabled=zip_info["total_zips"] == 0):
+            with st.spinner("Descomprimiendo..."):
+                extracted, errors = extract_zip_files(base, base / "extracted")
+            st.success(f"✅ {len(extracted)} archivos extraídos")
+            if errors:
+                st.error(f"{len(errors)} errores")
+    with c2:
+        if st.button("Limpiar extraídos"):
+            clean_extracted_directory(base / "extracted")
+            st.success("Limpiado")
+
+
+def ui_mod1():
+    """Conversión a TXT."""
+    st.subheader("Conversión a .txt")
+    base = get_base_dir()
+    if not base:
+        st.info("Configura el directorio del proyecto en el panel izquierdo.")
+        return
+
+    src = st.text_input("Carpeta fuente", value=str(base / "extracted") if (base / "extracted").exists() else str(base))
+    src_path = Path(src) if src else None
+    target = base / "archivos_txt"
+
+    if st.button("Escanear"):
+        if src_path and src_path.exists():
+            files = [p for p in src_path.rglob("*") if p.suffix.lower() in {".txt",".doc",".docx",".pdf"}]
+            st.session_state["m1_files"] = [str(f) for f in files]
+            st.success(f"{len(files)} archivos encontrados")
         else:
-            st.warning("No se encontró OPENAI_API_KEY. Configure .env o .streamlit/secrets.toml")
-    tabs = st.tabs(["0) Descompresión ZIP", "1) Conversión", "2) Filtro", "3) Análisis Completo", "4) Etiquetado", "5) Dashboard"])
-    with tabs[0]:
-        ui_mod0()
-    with tabs[1]:
-        ui_mod1()
-    with tabs[2]:
-        ui_mod2()
-    with tabs[3]:
-        ui_mod3()
-    with tabs[4]:
-        ui_mod4()
-    with tabs[5]:
-        ui_mod5()
+            st.error("Carpeta no existe")
+
+    files = [Path(f) for f in st.session_state.get("m1_files", [])]
+    if files:
+        by_ext = {}
+        for f in files:
+            by_ext[f.suffix.lower()] = by_ext.get(f.suffix.lower(), 0) + 1
+        cols = st.columns(len(by_ext))
+        for i, (ext, cnt) in enumerate(by_ext.items()):
+            with cols[i]: st.metric(ext, cnt)
+
+    if st.button("Convertir a TXT", type="primary", disabled=not files):
+        try:
+            from utils.extract_text import convert_file_to_txt
+        except Exception:
+            st.error("Módulo de conversión no disponible (iCloud). Copia utils/ a una carpeta local.")
+            return
+        target.mkdir(parents=True, exist_ok=True)
+        progress = st.progress(0)
+        ok = err = 0
+        for idx, path in enumerate(files, 1):
+            try:
+                convert_file_to_txt(path, target)
+                ok += 1
+            except Exception:
+                err += 1
+            progress.progress(idx / len(files), text=f"{idx}/{len(files)} — {path.name}")
+        progress.empty()
+        st.success(f"✅ {ok} convertidos — {err} errores — `{target}`")
+
+
+def ui_mod2():
+    """Análisis jurídico completo."""
+    st.subheader("Análisis jurídico completo con IA")
+    base = get_base_dir()
+    if not base:
+        st.info("Configura el directorio del proyecto en el panel izquierdo.")
+        return
+
+    if not os.getenv("OPENAI_API_KEY"):
+        st.error("Sin API key. Ingresa tu key en el panel izquierdo.")
+        return
+
+    txt_dir   = base / "archivos_txt"
+    cache_dir = base / "cache_analisis"
+    ana_dir   = base / "analisis_individuales"
+    res_dir   = base / "resultados"
+
+    if not txt_dir.exists():
+        alt = st.text_input("Carpeta con archivos .txt", value=str(base))
+        txt_dir = Path(alt).expanduser() if alt else txt_dir
+
+    c1, c2 = st.columns([2, 1])
+    with c1:
+        idx_modelo = MODELOS.index(st.session_state.get("modelo_global", MODELOS[0])) \
+                     if st.session_state.get("modelo_global") in MODELOS else 0
+        model_name = st.selectbox("Modelo", MODELOS, index=idx_modelo, key="m2_model")
+    with c2:
+        solo_nuevos = st.checkbox("Solo nuevos", value=True, help="Salta archivos ya en caché")
+
+    if st.button("Escanear TXT"):
+        if txt_dir.exists():
+            files = _collect_txt(txt_dir)
+            st.session_state["m2_files"] = [str(f) for f in files]
+            st.success(f"{len(files)} archivos encontrados")
+        else:
+            st.error("La carpeta no existe")
+
+    files = [Path(f) for f in st.session_state.get("m2_files", [])]
+    if not files:
+        return
+
+    cache_dir.mkdir(exist_ok=True)
+    cached = len(list(cache_dir.glob("*_analisis.json")))
+    pendientes = [f for f in files if not (cache_dir / f"{f.stem}_analisis.json").exists()] \
+                 if solo_nuevos else files
+
+    c1, c2, c3 = st.columns(3)
+    with c1: st.metric("Total TXT", len(files))
+    with c2: st.metric("En caché", cached)
+    with c3: st.metric("Por procesar", len(pendientes))
+
+    if not pendientes:
+        st.success("Todo procesado. Ve al Dashboard.")
+        if st.button("Actualizar CSV"):
+            n = _consolidar_csv(cache_dir, res_dir)
+            st.success(f"CSV actualizado — {n} filas")
+        return
+
+    if st.button(f"▶ Analizar {len(pendientes)} sentencias", type="primary"):
+        _run_analysis(pendientes, cache_dir, ana_dir, res_dir, model_name)
+
+
+def _run_analysis(files: list[Path], cache_dir: Path, ana_dir: Path, res_dir: Path, model: str):
+    ana_dir.mkdir(exist_ok=True)
+    res_dir.mkdir(exist_ok=True)
+
+    total = len(files)
+    progress = st.progress(0)
+    status   = st.empty()
+    errores  = []
+    concede = niega = otro = 0
+
+    for idx, path in enumerate(files, 1):
+        status.markdown(f"**{idx}/{total}** — `{path.name}`")
+        cache_file = cache_dir / f"{path.stem}_analisis.json"
+
+        try:
+            text = _read_txt(path)
+
+            # 1 call: metadatos (barato)
+            metadata = _extract_metadata(text, model)
+            radicado = metadata.get("radicado") or path.stem
+
+            # 1 call: análisis completo
+            analisis_raw = _analyze(text, model)
+
+            # Parsear JSON
+            parsed = parse_analysis(analisis_raw, radicado=radicado)
+
+            # Enriquecer con metadatos
+            for campo in ["seccion", "sala", "consejero_ponente", "actor", "demandado", "fecha", "ciudad"]:
+                if parsed.get(campo, "No consta") in ("No consta", "", None):
+                    parsed[campo] = metadata.get(campo, "No consta")
+
+            parsed["archivo"] = str(path)
+
+            # Guardar caché
+            with cache_file.open("w", encoding="utf-8") as f:
+                json.dump({"radicado": radicado, "metadata": metadata,
+                           "analisis_raw": analisis_raw, "parsed": parsed},
+                          f, ensure_ascii=False, indent=2)
+
+            # TXT individual
+            txt_file = ana_dir / f"{radicado}_analisis.txt"
+            txt_file.write_text(
+                f"ANÁLISIS JURÍDICO COMPLETO\n{'='*60}\n\n"
+                f"RADICADO: {radicado}\n"
+                f"PONENTE: {parsed.get('consejero_ponente','No consta')}\n"
+                f"SECCIÓN: {parsed.get('seccion','No consta')}\n"
+                f"FECHA: {parsed.get('fecha','No consta')}\n"
+                f"MATERIA: {parsed.get('materia_principal','No consta')} — {parsed.get('submateria','')}\n\n"
+                f"{'='*60}\n\n{analisis_raw}\n\n"
+                f"{'='*60}\nGenerado por AnalisIA v2.1\n",
+                encoding="utf-8"
+            )
+
+            dm = parsed.get("decision_macro", "Otro")
+            if dm == "Concede": concede += 1
+            elif dm in ("Niega", "Confirma"): niega += 1
+            else: otro += 1
+
+        except Exception as e:
+            errores.append(f"{path.name}: {e}")
+
+        progress.progress(idx / total)
+
+    progress.empty()
+    status.empty()
+
+    n = _consolidar_csv(cache_dir, res_dir)
+    st.success(f"✅ {total - len(errores)}/{total} analizadas — CSV con {n} filas")
+    c1, c2, c3 = st.columns(3)
+    with c1: st.metric("Concede", concede)
+    with c2: st.metric("Niega/Confirma", niega)
+    with c3: st.metric("Otro", otro)
+    if errores:
+        with st.expander(f"⚠ {len(errores)} errores"):
+            for e in errores: st.caption(e)
+
+
+def ui_mod3():
+    """Dashboard de tendencias."""
+    st.subheader("Dashboard de tendencias")
+    base = get_base_dir()
+    if not base:
+        st.info("Configura el directorio del proyecto en el panel izquierdo.")
+        return
+
+    try:
+        import pandas as pd
+        import plotly.express as px
+    except ImportError:
+        st.error("Instala plotly: `pip install plotly`")
+        return
+
+    cache_dir = base / "cache_analisis"
+    # Buscar CSV en base o en resultados/
+    csv_path = base / "analisis_consolidado.csv"
+    if not csv_path.exists():
+        csv_path = base / "resultados" / "analisis_consolidado.csv"
+
+    if st.button("Actualizar CSV desde caché"):
+        n = _consolidar_csv(cache_dir, base)
+        st.success(f"CSV actualizado — {n} filas")
+        csv_path = base / "analisis_consolidado.csv"
+
+    if not csv_path.exists():
+        st.warning("Sin CSV aún. Ejecuta el análisis o actualiza desde caché.")
+        return
+
+    try:
+        df = pd.read_csv(csv_path)
+    except TimeoutError:
+        st.error(f"Timeout leyendo `{csv_path}`. Archivo no descargado localmente.")
+        return
+    except Exception as e:
+        st.error(f"Error: {e}")
+        return
+
+    total = len(df)
+    if total == 0:
+        st.warning("CSV vacío.")
+        return
+
+    # KPIs
+    st.markdown("### Resumen general")
+    c1, c2, c3, c4 = st.columns(4)
+    with c1: st.metric("Total sentencias", total)
+    with c2:
+        if "decision_macro" in df.columns:
+            n = (df["decision_macro"] == "Concede").sum()
+            st.metric("Conceden", n, f"{100*n//total}%")
+    with c3:
+        if "materia_principal" in df.columns:
+            top = df["materia_principal"].value_counts().index[0]
+            st.metric("Materia top", top)
+    with c4:
+        col = "c590e_desconocimiento_precedente_si"
+        if col in df.columns:
+            st.metric("Descon. precedente", int(df[col].sum()))
+
+    st.markdown("---")
+    col1, col2 = st.columns(2)
+
+    BG, FONT = "#1a3a2a", "#e8f5e9"
+
+    def _layout(fig):
+        fig.update_layout(paper_bgcolor=BG, plot_bgcolor=BG,
+                          font_color=FONT, title_font_color=FONT)
+        return fig
+
+    with col1:
+        if "decision_macro" in df.columns:
+            fig = px.pie(df, names="decision_macro", title="Decisiones",
+                         color_discrete_sequence=["#4CAF50","#ef5350","#FFA726","#42A5F5"], hole=0.4)
+            st.plotly_chart(_layout(fig), use_container_width=True)
+
+    with col2:
+        if "materia_principal" in df.columns:
+            mc = df["materia_principal"].value_counts().reset_index()
+            mc.columns = ["Materia", "n"]
+            fig = px.bar(mc, x="n", y="Materia", orientation="h", title="Materias",
+                         color="n", color_continuous_scale=["#1a3a2a","#4CAF50"])
+            fig.update_layout(yaxis={"categoryorder":"total ascending"})
+            st.plotly_chart(_layout(fig), use_container_width=True)
+
+    col3, col4 = st.columns(2)
+    with col3:
+        if "submateria" in df.columns:
+            sc = df["submateria"].value_counts().head(15).reset_index()
+            sc.columns = ["Submateria","n"]
+            fig = px.bar(sc, x="n", y="Submateria", orientation="h", title="Top submaterias",
+                         color="n", color_continuous_scale=["#1a3a2a","#81C784"])
+            fig.update_layout(yaxis={"categoryorder":"total ascending"})
+            st.plotly_chart(_layout(fig), use_container_width=True)
+
+    with col4:
+        c590_cols = [c for c in df.columns if c.startswith("c590e_") and c.endswith("_si")]
+        if c590_cols:
+            defectos = {c.replace("c590e_","").replace("_si","").replace("_"," ").title(): int(df[c].sum())
+                        for c in c590_cols if df[c].sum() > 0}
+            if defectos:
+                df_d = pd.DataFrame(list(defectos.items()), columns=["Defecto","n"])
+                fig = px.bar(df_d.sort_values("n"), x="n", y="Defecto", orientation="h",
+                             title="Defectos C590",
+                             color="n", color_continuous_scale=["#1a3a2a","#EF9A9A"])
+                st.plotly_chart(_layout(fig), use_container_width=True)
+
+    if "derechos_invocados" in df.columns:
+        st.markdown("### Derechos fundamentales invocados")
+        from collections import Counter
+        cnt = Counter()
+        for v in df["derechos_invocados"].dropna():
+            for d in str(v).split(" | "):
+                d = d.strip()
+                if d and d != "No consta": cnt[d] += 1
+        if cnt:
+            df_der = pd.DataFrame(cnt.most_common(12), columns=["Derecho","n"])
+            fig = px.bar(df_der, x="n", y="Derecho", orientation="h",
+                         color="n", color_continuous_scale=["#1a3a2a","#4CAF50"])
+            fig.update_layout(yaxis={"categoryorder":"total ascending"})
+            st.plotly_chart(_layout(fig), use_container_width=True)
+
+    st.markdown("### Explorar sentencias")
+    cols_show = [c for c in ["radicado","fecha","seccion","materia_principal","submateria",
+                              "decision_macro","resumen_ejecutivo"] if c in df.columns]
+
+    fc1, fc2, fc3 = st.columns(3)
+    df_f = df.copy()
+    with fc1:
+        if "materia_principal" in df.columns:
+            opts = ["Todas"] + sorted(df["materia_principal"].dropna().unique().tolist())
+            sel = st.selectbox("Materia", opts)
+            if sel != "Todas": df_f = df_f[df_f["materia_principal"] == sel]
+    with fc2:
+        if "decision_macro" in df.columns:
+            opts = ["Todas"] + sorted(df["decision_macro"].dropna().unique().tolist())
+            sel = st.selectbox("Decisión", opts)
+            if sel != "Todas": df_f = df_f[df_f["decision_macro"] == sel]
+    with fc3:
+        q = st.text_input("Buscar")
+        if q:
+            df_f = df_f[df_f.apply(lambda r: q.lower() in str(r).lower(), axis=1)]
+
+    st.caption(f"{len(df_f)} sentencias")
+    st.dataframe(df_f[cols_show], use_container_width=True, height=400)
+
+    csv_bytes = df_f.to_csv(index=False, encoding="utf-8-sig").encode("utf-8-sig")
+    c1, c2 = st.columns(2)
+    with c1:
+        st.download_button("Descargar CSV", data=csv_bytes,
+                           file_name="analisis_filtrado.csv", mime="text/csv")
+    with c2:
+        try:
+            import io
+            buf = io.BytesIO()
+            with pd.ExcelWriter(buf, engine="openpyxl") as w:
+                df_f.to_excel(w, index=False, sheet_name="Sentencias")
+            st.download_button("Descargar Excel", data=buf.getvalue(),
+                               file_name="analisis_filtrado.xlsx",
+                               mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+        except Exception:
+            pass
+
+
+def ui_mod4():
+    """Análisis individual."""
+    st.subheader("Análisis individual")
+    if not os.getenv("OPENAI_API_KEY"):
+        st.error("Sin API key.")
+        return
+
+    idx_modelo = MODELOS.index(st.session_state.get("modelo_global", MODELOS[0])) \
+                 if st.session_state.get("modelo_global") in MODELOS else 0
+    model_name = st.selectbox("Modelo", MODELOS, index=idx_modelo, key="m4_model")
+
+    uploaded = st.file_uploader("Subir sentencia (.txt, .pdf, .doc, .docx)",
+                                type=["txt","pdf","doc","docx"])
+    texto = st.text_area("O pegar texto aquí", height=180,
+                         placeholder="Pega el texto completo de la sentencia...")
+
+    if st.button("Analizar", type="primary"):
+        text_to_analyze = ""
+        if uploaded:
+            if uploaded.name.endswith(".txt"):
+                text_to_analyze = uploaded.read().decode("utf-8", errors="replace")
+            else:
+                with tempfile.NamedTemporaryFile(delete=False, suffix=Path(uploaded.name).suffix) as tmp:
+                    tmp.write(uploaded.getbuffer())
+                    tmp_path = Path(tmp.name)
+                try:
+                    from utils.extract_text import extract_text_from_path
+                    text_to_analyze = extract_text_from_path(tmp_path)
+                except Exception:
+                    st.error("Módulo de extracción no disponible. Sube el archivo en .txt.")
+                    return
+                finally:
+                    tmp_path.unlink(missing_ok=True)
+        elif texto.strip():
+            text_to_analyze = texto.strip()
+
+        if not text_to_analyze:
+            st.warning("Sube un archivo o pega texto.")
+            return
+
+        with st.spinner("Analizando..."):
+            meta   = _extract_metadata(text_to_analyze, model_name)
+            raw    = _analyze(text_to_analyze, model_name)
+            parsed = parse_analysis(raw, radicado=meta.get("radicado", ""))
+
+        c1, c2 = st.columns(2)
+        with c1:
+            for k in ["consejero_ponente","radicado","fecha","ciudad"]:
+                st.write(f"**{k.replace('_',' ').title()}:** {meta.get(k,'—')}")
+        with c2:
+            for k in ["sala","seccion","actor","demandado"]:
+                st.write(f"**{k.replace('_',' ').title()}:** {meta.get(k,'—')}")
+
+        st.markdown("---")
+        c1, c2 = st.columns(2)
+        with c1:
+            st.info(f"**Materia:** {parsed.get('materia_principal','—')}  \n"
+                    f"**Submateria:** {parsed.get('submateria','—')}")
+        with c2:
+            st.info(f"**Decisión:** {parsed.get('decision_macro','—')}  \n"
+                    f"**Derechos:** {parsed.get('derechos_invocados','—')}")
+
+        with st.expander("Análisis completo"):
+            st.markdown(raw)
+
+        st.download_button("Descargar TXT", data=raw,
+                           file_name=f"{meta.get('radicado','analisis')}.txt",
+                           mime="text/plain")
+
+
+# ══ MAIN ══════════════════════════════════════════════════════════════════════
+
+def main():
+    _init_key()
+
+    st.set_page_config(page_title="AnalisIA", page_icon="⚖️", layout="wide",
+                       initial_sidebar_state="expanded")
+    st.markdown(CSS, unsafe_allow_html=True)
+
+    # ── Sidebar ──────────────────────────────────────────────────────────────
+    with st.sidebar:
+        st.markdown("## ⚖️ AnalisIA")
+        st.markdown("---")
+
+        # Directorio del proyecto
+        st.markdown("### Proyecto")
+        base_input = st.text_input(
+            "Directorio",
+            value=st.session_state.get("base_dir", ""),
+            placeholder="/ruta/a/tu/carpeta",
+            key="base_dir_input",
+        )
+        if base_input != st.session_state.get("base_dir", ""):
+            st.session_state["base_dir"] = base_input
+
+        base = get_base_dir()
+        if base:
+            st.success(f"✅ `{base.name}`")
+            _pipeline_status(base)
+        else:
+            st.warning("Directorio no configurado")
+
+        st.markdown("---")
+
+        # API Key
+        st.markdown("### API Key")
+        key_actual = os.getenv("OPENAI_API_KEY", "")
+        if key_actual:
+            st.success(f"🔑 `...{key_actual[-6:]}`")
+            if st.button("Cambiar key", key="btn_cambiar"):
+                st.session_state["show_key"] = True
+        else:
+            st.session_state["show_key"] = True
+
+        if st.session_state.get("show_key"):
+            nueva = st.text_input("OpenAI API key", type="password",
+                                  placeholder="sk-...", key="key_input")
+            if st.button("Guardar", type="primary", key="btn_save_key"):
+                if nueva.startswith("sk-"):
+                    _save_local_key(nueva)
+                    os.environ["OPENAI_API_KEY"] = nueva
+                    st.session_state["show_key"] = False
+                    st.rerun()
+                else:
+                    st.error("Debe empezar con sk-")
+
+        st.markdown("---")
+
+        # Modelo global
+        st.markdown("### Modelo")
+        st.selectbox("Modelo OpenAI", MODELOS, index=0, key="modelo_global",
+                     label_visibility="collapsed")
+
+        st.markdown("---")
+        st.caption("AnalisIA v2.1 · Consejo de Estado")
+
+    # ── Tabs ──────────────────────────────────────────────────────────────────
+    tabs = st.tabs(["📦 ZIP", "📄 Conversión", "🧠 Análisis", "📊 Dashboard", "🔍 Individual"])
+
+    def _safe(fn):
+        try:
+            fn()
+        except TimeoutError:
+            st.error("Timeout de iCloud/OneDrive. Espera a que el archivo se descargue.")
+        except Exception as e:
+            st.error(f"Error: {e}")
+
+    with tabs[0]: _safe(ui_mod0)
+    with tabs[1]: _safe(ui_mod1)
+    with tabs[2]: _safe(ui_mod2)
+    with tabs[3]: _safe(ui_mod3)
+    with tabs[4]: _safe(ui_mod4)
 
 
 if __name__ == "__main__":
     main()
-
-
