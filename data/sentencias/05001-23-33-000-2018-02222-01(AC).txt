@@ -1,0 +1,234 @@
+﻿IMPROCEDENCIA DE LA ACCIÓN DE TUTELA CONTRA PROVIDENCIA JUDICIAL / INCUMPLIMIENTO DEL REQUISITO DE RELEVANCIA CONSTITUCIONAL / INCUMPLIMIENTO DEL REQUISITO DE SUBSIDIARIEDAD - Omisión en el agotamiento de los medios de impugnación / RECURSO DE REPOSICIÓN CONTRA PROVIDENCIA QUE ACCEDIÓ AL CAMBIO DE PERITO - No interposición
+
+[L]a Sala estima necesario verificar si la acción de tutela cumple con los presupuestos de relevancia constitucional y subsidiariedad. (…) [L]a Sala advierte que los argumentos que expuso el [accionante] en la acción de tutela no son más que la reiteración de lo que ya había expuesto la parte demandante del proceso de reparación directa en el recurso de reposición contra el auto del 19 de abril de 2018, proferido por el Juzgado 29 Administrativo de Medellín, que dejó sin efectos la providencia del 22 de marzo de 2018, que, a su vez, había declarado el desistimiento de la prueba pericial solicitada por la parte demandada. (…) [Además,] el actor contó con mecanismos de defensa ordinarios que resultaban eficaces e idóneos para exponer los argumentos que ahora pretende hacer valer. Sin embargo, no presentó el recurso de reposición contra la providencia que accedió al cambio del perito, y no solicitó la adición del auto que resolvió el recurso de reposición, para que se le tuviera en cuenta el argumento que estimó no resuelto. Por el contrario, el demandante optó por interponer directamente la tutela, como si esta acción pudiera emplearse en reemplazo de los mecanismos ordinarios establecidos en la ley para la defensa de los derechos. (…) Así las cosas, aunque el a quo efectuó el estudio de fondo del asunto, al estimar acreditados los presupuestos genéricos, la Sala considera que la tutela no cumple con el requisito de relevancia constitucional, porque los argumentos del actor no son más que la reiteración de lo que ya expuso en el recurso de reposición contra la providencia que dejó sin efectos el auto que declaró desistida la prueba pericial solicitada por la parte demandada en reparación directa. Además, en cuanto a los argumentos de la solicitud de amparo que no habían sido resueltos por el juez del asunto, la tutela es improcedente, por falta del presupuesto de subsidiariedad.
+
+
+CONSEJO DE ESTADO
+
+SALA DE LO CONTENCIOSO ADMINISTRATIVO
+
+SECCIÓN CUARTA
+
+Consejero ponente: JULIO ROBERTO PIZA RODRÍGUEZ
+
+Bogotá, D.C., ocho (8) de marzo de dos mil diecinueve (2019)
+
+Radicación número: 05001-23-33-000-2018-02222-01(AC)
+
+Actor:	 GABRIEL HUMBERTO MARÍN GIL
+
+Demandado: JUZGADO 29 ADMINISTRATIVO DE MEDELLÍN
+
+
+
+La Sala decide la impugnación formulada por el señor Gabriel Humberto Marín Gil contra la sentencia del 30 de noviembre de 2018, proferida por el Tribunal Administrativo de Antioquia, que denegó las pretensiones de la tutela.
+
+ANTECEDENTES
+
+    1. Pretensiones
+
+1.1. En ejercicio de la acción de tutela, el señor Gabriel Humberto Marín Gil solicitó la protección del derecho fundamental al debido proceso, que estimó vulnerado por el Juzgado 29 Administrativo de Medellín, con ocasión del auto del 10 de mayo de 2018, que confirmó la providencia que declaró el desistimiento de una prueba pericial. En concreto, formuló las siguientes pretensiones1:
+
+3.1. Se declare la vulneración del derecho fundamental consagrado en el artículo 29 de la Constitución Política de Colombia. 
+
+3.2. Se deje sin efectos el auto de fecha 10 de mayo de 2018, proferido por el Juzgado 29 Administrativo de Medellín, dentro del expediente radicado 2013-1292. 
+
+3.3. Las demás acciones que el despacho considere pertinentes para el restablecimiento efectivo de los derechos fundamentales vulnerados. 
+
+    2. Hechos
+
+Del expediente, la Sala destaca los siguientes hechos relevantes: 
+
+2.1. El señor Juan Estaban Lorenzo Piñeros y otros instauraron demanda de reparación directa contra la E.S.E. Hospital General de Medellín Luz Castro de Gutiérrez, con el objeto de obtener la indemnización de los perjuicios causados por la muerte del señor Luis Fernando Marín Gil, acaecida como consecuencia de una falla en la prestación del servicio médico. 
+
+2.2. En la audiencia inicial llevada a cabo el 10 de noviembre de 20162, el Juzgado 29 Administrativo de Medellín decretó como prueba de la E.S.E. Hospital General de Medellín Luz Castro de Gutiérrez un dictamen pericial de un médico neurocirujano y un cardiólogo, que indiquen si la atención brindada al señor Luis Fernando Marín Gil fue adecuada. Para practicar la prueba, designó a la Universidad CES, a quien le ordenó designar de su planta de docentes a los profesionales mencionados. Además, instó a la entidad solicitante de la prueba a ser muy diligente en la citación de los auxiliares de la justicia, y en la consignación de los gastos de la pericia.
+
+2.3. El Juzgado 29 Administrativo de Medellín, mediante auto del 22 de marzo de 20183, declaró desistida la prueba pericial, al estimar que la E.S.E. Hospital General de Medellín Luz Castro de Gutiérrez no había enviado las citaciones a los auxiliares de la justicia designados por la Universidad CES y la Clínica Cardio VID4. 
+
+2.4. Mediante auto del 19 de abril de 20185, el Juzgado 29 Administrativo de Medellín dejó sin valor la providencia del 22 de marzo de 2018, con fundamento en que la Universidad CES aportó el dictamen pericial practicado por especialista en neurocirugía, y que la Clínica Cardio VID informó que había recibido la comunicación el 7 de marzo de 2018, pero que no tenía disponibilidad para practicar la prueba. Que, por tanto, estaba demostrado que la E.S.E. Hospital General de Medellín Luz Castro de Gutiérrez sí había adelantado las gestiones necesarias para la práctica de la prueba pericial. 
+
+2.5. Los demandantes interpusieron recurso de reposición contra la anterior providencia6, y argumentaron que la parte demandada no había recurrido el auto del 22 de marzo de 2018, que declaró el desistimiento de la prueba pericial, por lo que esa decisión cobró firmeza y fuerza ejecutoria, y no podía ser desconocida mediante providencia posterior. Además, señalaron que la E.S.E. Hospital General de Medellín Luz Castro de Gutiérrez no dio cumplimiento al artículo 49 de la Ley 1564 de 2012, Código General del Proceso – CGP, porque no dejó constancia en el expediente de haber enviado las comunicaciones a los auxiliares de la justicia. 
+
+2.5.1. Mediante auto del 10 de mayo de 20187, el Juzgado 29 Administrativo de Medellín confirmó la providencia recurrida e insistió en que la E.S.E. Hospital General de Medellín Luz Castro de Gutiérrez sí había adelantado las gestiones necesarias para la práctica de la prueba pericial.
+
+    3. Argumentos de la tutela
+
+3.1. El señor Gabriel Humberto Marín Gil alegó que la providencia del 22 de marzo de 2018, que declaró el desistimiento de la prueba pericial, no fue recurrido, por lo que tomó fuerza ejecutoria. Que, por tanto, el auto del 19 de abril de 2018 revivió injustificadamente los términos a la parte demandada, para que acreditara el cumplimiento de la carga procesal que se le impuso en la audiencia inicial, al decretar la prueba pericial. 
+
+3.1.1. Que, en efecto, el despacho otorgó un plazo de cinco días a la E.S.E. Hospital General de Medellín Luz Castro de Gutiérrez para adelantar las gestiones necesarias para que se practicara la prueba pericial, pero que la entidad dejó transcurrir más de un año sin cumplir con esa carga. Es decir, que la providencia objeto de tutela premió la negligencia de la demandada, lo que rompió el equilibrio y la igualdad de las partes. 
+
+3.1.2. Que la prueba pericial se decretó en la audiencia inicial adelantada el 10 de noviembre de 2016, pero solo hasta el 23 de febrero de 2018, tres días antes de la celebración de la audiencia de pruebas, la Universidad CES solicitó el cambio de perfil del especialista designado para practicarla, de neurólogo a neurocirujano8, lo que, a su juicio, es cuestionable. 
+
+Que, además, es evidente que fue la parte demandada la que, a su conveniencia, propició el cambio de especialista. Que, si la entidad hubiera acreditado el envío de la comunicación a los auxiliares de la justicia, como lo ordena el artículo 49 CGP, el despacho y las partes habrían advertido el error o mala fe, pues allí se habría evidenciado la modificación de la prueba. 
+
+3.2. Por otro lado, señaló que el auto del 10 de mayo de 2018 no resolvió el argumento expuesto por los demandantes en el recurso de reposición contra la providencia del 19 de abril de 2018, en el que alegaron que la declaratoria de desistimiento de la prueba pericial había cobrado firmeza, por no haber sido recurrida por la parte demandada. 
+
+3.3. Luego, mencionó las causales generales y específicas de procedibilidad de la tutela contra providencias judiciales, pero no sustentó ninguna de estas. 
+
+    4. Intervenciones
+
+4.1. El Juzgado 29 Administrativo de Medellín no presentó contestación, a pesar de que fue notificado de la tutela. 
+
+4.2. La jefe de la Oficina Jurídica de la E.S.E. Hospital General de Medellín Luz Castro de Gutiérrez9 manifestó que si bien no recurrió la providencia que declaró el desistimiento de la prueba pericial, lo cierto es que en el expediente estaba acreditado que la misma se estaba gestionando, si se tiene en cuenta que, dentro de los cinco días siguientes a la audiencia de pruebas del 27 de febrero de 2018, se enviaron las comunicaciones respectivas a la Universidad CES y a la Clínica Cardio VID, que fueron recibidas por éstas el 7 de marzo de ese año. 
+
+4.2.1. Que la ausencia de los comprobantes de las comunicaciones enviadas a las entidades designadas para proporcionar los peritos no afectaba en nada los intereses de la parte demandante, pues esta conoció el decreto de la prueba desde la audiencia inicial, y, en todo caso, podrá controvertir los dictámenes en la oportunidad legal correspondiente. 
+
+
+    5. Sentencia impugnada 
+
+5.1. El Tribunal Administrativo de Antioquia mediante sentencia del 30 de noviembre de 201810, denegó el amparo solicitado, por considerar que el Juzgado 29 Administrativo de Medellín, al dictar la providencia objeto de tutela, evidenció que la E.S.E. Hospital General de Medellín Luz Castro de Gutiérrez había realizado oportunamente las gestiones necesarias para la práctica de la prueba pericial, y que la Clínica Cardio VID recibió la comunicación dentro del plazo otorgado por el despacho. 
+
+5.2. Concluyó que si bien la parte demandada no recurrió el auto que declaró el desistimiento de la prueba, lo cierto es que la fecha de presentación del dictamen de la Universidad CES evidenciaba que las gestiones que correspondían a la interesada se habían adelantado de manera oportuna. 
+
+5.3. Que, con todo, si bien es cierto que dejar sin efectos una prueba previamente decretada puede generar inconformidad en las partes, en últimas, no se configuró una irregularidad lesiva de los derechos fundamentales, pues no validó una prueba prohibida, ilegal o irregularmente allegada al proceso, sino un medio de prueba oportunamente solicitado, decretado y practicado. 
+
+5.4. Que, de conformidad con el principio de comunidad de la prueba, una vez decretados los medios de convicción, estos no pertenecen a la parte que los solicita, sino al proceso, y deben cumplir con la finalidad propuesta, que es el esclarecimiento de los hechos en controversia. Que, además, la finalidad del proceso es hacer efectivo el derecho sustancial, por lo que, incluso, el juez tiene la facultad para decretar pruebas de oficio. 
+
+    6. Impugnación
+
+6.1. El señor Gabriel Humberto Marín Gil impugnó la sentencia del 30 de noviembre de 201811. 
+
+6.1.1. Además de reiterar los argumentos de la tutela, alegó que la necesidad de la prueba no es un pretexto para sustenta la irregularidad procesal que se configuró en este caso, la cual lesiona la confianza de los particulares en la administración de justicia. Que, de hecho, el dictamen pericial no fue decretado de oficio, sino a solicitud de la parte demandada, por cuya desidia fue declarado desistido. 
+
+CONSIDERACIONES
+
+    1. De la acción de tutela contra providencias judiciales
+
+A partir del año 201212, la Sala Plena de lo Contencioso Administrativo de esta Corporación aceptó la procedencia de la acción de tutela contra providencias judiciales. Posteriormente, en la sentencia de unificación del 5 de agosto de 201413, se precisó que la acción de tutela, incluso, es procedente para cuestionar providencias judiciales dictadas por el Consejo de Estado, pues, de conformidad con el artículo 86 de la Constitución Política, ese mecanismo puede ejercerse contra cualquier autoridad pública. 
+Para tal efecto, el juez de tutela debe verificar el cumplimiento de los requisitos generales (procesales o de procedibilidad) que fijó la Corte Constitucional, en la sentencia C-590 de 2005. Esto es: (i) la relevancia constitucional; (ii) el agotamiento de los medios ordinarios de defensa; (iii) la inmediatez; (iv) que si se trata de una irregularidad procesal, ésta debe tener un efecto decisivo o determinante; (v) que se identifiquen los hechos que generaron la vulneración y los derechos vulnerados, y que esa vulneración se hubiere alegado en el proceso judicial, y (vi) que no se cuestione una sentencia de tutela. 
+
+Una vez la acción de tutela supere el estudio de las causales procesales, el juez puede conceder la protección, siempre que advierta la presencia de alguno de los siguientes defectos o vicios de fondo, que miran más hacia la prosperidad de la tutela: (i) defecto sustantivo, (ii) defecto fáctico, (iii) defecto procedimental absoluto, (iv) defecto orgánico, (v) error inducido, (vi) decisión sin motivación, (vii) desconocimiento del precedente y (viii) violación directa de la Constitución. 
+
+Las causales específicas que ha decantado la Corte Constitucional (y que se ha aplicado la mayoría de las autoridades judiciales) buscan que la tutela no se convierta en una instancia adicional para que las partes reabran discusiones jurídicas que son propias de los procesos ordinarios o expongan los argumentos que, por negligencia o decisión propia, dejaron de proponer oportunamente. 
+
+Ahora, tratándose de tutela contra providencias judiciales proferidas por el Consejo de Estado o por la Corte Suprema de Justicia, cuando ejercen funciones de órganos de cierre en las respectivas jurisdicciones, la Corte Constitucional ha establecido un requisito adicional, consistente en «la configuración de una anomalía de tal entidad que exija la imperiosa intervención del juez constitucional»14. 
+
+    2. Caso concreto
+
+De manera previa a cualquier consideración respecto del fondo del asunto, la Sala estima necesario verificar si la acción de tutela cumple con los presupuestos de relevancia constitucional y subsidiariedad. 
+
+2.1. El requisito de relevancia constitucional tiene como finalidad proteger la autonomía e independencia judicial y evitar que el juez de tutela se inmiscuya en asuntos que le corresponde resolver a otras jurisdicciones. Para determinar si una solicitud de amparo tiene o no relevancia constitucional, la Sala Plena del Consejo de Estado ha considerado necesario examinar dos elementos15 cuando la tutela no es presentada contra una alta corporación judicial:
+
+i) El primero consistente en que el interesado argumente manera suficiente y razonable la relevancia constitucional por vulneración de derechos fundamentales. Debe tenerse en cuenta, para el efecto, que «no basta, entonces, aducir la vulneración de derechos fundamentales para cumplir este requisito de procedibilidad de la tutela contra providencias judiciales». 
+
+ii) El segundo consiste en que la acción de tutela no se convierta en una instancia adicional del proceso ordinario en el que fue proferida la providencia acusada, puesto que este mecanismo especial está constituido para proteger derechos fundamentales, mas no para discutir la discrepancia que el interesado tenga frente a la decisión judicial. 
+
+2.1.1. La Sala advierte que, como se evidencia en el siguiente cuadro, en la acción de tutela, el señor Gabriel Humberto Marín Gil reiteró los argumentos que ya había expuesto en el recurso de reposición contra el auto del 19 de abril de 2018, proferido por el Juzgado 29 Administrativo de Medellín, que declaró el desistimiento de la prueba pericial decretada a solicitud de la E.S.E. Hospital General de Medellín Luz Castro de Gutiérrez: 
+
+Recurso de reposición	Acción de tutela
+El pasado 22 de marzo de 2018, el despacho declaró el desistimiento tácito de la prueba solicitada por la parte demandada por no haber acreditado el trámite legal ordenado en audiencia de pruebas, donde se le concedió a la parte demandada el término de (5) días para que allegara al despacho la constancia del diligenciamiento del mismo, so pena de tener por desistida la prueba pericial solicitada y decretada en la audiencia inicial. Notificada la declaratoria de desistimiento tácito de la prueba pericial, la parte interesada en esta prueba no recurrió el auto ni aportó constancia de haber gestionado el trámite para llevarse a cabo el dictamen pericial, aceptando en consecuencia lo decidido en dicha oportunidad y adquiriendo firmeza la declaratoria de desistimiento tácito y demás puntos decididos. 
+
+El auto recurrido termina reviviendo los términos a la parte demandada toda vez que en la audiencia inicial se le concedió el termino de (5) días para que realizara los trámites pertinentes, transcurriendo más de un año sin cumplir con la carga procesal, el despacho en audiencia de pruebas le insiste a la parte demandada concediéndole nuevamente el término enunciado para que allegara constancia al despacho del cumplimiento de la carga procesal impuesta, la cual tampoco fue cumplida por esta en los términos ordenados por la señora Juez, posteriormente llega el dictamen pericial sin que la parte demandada hubiese acreditado su diligenciamiento, lo que lleva a premiar a la parte negligente en el proceso, rompiendo el equilibrio e igualdad de las partes. 
+
+De otra parte, las razones que llevaron al despacho a declarar el desistimiento tácito siguen incólumes, en tanto finalmente la parte demandada nunca acreditó ni incorporó al expediente el comprobante de dicha comunicación en los términos que se decretó e insistió en ello por parte del despacho.  
+
+Se reitera a la parte demandada que cuenta con un término de cinco (5) días para que le informe a la UNIVERSIDAD CES y a la CLINICA CARDIOVID su nombramiento dentro del presente proceso y sino obra en el expediente comprobante de tal comunicación se tiene por desistida la prueba. 
+
+Entre tanto, más allá de desconocer lo ordenado por el despacho, la parte demandada desconoció lo ordenado por la Ley, que puntualmente señala que de dicha comunicación se dejará constancia en el expediente, siendo esta una regla imperativa y no potestativa de la parte. 
+
+CGP. Artículo 49. Comunicación del nombramiento, aceptación del cargo y relevo del auxiliar de la justicia. El nombramiento del auxiliar de la justicia le comunicará por telegrama enviado a la dirección que figure en la lista oficial, o por otro medio más expedito, o de preferencia a través de mensajes de datos. De ello se dejará constancia en el expediente. En la comunicación se indicará el día y la hora de la diligencia a la cual deba concurrir el auxiliar designado. En la misma forma se hará cualquier otra comunicación. 
+
+El perito está llamado a actuar con total imparcialidad y sobre la manera como apareció el dictamen pericial en el expediente, sin una trazabilidad, sin una solicitud formal, queda una gran duda sobre la imparcialidad del perito. 
+
+El hecho de que la parte demanda no hubiese recurrido la decisión de declaratoria de desistimiento tácito de la prueba pericial, sumado al hecho de que nunca se acreditó el trámite de la misma en los términos del artículo 49 del C.G.P y providencias del despacho, permite colegir no solo su aceptación de tal decisión, sino además el incumplimiento de las formalidades procesales exigidas por las normas imperativas de orden público que regulan la materia, lo que conllevaría a una nulidad de la prueba por violación del debido proceso. 
+
+En el momento en que fue notificada la decisión de declarar el desistimiento tácito de la prueba pericial, la parte demandada, debió recurrir la decisión y aportar las constancias de que trata el artículo 49 del C.G.P, ello no ocurrió, de hecho, no ha ocurrido aun, por lo cual, el despacho no debe premiar esa conducta, máxime cuando insistió tanto a la parte demandada sobre ello (Negrillas fuera de texto).  	1.4 Dentro del término legal, nuestro apoderado interpone recurso de reposición contra dicha decisión, por considerarla contraria a los principios y valores desarrollados en nuestra Constitución y la Ley procesal, en tanto la decisión de declarar el desistimiento tácito de dicha prueba no fue recurrida, tomando fuerza de ejecutoria, entre tanto, pese a que extemporáneamente aparecieron en el expediente respuestas de las entidades destinatarias de los oficios, nunca se aportaron las constancias de trámite de los oficios, como lo exigió la señora Juez y sobre todo, como lo exige la Ley. 
+
+15. El auto recurrido terminó reviviendo los términos a la parte demandada toda vez que en la audiencia inicial se le concedió el termino de (5) días para que realizara los trámites pertinentes, transcurriendo más de un año sin cumplir con la carga procesal, el despacho en audiencia de pruebas le insiste a la parte demandada concediéndole nuevamente el término enunciado para que allegara constancia al despacho del cumplimiento de la carga procesal impuesta, la cual tampoco fue cumplida por esta en los términos ordenados por la señora Juez, lo que lleva a premiar a la parte negligente en el proceso, rompiendo el equilibrio e igualdad de las partes y denotando ausencia de imparcialidad.
+
+1.6 El día 10 de mayo de 2018, el Juzgado 29 Administrativo de Medellín, resuelve el recurso interpuesto, no reponiendo la decisión estableciendo fecha para audiencia de contradicción del dictamen pericial aportado para el día 06 de febrero de 2019. El Juzgado desconoció y nada dijo sobre el hecho de que la decisión de declarar el desistimiento tácito de la prueba no fue objeto de recursos. 
+
+1.7 Es importante precisar que el decreto de pruebas se produce en la audiencia inicial celebrada el día 10 de noviembre de 2016, y solo hasta el día 22 de febrero de 2018, tres días antes de la audiencia de pruebas, la universidad CES, solicita un cambio de perfil de especialistas para dictámenes periciales, aduciendo que luego de revisar los documentos allegados por la apoderada del Hospital General de Medellín, se requiere un cambio de especialistas solicitado de Neurología a Neurocirugía, lo cual es bastante cuestionable en el entendido de que la prueba decretada fue precisamente la de
+Neurocirugía y no de Neurología, así pues que fue la parte demandada la que solicitó un dictamen diferente al que se había decretado, y aunque no se conoce cuando lo hizo, porque nunca acreditó el trámite de las comunicaciones, lo cierto, es que si hubiera acreditado el trámite de la comunicación en los términos del artículo 49 del CGP, la señora Juez y/o las partes, hubiéramos podido advertir su error o mala fe y haber propendido por corregirlo antes de la audiencia de pruebas (Negrillas fuera de texto y subrayado del texto original). 
+
+2.1.2. De acuerdo con lo expuesto, la Sala advierte que los argumentos que expuso el señor Gabriel Humberto Marín Gil en la acción de tutela no son más que la reiteración de lo que ya había expuesto la parte demandante del proceso de reparación directa en el recurso de reposición contra el auto del 19 de abril de 2018, proferido por el Juzgado 29 Administrativo de Medellín, que dejó sin efectos la providencia del 22 de marzo de 2018, que, a su vez, había declarado el desistimiento de la prueba pericial solicitada por la parte demandada. 
+
+2.1.3. En efecto, en las dos oportunidades, el demandante alegó que: 
+
+    (i) la E.S.E. Hospital General de Medellín Luz Castro de Gutiérrez no recurrió el auto del 22 de marzo de 2018, que declaró el desistimiento de la prueba pericial, por lo que esa decisión cobró firmeza y fuerza ejecutoria, y no podía ser desconocida mediante providencia posterior; 
+    (ii) el auto del 19 de abril de 2018, al dejar sin efectos la anterior decisión, revivió irregularmente los términos concedidos a la interesada en la prueba, para adelantar las gestiones necesarias para practicarla, que, por negligencia, dejó vencer; 
+    (iii) la entidad demanda no dio cumplimiento al artículo 49 CGP, porque no dejó constancia en el expediente de haber enviado las comunicaciones a los auxiliares de la justicia, lo que arrojó un manto de duda sobre la transparencia en la práctica de la prueba. 
+
+2.1.4. Es evidente que la solicitud de amparo se interpuso simplemente para revivir el debate que ya se agotó en el proceso de nulidad y restablecimiento del derecho, y para obtener una opinión diversa a la que ya emitió la jurisdicción de lo contencioso administrativo, finalidad para la que es improcedente este medio de protección excepcional. Con esa pretensión, el demandante desconoció que la acción de tutela es un valioso instrumento para proteger derechos fundamentales, que no puede utilizarse como una instancia adicional, para obtener una opinión jurídica diversa o tratar de imponer una decisión distinta a la adoptada por los jueces de instancia. 
+
+2.1.5. Para la Sala, no es posible, en sede de tutela, revisar nuevamente los argumentos del señor Gabriel Humberto Marín Gil, pues estos ya fueron valorados por el Tribunal Administrativo de Santander de manera suficiente y razonable. Cosa distinta es que el actor esté en desacuerdo con la conclusión a la que llegó la autoridad judicial demandada e insista en los argumentos que ya expuso contra la decisión judicial. 
+
+2.1.6. La Sala advierte en las pretensiones de la parte actora un uso indebido de la acción de tutela, pues pretende un nuevo pronunciamiento de fondo, como si el juez constitucional fungiera como superior de la autoridad judicial demandada. Eso desconoce la naturaleza de la institución de la tutela, que está prevista para la protección de derechos fundamentales. 
+
+2.1.7. De hecho, el actor ni siquiera expuso la configuración de ninguna de las causales de procedibilidad específicas de la tutela contra providencias judiciales, lo que evidencia que simplemente busca que sus argumentos vuelvan a ser estudiados por el juez constitucional, pretensión que es improcedente en vía de tutela, pues involucraría la usurpación de la competencia del juez natural del asunto. 
+
+2.1.8. Por más informal que sea la tutela, y aunque sus objetivos sean la salvaguarda de derechos fundamentales, el interesado está en la obligación de ejercer adecuadamente el derecho de acción, es decir, de interponer la demanda con serios y fuertes argumentos para derribar las decisiones de los jueces, que se dictan previo agotamiento de los procedimientos reglados y conforme con una sólida razonabilidad. No se debe insistir en los argumentos que se ofrecieron en el proceso ordinario, pues ya fueron decididos por los jueces competentes. Por ejemplo, los cargos de violación que se alegan en el proceso contencioso administrativo se dirigen a cuestionar los actos administrativos, los contratos, los hechos, las acciones o las omisiones de la administración. Por ende, no pueden servir para luego cuestionar las providencias judiciales que justamente resolvieron tales cargos, como lo pretendió la parte actora. 
+
+2.1.9. Ahora, es cierto que, además de los anteriores argumentos, en la tutela, el demandante sostuvo que: 
+
+    (i) la Universidad CES, designada para practicar la prueba, solicitó el cambio de perfil del especialista, de neurólogo a neurocirujano, lo que, a su juicio, es cuestionable, pues es evidente que fue la parte demandada la que propició el cambio, y 
+    (ii) el auto del 10 de mayo de 2018 no resolvió uno de los argumentos del recurso de reposición: que la E.S.E. Hospital General de Medellín Luz Castro de Gutiérrez no recurrió la providencia del 22 de marzo de 2018, por lo que la misma cobró fuerza ejecutoria y no podía ser desconocida por providencia posterior. 
+
+No obstante, en relación con los anteriores argumentos, la tutela no cumple con el presupuesto de subsidiariedad, por las razones que pasan a exponerse. 
+
+2.2. La subsidiariedad consiste en impedir que la acción de tutela, que tiene un campo restrictivo de aplicación, se convierta en un mecanismo principal de protección de los derechos fundamentales, pues eso sería tanto como desconocer que la Constitución y la ley estipulan una serie de mecanismos judiciales igualmente eficaces e idóneos para garantizar el ejercicio pleno de los derechos.
+
+2.2.1. No en vano los artículos 86 de la Constitución Política y el 6, numeral 1º, del Decreto 2591 de 1991 prevén como causal de improcedencia de la acción de tutela la existencia de otros medios de defensa para la protección de los derechos invocados. De manera que la acción de tutela sólo puede utilizarse cuando se han agotado los mecanismos de protección que el ordenamiento jurídico ha dispuesto para la protección idónea y eficaz de los derechos fundamentales. En ese sentido, la Corte Constitucional manifestó16:
+
+La acción de tutela ha sido concebida únicamente para dar solución eficiente a situaciones de hecho creadas por actos u omisiones que implican la transgresión o amenaza de un derecho fundamental, respecto de las cuales el sistema jurídico no tiene previsto otro mecanismo susceptible de ser invocado ante los jueces a objeto de lograr la protección del derecho. La tutela no puede converger con vías judiciales diversas por cuanto no es un mecanismo que sea factible de elegir según la discrecionalidad del interesado, para esquivar el que de modo específico ha regulado la ley; no se da la concurrencia entre éste y la acción de tutela porque siempre prevalece —con la excepción dicha— la acción ordinaria. La acción de tutela no es, por tanto, un medio alternativo, ni menos adicional o complementario para alcanzar el fin propuesto. Tampoco puede afirmarse que sea el último recurso al alcance del actor, ya que su naturaleza, según la Constitución, es la de único medio de protección, precisamente incorporado a la Carta con el fin de llenar los vacíos que pudiera ofrecer el sistema jurídico para otorgar a las personas una plena protección de sus derechos esenciales (…). 
+
+2.2.2. Entonces, para que el juez estudie una solicitud de tutela, el interesado debe, por lo menos, probar que se agotaron los recursos que tenía a su disposición, pues, de lo contrario, la tutela deviene improcedente. El requisito de subsidiariedad no solo involucra la interposición de los recursos que proceden, sino también que en éstos se cuestionen las decisiones que, en concreto, se atacan en la acción de tutela. 
+
+2.2.3. En cuanto al primero de los argumentos reseñados —que la Universidad CES solicitó el cambio de perfil del especialista—, la Sala advierte que, en efecto, en la audiencia de pruebas adelantada el 27 de febrero de 201817, el juzgado analizó la solicitud y accedió al requerimiento de la universidad, en el sentido de variar el decreto de la prueba. Sin embargo, al conceder el uso de la palabra a las partes, el apoderado de los demandantes guardó silencio frente a esa determinación. 
+
+Es decir, que la parte actora no interpuso el recurso de reposición, medio de defensa ordinario que, de conformidad con el artículo 242 de la Ley 1437 de 201118, procedía contra la decisión que ahora cuestiona. 
+
+2.2.4. En relación con el segundo argumento —que el auto del 10 de mayo de 2018 no resolvió uno de los puntos objeto del recurso de reposición contra la providencia del 19 de abril de 2018—, debe tenerse en cuenta que el artículo 287 CGP19 establece que la adición de las providencias procede cuando se omite «resolver sobre cualquiera de los extremos de la litis o sobre cualquier otro punto que de conformidad con la ley debía ser objeto de pronunciamiento». 
+
+La adición del auto es el medio legal eficaz e idóneo, establecido en los estatutos procesales para que las partes le pidan al juez que se pronuncie frente a alguna de las cuestiones que se proponen en la demanda, en la contestación o en el recurso de apelación, o frente a los puntos que, por expreso mandato legal, deben definirse en la providencia. 
+
+2.2.5. Es claro, pues, que el actor contó con mecanismos de defensa ordinarios que resultaban eficaces e idóneos para exponer los argumentos que ahora pretende hacer valer. 
+
+Sin embargo, no presentó el recurso de reposición contra la providencia que accedió al cambio del perito, y no solicitó la adición del auto que resolvió el recurso de reposición, para que se le tuviera en cuenta el argumento que estimó no resuelto. Por el contrario, el demandante optó por interponer directamente la tutela, como si esta acción pudiera emplearse en reemplazo de los mecanismos ordinarios establecidos en la ley para la defensa de los derechos. 
+
+2.2.6. Sobre el particular, la Corte Constitucional, en la sentencia T-520 de 1992, explicó que la persona que «no ha hecho uso oportuno y adecuado de los medios procesales que la ley le ofrece para obtener el reconocimiento de sus derechos o prerrogativas se abandona voluntariamente a las consecuencias de los fallos que le son adversos. De su conducta omisiva no es responsable el Estado ni puede admitirse que la firmeza de los proveídos sobre los cuales el interesado no ejerció recurso constituya transgresión u ofensa a unos derechos que, pudiendo, no hizo valer en ocasión propicia. Es inútil, por tanto, apelar a la tutela, cual si se tratara de una instancia nueva y extraordinaria, con el propósito de resarcir los daños causados por el propio descuido procesal». 
+
+2.3. Así las cosas, aunque el a quo efectuó el estudio de fondo del asunto, al estimar acreditados los presupuestos genéricos, la Sala considera que la tutela no cumple con el requisito de relevancia constitucional, porque los argumentos del actor no son más que la reiteración de lo que ya expuso en el recurso de reposición contra la providencia que dejó sin efectos el auto que declaró desistida la prueba pericial solicitada por la parte demandada en reparación directa. Además, en cuanto a los argumentos de la solicitud de amparo que no habían sido resueltos por el juez del asunto, la tutela es improcedente, por falta del presupuesto de subsidiariedad. 
+
+2.3.1. En consecuencia revocará la sentencia impugnada, para, en su lugar, declarar la improcedencia de la acción de tutela. 
+
+Por lo expuesto, el Consejo de Estado, Sala de lo Contencioso Administrativo, Sección Cuarta, administrando justicia en nombre de la República de Colombia y por autoridad de la ley, 
+
+FALLA
+
+1. Revocar el fallo impugnado. En su lugar: 
+
+1.1. Declarar improcedente la acción de tutela instaurada por el señor Gabriel Humberto Marín Gil, por las razones expuestas. 
+
+2. Notificar a las partes por el medio más expedito.
+
+3. Enviar el expediente a la Corte Constitucional para lo de su cargo, y devolver el expediente en préstamo. 
+
+
+Cópiese, notifíquese y cúmplase. 
+
+La anterior providencia fue discutida y aprobada en sesión de la fecha.
+
+
+
+
+JULIO ROBERTO PIZA RODRÍGUEZ
+Presidente de la Sección
+
+
+
+
+STELLA JEANNETTE CARVAJAL BASTO
+Magistrada
+
+
+
+
+MILTON CHAVES GARCÍA
+Magistrado
+
+
+
+
+JORGE OCTAVIO RAMÍREZ RAMÍREZ
+Magistrado

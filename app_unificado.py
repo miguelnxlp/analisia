@@ -181,16 +181,28 @@ def _pipeline_status(base: Path):
             st.metric(label, count)
 
 
-DEFAULT_BASE = (
+DEFAULT_BASE_LOCAL = (
     "/Users/pro2020/Library/CloudStorage/"
     "OneDrive-UniversidadExternadodeColombia/"
     "Consejo de Estado IA/Repositorio/ANALES 2019/"
     "ACCION DE TUTELA/G1/Prueba.txt"
 )
+# En la nube (Streamlit Cloud) usamos la carpeta del repo
+DEFAULT_BASE_CLOUD = str(APP_DIR / "data" / "sentencias")
+
+
+def _default_base() -> str:
+    local = Path(DEFAULT_BASE_LOCAL)
+    if local.exists():
+        return str(local)
+    cloud = Path(DEFAULT_BASE_CLOUD)
+    if cloud.exists():
+        return str(cloud)
+    return ""
 
 
 def get_base_dir() -> Path | None:
-    raw = st.session_state.get("base_dir", DEFAULT_BASE)
+    raw = st.session_state.get("base_dir", _default_base())
     if not raw:
         return None
     p = Path(raw).expanduser()
@@ -711,7 +723,7 @@ def main():
         st.markdown("### Proyecto")
         base_input = st.text_input(
             "Directorio",
-            value=st.session_state.get("base_dir", DEFAULT_BASE),
+            value=st.session_state.get("base_dir", _default_base()),
             placeholder="/ruta/a/tu/carpeta",
             key="base_dir_input",
         )

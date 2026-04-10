@@ -1,0 +1,238 @@
+﻿ACCIÓN DE TUTELA CONTRA PROVIDENCIA JUDICIAL / INCIDENTE DE LIQUIDACIÓN DE CONDENA - Tasación de perjuicios por daño emergente / AUSENCIA DE DEFECTO FÁCTICO / AUSENCIA DE DEFECTO SUSTANTIVO - Interpretación sistemática de normas / DESCONOCIMIENTO DE PRECEDENTE - No configuración / APLICACIÓN DEL PRECEDENTE - Exige similitud fáctica y jurídica
+
+La [accionante] considera que el Tribunal Administrativo del Cesar incurrió en los defectos fáctico y sustantivo con la decisión de modificar el auto del 16 de noviembre de 2017, proferido en el trámite del incidente de liquidación de condena, en lo pertinente a la liquidación y tasación de los perjuicios por daño emergente, en monto de $162.852.000. [E]l Tribunal [accionado] Administrativo del Cesar, al resolver el recurso de apelación contra el auto mediante el que el juzgado liquidó los perjuicios, encontró que la conclusión del dictamen pericial no estuvo soportada en prueba documental que acreditara en debida forma el valor del metro cuadrado consignado por el perito avaluador y, por esa razón, lo desestimó y se apartó del mismo en ejercicio de la autonomía e independencia que le confiere el ejercicio de la actividad judicial. Siendo así, no resulta afortunado el argumento de la parte actora en el sentido de que el tribunal debió decretar un dictamen pericial de oficio, si se tiene en cuenta que en el trámite incidental ya se había hecho uso de esa facultad oficiosa. Sin embargo, tampoco cumplió con las condiciones de idoneidad para brindar certeza respecto de las conclusiones consignadas en lo relativo al valor del metro cuadrado del inmueble. [Frente al defecto sustantivo], el tribunal hizo una interpretación sistemática de las normas que consideró útiles para resolver la controversia sometida a su conocimiento y, en uso de la autonomía e independencia judicial que caracteriza la actividad de los operadores judiciales, liquidó la condena con base en una disposición normativa vigente que le permitiera, en algún modo, efectivizar la condena por el daño causado a la parte actora con la ocupación del inmueble, lo cual dista de constituir una vulneración de algún derecho fundamental. Finalmente, se anota que la Sala descartó el estudio del cargo por desconocimiento del precedente judicial de la sentencia del 27 de marzo de 2014 (Exp. 20912) de la Sección Tercera, Subsección B del Consejo de Estado, porque los presupuestos fácticos no se compadecen con los del sub lite, pues, tal como lo narró la parte actora en el escrito inicial, en ese caso se establecieron los requisitos para objetar por error grave un dictamen pericial y los eventos en que procede. Por su parte, en el caso objeto de estudio no se encontró configurado el error grave que alegó la entidad territorial demandada. Luego, no resulta aplicable. Sumado a lo anterior, la providencia que se alega como desconocida fue proferida en el marco de un proceso de controversias contractuales y en el que se alegaba la objeción por error grave respecto de un dictamen pericial dirigido a demostrar mayor tiempo de permanencia en la obra y el rompimiento de la ecuación económica del contrato, con lo cual es suficiente para desestimar la identidad de fáctica y jurídica para proceder con el estudio de fondo del defecto por desconocimiento del precedente judicial.
+
+
+CONSEJO DE ESTADO
+
+SALA DE LO CONTENCIOSO ADMINISTRATIVO
+
+SECCIÓN CUARTA
+
+Consejero ponente: MILTON CHAVES GARCÍA
+
+Bogotá, D.C., cinco (5) de febrero de dos mil diecinueve (2019)
+
+Radicación número: 11001-03-15-000-2018-02513-01(AC)
+
+Actor: ZULMA YANETH ARAÚJO
+
+Demandado: TRIBUNAL ADMINISTRATIVO DEL CESAR
+
+
+
+La Sala decide la impugnación presentada por la demandante contra la sentencia del 11 de septiembre de 2018, proferida por la Sección Segunda, Subsección B del Consejo de Estado, que negó el amparo solicitado. 
+
+I. ANTECEDENTES
+
+    1. Pretensiones
+
+La señora Zulma Yaneth Araújo, en nombre propio, ejerció acción de tutela contra el Tribunal Administrativo del Cesar, por considerar vulnerados los derechos fundamentales al debido proceso, a la igualdad y el principio de seguridad jurídica. En consecuencia, formuló la siguiente pretensión1:
+
+“(…)
+Con fundamento en lo anterior, y en aras de que se me garantice el derecho fundamental al debido proceso, a la igualdad en conexidad con el principio de seguridad jurídica, solicito respetuosamente al Honorable Consejo de Estado, dejar sin efecto el auto de fecha 8 de marzo de 2018, proferida por la honorable sala de decisión del Tribunal Contencioso Administrativo del Cesar, dentro del medio de control de Reparación Directa, radicado bajo el núm. (sic) 20001-33-31-005-2012-00060-00, y en consecuencia, se le ordene a la Honorable Sala de Decisión del Tribunal Contencioso Administrativo del Cesar, que dentro de un término máximo de treinta (30) días siguientes a la ejecutoria de la sentencia, emita una nueva providencia en la que tenga en cuenta el dictamen pericial que recaudo el A – quo, en el presente caso o en su defecto decrete y recauda un nuevo dictamen pericial, sin que le sea dable aplicar una disposición legal para suplir esa prueba”.
+
+    2. Hechos 
+
+De la lectura del expediente se advierten como hechos relevantes, los siguientes:
+
+La señora Zulma Yaneth Araújo mantuvo unión marital de hecho con el señor Jairo León Arzuaga Rodríguez hasta el día de su fallecimiento, quien adquirió un predio rural denominado “La Granja”, en el corregimiento la Loma, del municipio de El Paso del Departamento del Cesar.
+
+El 8 de febrero de 2005, el predio La Granja fue invadido, por lo que el señor Arzuaga Rodríguez presentó querella de lanzamiento por ocupación de hecho y, mediante Resolución 003 de 11 de mayo de 2005, el Comisario de Familia con funciones de inspector de policía del municipio2 ordenó el lanzamiento. Sin embargo, no se llevó cabo por falta de apoyo policial.
+
+El 12 de marzo de 2012, el señor Jairo León Arzuaga Rodríguez promovió demanda de reparación directa contra el municipio de El Paso, con el fin de que se declarara la responsabilidad administrativa por los perjuicios ocasionados con la omisión en ejecutar medidas efectivas tenientes a obtener la restitución del inmueble.
+
+El Juzgado Tercero Administrativo en Descongestión de Valledupar, mediante sentencia del 31 de julio de 2014, accedió a las pretensiones de la demanda y condenó en abstracto al municipio a pagar los perjuicios materiales en la modalidad de daño emergente. El Tribunal Administrativo del Cesar, en sentencia del 22 de abril de 2016, confirmó la decisión3.
+
+El 27 de junio de 2016 la parte demandante presentó incidente de regulación de condena ante el Juzgado Séptimo Administrativo de Valledupar4 y, en auto del 19 de octubre de 2016, ordenó la práctica de un nuevo dictamen pericial, por considerar que el documento aportado por la parte demandante con el incidente no cumplía con los requisitos del artículo 232 del Código de Procedimiento Civil y los parámetros establecidos por el Consejo de Estado en la sentencia del 31 de julio de 2014.
+
+El perito designado, en escrito del 24 de noviembre de 2016, tasó los perjuicios materiales en monto de $560´840.841, sin embargo, el municipio de El Paso objetó por error grave por el informe y el Juzgado Séptimo Administrativo de Valledupar, en proveído del 16 de noviembre de 2017, desestimó las objeciones y estimó los perjuicios materiales en la modalidad de daño emergente en cuantía de $601´686.615. 
+
+El ente territorial interpuso recurso de apelación y el Tribunal Administrativo del Cesar, en providencia del 8 de marzo de 2018, modificó el monto de los perjuicios materiales reconocidos, para en su lugar, reconocer $162´852.000, por considerar que el dictamen pericial aportado por la parte demandante no contenía elementos fácticos contundentes, pues, se limitó a sustentar el precio del terrero sobre la base de bienes semejantes y “comprables” con el que fue objeto del avalúo.
+
+Por lo que, para tasar los perjuicios materiales, procedió a aplicar los artículos 193, 283 y 444 del Código General del Proceso, esto es, se basó en el avalúo catastral del predio incrementado en un 50 %. Así, dado que en el expediente obraba el avalúo catastral del inmueble expedido por la tesorería del municipio y que tal no fue cuestionado en su idoneidad, resultó pertinente para estimar la liquidación de la condena. 
+
+El avalúo catastral tasó el inmueble en valor de $108´568.000, el cual se incrementó en el 50 %, para valor total de $162´852.000, que debería pagar el municipio de El Paso a favor de la parte actora por concepto de los perjuicios materiales en la modalidad de daño emergente.
+
+    3. Argumentos de la tutela
+
+La parte actora sostuvo que el Tribunal Administrativo del Cesar incurrió en los defectos fáctico, sustantivo y en el desconocimiento del precedente judicial, con fundamento en los argumentos que se pasan a resumir:
+
+El tribunal no valoró en debida forma el dictamen pericial allegado al incidente de regulación de condena, pues desconoció el contenido sin tener en cuenta que tal documento acreditaba el perjuicio económico reclamado y que, en todo caso, al juez de conocimiento le correspondía decretar alguna prueba de oficio que le permitiera contrastar el dictamen pericial que desechó.
+
+Que, la decisión fue sustentada en el inciso 4 del artículo 444 del Código General del Proceso para determinar el valor de la indemnización reclamada, sin embargo, no resultaba aplicable, en tanto que se trata de una disposición especial de los procesos ejecutivos.
+
+Finalmente, que la autoridad judicial demandada desconoció la sentencia del 27 de marzo de 2014 (Exp. 20912) de la Sección Tercera, Subsección B del Consejo de Estado, en la que se establecieron los requisitos para objetar por error grave un dictamen pericial y los eventos en que procede.
+
+    4. Oposición
+
+El Tribunal Administrativo del Cesar básicamente hizo un recuento de los argumentos expuestos en la providencia cuestionada para modificar el monto de los perjuicios materiales reconocidos a favor de la parte demandante, señaló que el dictamen pericial se limitó a utilizar un modelo teórico para determinar el avaluó comercial del inmueble, en el cual no tuvo en cuenta el detrimento económico del municipio de El Paso, por la actividad minera de la zona, como lo señaló el demandado en el proceso de reparación directa. 
+
+Adicionalmente, indicó que hizo referencia en la providencia acusada a las condiciones que debe reunir el peritaje para su eficacia con base en la sentencia del 3 de marzo de 2010 de la Sección Tercera del Consejo de Estado, M.P. Ruth Stella Correa.
+
+Sostuvo que era necesario tasar los perjuicios materiales por daño emergente conforme con el artículo 444 del Código General del Proceso, teniendo en cuenta el avaluó catastral, frente al cual no se realizó cuestionamiento alguno respecto de la idoneidad. 
+
+En consecuencia, indicó que tasó los perjuicios con base en el avaluó catastral por $108´568.000, el cual debía ser incrementado en un 50% conforme a la referida norma, lo que determinó que los perjuicios materiales por daño emergente debían ser reconocidos en valor total de $162´852.000, a cargo del municipio demandado.
+
+Por lo anterior, solicitó se declare improcedente la acción de tutela. 
+
+4. Intervención del tercero interesado
+
+El municipio de El Paso, en síntesis, solicitó que se niegue el amparo, porque el asunto ya fue discutido en sede judicial, hizo tránsito a cosa juzgada y, en esa medida, la parte actora, ejerce la acción de tutela como una instancia adicional del proceso.
+
+5. Providencia impugnada
+
+La Sección Segunda, Subsección B del Consejo de Estado en sentencia del 11 de septiembre de 2018, negó el amparo solicitado, porque de la lectura de la providencia cuestionada encontró que no incurrió en alguno de los defectos invocados, porque la decisión de modificar la decisión de primera instancia, en relación con el valor de los perjuicios reconocidos a favor de la sucesión del señor Jairo León Arzuaga Rodríguez, estuvo soportada en el estudio razonable de las pruebas documentales allegadas al proceso y las normas y, que por esa razón, la autoridad judicial demandada concluyó que se debía estimar la liquidación de la condena con el valor del avalúo catastral certificado por la tesorería del municipio, incrementado en un 50 % de conformidad con lo dispuesto en el numeral 4 del artículo 444 del CGP.
+
+Dijo que toda autoridad judicial, al momento de valorar un dictamen pericial, tiene la potestad de examinar en su contenido y en el evento de encontrarlo ajustado y convincente puede tenerlo en cuenta total o parcialmente o descartarlo si no cumple con los elementos de firmeza, precisión y claridad que deben existir en el documento para ilustrar los conocimientos técnicos, científicos o artísticos solicitados.
+
+Que el tribunal evidenció que el informe pericial con cumplía con los elementos de convicción suficientes, por lo que, en ejercicio de la autonomía y libertad de valoración probatoria, lo dejó de lado para darle mayor relevancia al avalúo catastral certificado por la Secretaría de Hacienda del municipio de El Paso, toda vez que el documento contenía una información más precisa sobre el valor real del inmueble a indemnizar.
+
+La decisión de aplicar el numeral 4 del artículo 444 del CGP, explicó de manera suficiente y razonada los motivos por los cuales se apoyaba en dicha norma para determinar el valor de la liquidación de la condena, por lo tanto, no se puede advertir que la actuación desplegada se haya sustentado en una norma inexistente o inconstitucional.
+
+
+6. Impugnación 
+
+
+La parte actora impugnó la decisión de primera instancia, para lo cual insistió exactamente en los mismos argumentos expuestos en el escrito inicial.
+
+Reiteró que si el dictamen pericial no ofrecía suficiente certeza para liquidar los perjuicios materiales reclamados, lo propio era decretar una prueba de oficio, en la que especificara los parámetros que debía contener el nuevo dictamen y no proceder con la aplicación del artículo 444 del CGP, que es una norma especial de los procesos ejecutivos.
+
+Indicó que la liquidación de perjuicios que hizo el Tribunal Administrativo del Cesar la hizo con fundamento en una norma, esto es, el artículo 444 CGP, a pesar de que debió liquidarlos con fundamento en la prueba pericial que obrara en el expediente.
+
+II. CONSIDERACIONES DE LA SALA
+
+Acción de tutela contra providencias judiciales
+
+En cuanto a la acción de tutela como mecanismo para controvertir providencias judiciales, se precisa que, de manera excepcionalísima, se ha aceptado la procedencia cuando se advierte la afectación manifiesta y grosera de los derechos constitucionales fundamentales de acceso a la administración de justicia, debido proceso e igualdad5.
+
+Ahora bien, sin perder de vista que la acción de tutela es, ante todo, un mecanismo de protección previsto de manera residual y subsidiaria por el ordenamiento jurídico, que en su conjunto está precisamente diseñado para garantizar los derechos fundamentales constitucionales, la Sala adecuó su posición respecto de la improcedencia de esta acción contra providencias judiciales y acogió el criterio de la procedencia excepcional6.
+
+En el mismo sentido, la Sala Plena de lo Contencioso Administrativo en sentencia de 31 de julio de 2012, exp 2009-01328-01, aceptó la procedencia de la tutela contra providencia judicial, en los siguientes términos:
+
+“De lo que ha quedado reseñado se concluye que si bien es cierto que el criterio mayoritario de la Sala Plena de lo Contencioso Administrativo ha sido el de considerar improcedente la acción de tutela contra providencias judiciales, no lo es menos que las distintas Secciones que la componen, antes y después del pronunciamiento de 29 de junio de 2004 (Expediente AC-10203), han abierto paso a dicha acción constitucional, de manera excepcional, cuando se ha advertido la vulneración de derechos constitucionales fundamentales, de ahí que se modifique tal criterio radical y se admita, como se hace en esta providencia, que debe acometerse el estudio de fondo, cuando se esté en presencia de providencias judiciales que resulten violatorias de tales derechos, observando al efecto los parámetros fijados hasta el momento Jurisprudencialmente. En consecuencia, en la parte resolutiva, se declarará la procedencia de la acción de tutela contra providencias judiciales.” (Subraya la Sala)
+
+Aún más, la Sala Plena de esta Corporación, en sentencia de unificación del 5 de agosto de 20147, aceptó que la acción de tutela es procedente para cuestionar providencias judiciales dictadas por los órganos judiciales de cierre (Consejo de Estado, Corte Constitucional, Corte Suprema de Justicia y Sala Jurisdiccional Disciplinaria del Consejo Superior de la Judicatura), pues, de conformidad con el artículo 86 de la Constitución Política, ese mecanismo puede ejercerse contra “cualquier autoridad pública”.
+
+Hechas estas precisiones acerca de la excepcionalísima procedencia de la tutela contra providencias judiciales, la Sala adoptará la metodología aplicada por la Corte Constitucional en la sentencia C-590 de 2005 para estudiar si, en un caso concreto, procede o no el amparo solicitado. 
+
+En esa sentencia la Corte Constitucional precisó que las causales genéricas de procedibilidad o requisitos generales de procedencia de la tutela contra providencia judicial son:
+
+    (i) Que la cuestión que se discuta resulte de evidente relevancia constitucional;
+
+    (ii) Que se hayan agotado todos los medios ordinarios y extraordinarios de defensa judicial al alcance de la persona afectada, salvo que se trate de evitar la consumación de un perjuicio iusfundamental irremediable; 
+
+    (iii) Que se cumpla con el requisito de la inmediatez; 
+
+    (iv) Cuando se trate de una irregularidad procesal ésta debe tener un efecto determinante en la sentencia que se impugna y afectar los derechos fundamentales de la parte actora; 
+
+    (v) Que la parte actora identifique de manera razonable tanto los hechos que generaron la vulneración como los derechos que se transgredieron y que tal vulneración hubiere sido alegada en el proceso judicial siempre que esto hubiere sido posible y
+
+    (vi) Que no se trate de sentencias de tutela.
+
+Una vez agotado el estudio de estos requisitos, y, siempre y cuando se constate el cumplimiento de todos, es necesario determinar la existencia de por lo menos alguna de las causales especiales de procedibilidad, es decir, que la providencia controvertida haya incurrido en: a) defecto orgánico, b) defecto procedimental absoluto, c) defecto fáctico, d) defecto material o sustantivo, e) error inducido, f) decisión sin motivación, g) desconocimiento del precedente constitucional que establece el alcance de un derecho fundamental y h) violación directa de la Constitución.
+
+
+Problema jurídico
+
+
+La señora Zulma Yaneth Araujo considera que el Tribunal Administrativo del Cesar incurrió en los defectos fáctico y sustantivo con la decisión de modificar el auto del 16 de noviembre de 2017, proferido en el trámite del incidente de liquidación de condena, en lo pertinente a la liquidación y tasación de los perjuicios por daño emergente, en monto de $162.852.000.
+
+La Sala procederá con el estudio, en conjunto, de los cargos invocados por la parte actora, en los siguientes términos.
+
+Caso concreto
+
+De entrada la Sala advierte que los cargos invocados no se encuentran configurados y, en esa medida, la acción de tutela de la referencia no está llamada a prosperar.
+
+Pues bien, en el caso objeto de estudio la demandante alega que el Tribunal Administrativo del Cesar vulneró los derechos fundamentales al debido proceso y a la igualdad con la decisión de modificar el quantum de los perjuicios materiales -lucro cesante-, liquidados en el trámite del incidente de liquidación de condena en abstracto, con fundamento en que el dictamen pericial no contenía elementos fácticos suficientes que sustentaran el precio en que fue avaluado el terrero, más allá de la comparación con bienes semejantes en predios vecinos.
+
+La Sala se permite citar en extenso las consideraciones expuestas por el Tribunal Administrativo del Cesar para apartarse de las conclusiones del dictamen pericial practicado en el incidente de liquidación de condena y, en su lugar, liquidar los perjuicios materiales con base en el avalúo catastral del inmueble. Así: 
+
+“(…)
+
+Ahora bien, encontramos que el dictamen pericial aportado por el perito debidamente nombrado y posesionado para tales efectos, está soportado en un concepto o dictamen proferido por sendos arquitectos de la Lonja Inmobiliaria SCA – Cesar, el cual se realizó utilizando el método comparativo y el método residual o potencial de desarrollo, aplicando en el avalúo de inmuebles urbanos desarrollados similarmente al lote materia de la litis, incluyendo análisis de los mercados de zonas geoeconómicas similares y con características parecidas, es decir, consultaron ofertas y lotes que se negocian para viviendas VIS, trayéndolos a valor presente para poder compararlos, y así concluir con base en ese modelo teórico que el valor del metro cuadrado del terreno es de $77.427.18, que al multiplicarlo por 7.771 m2 arroja total de $ 601.686.615,80, como avalúo comercial del inmueble objeto de este asunto.
+
+Ahora bien, (sic) lo primero que observa la Sala, es que las fuentes y los análisis de mercados utilizados por la Lona Inmobiliaria SCA – Cesar, para comparar el justiprecio del terreno a indemnizar, no tiene ningún respaldo probatorio documental, simplemente se tomó un modelo teórico documental, puesto que únicamente tuvieron en cuenta sondeos con inmobiliarias y datos de valores aproximados de la zona para tazar el precio comercial del inmueble a indemnizar, razón por la cual cae en escenarios especulativos o hipotéticos ajenos a las consideraciones probatorias que rigen el proceso judicial.
+
+En Segundo lugar, no es menos cierto lo alegado por el apoderado del ente territorial demandado, al indicar que ese corregimiento del municipio de El Paso, hace parte del corredor minero, tal como puede corroborarse con el Contrato de Concesión No. JB7-10541 de 24 de noviembre de 2016, visible a folio 176 177 del cuaderno principal, para la exploración y explotación de un yacimiento de carbón mineral, ubicado en el Municipio de El Paso – Cesar, y por tanto, presenta hoy en día una gran transformación en detrimento de su economía como consecuencia de la minería, lo cual si bien no está debidamente sustentado, lo cierto es que el dictamen tampoco lo menciona como un factor determinante para establecer el precio del metro cuadrado del terreno en dicha zona, por consiguiente, no se tuvo en cuenta las condiciones socioeconómicas y ambientales del lugar, lo cual sin duda aluna, debe ser parte integral del inmueble objeto del avaluó.
+
+En suma, se despachara desfavorablemente la tasación de este perjuicio, en la forma en que lo hizo el a quo.
+
+Se itera, porque el dictamen pericial aportado por la parte actora, acogido por el juez de instancia para estimar la condena por concepto de perjuicios materiales, causados en la modalidad de daño emergente, no contiene elementos fáctico contundentes, sólo se limita a fundamentar el terreno sobre la base de bienes semejantes y comparables al de objeto de avalúo, diseñando para ello un modelo teórico en el área ocupada para corroborar el justiprecio.
+
+(…)
+
+En razón de lo anterior, y ante la necesidad de tasar los perjuicios materiales en la modalidad de daño emergente, la Sala fundamentará la decisión con base en las normas consagrada en el Código de Procedimiento Administrativo y de lo Contencioso Administrativo, y en el Código General del Proceso, en sus artículos 193, 283 y 444 en su orden.
+
+En efecto, el primero de los artículos citados, dice que cuando la condena se haga en abstracto se liquidara por incidente que deberá promover el interesado, en los términos del Código de Procedimiento Civil, hoy Código General del Proceso, claro está dentro del término señalado en dicha norma. A su turno el C. G. P. en el segundo de los artículos citados consagra la misma fórmula que la anterior, esto es, que la condena en abstracto se liquidara por incidente, entre otros asuntos no aplicables para el caso de autos. Y en el último de los artículos citados, si bien es cierto, esta norma en el titulo único -proceso ejecutivo- no lo es menos, que resulta útil para resolver el presente asunto, puesto en su numeral 4 estipula: “Tratándose de bienes inmuebles el valor será el del avalúo catastral del predio incrementado por ciento (50%), salvo que quien lo aporte considere que no es idóneo para establecer su precio real. En este evento. Con el avaluó catastral deberá presentarse un dictamen obtenido en la forma indicada en el numeral 1°”.
+
+En consecuencia, teniendo en cuenta la prueba que obra en el expediente principal, a folio 271, esto es, el avaluó catastral del inmueble objeto de esta litis, expedido por la Tesorería del Municipio de El Paso – Cesar, por la suma de $108.568.000, documento éste que nadie le cuestiono su idoneidad, lo cual deja sin soporte la aplicación dl segundo inciso de la norma en cita, esto aunado a que la sentencia condenatoria exige que para determinar el valor del terreno se deberá contar con certificación emitida por la autoridad competente acerca del valor del metro cuadrado en la zona en donde se encuentra ubicado el terreno, resulta pertinente dicho documento para estimar la liquidación de la condena por concepto de perjuicios materiales causados en la modalidad de daño emergente, más del 50% de conformidad con lo consagrado en el numeral 4 del citado artículo 444.
+
+(…)” (Se destaca)
+
+A juicio de la parte actora el tribunal incurrió en los defectos señalados porque: (i) no valoró en debida forma el dictamen pericial allegado al incidente y omitió decretar alguna prueba de oficio que le permitiera contrastar el dictamen pericial que desechó y; (ii) aplicó el inciso 4 del artículo 444 del Código General del Proceso para señalar que el valor de la indemnización reclamada se liquidaría con base en el avalúo catastral aumentado en un 50 %.
+
+A ese respecto es pertinente resaltar que, en los términos del artículo 167 del Código General del Proceso, incumbe a las partes probar los supuestos de hecho en que basan las pretensiones y, en esa medida, es obligación de los interesados allegar los medios probatorios adecuados e idóneos para sustentar sus pedidos.
+
+De la lectura del cuaderno del incidente de liquidación de condena se observa que, en el trámite del mismo, el Juzgado Séptimo Administrativo de Valledupar decretó de manera oficiosa el dictamen pericial a efecto de determinar el valor de los perjuicios materiales que debían liquidarse a favor de la parte demandante, ello, en razón de que el dictamen aportado por la demandante aplicó una metodología que el Despacho no consideró adecuada, respecto del cual, existió aclaración, complementación y objeción por error grave, este último despachado desfavorablemente.
+
+No obstante, el Tribunal Administrativo del Cesar, al resolver el recurso de apelación contra el auto mediante el que el juzgado liquidó los perjuicios, encontró que la conclusión del dictamen pericial no estuvo soportada en prueba documental que acreditara en debida forma el valor del metro cuadrado consignado por el perito avaluador y, por esa razón, lo desestimó y se apartó del mismo en ejercicio de la autonomía e independencia que le confiere el ejercicio de la actividad judicial.
+
+Siendo así, no resulta afortunado el argumento de la parte actora en el sentido de que el tribunal debió decretar un dictamen pericial de oficio, si se tiene en cuenta que en el trámite incidental ya se había hecho uso de esa facultad oficiosa. Sin embargo, tampoco cumplió con las condiciones de idoneidad para brindar certeza respecto de las conclusiones consignadas en lo relativo al valor del metro cuadrado del inmueble.
+
+Lo cual conlleva a señalar que, conforme con el artículo 232 del CGP, corresponde al juez apreciar el dictamen pericial de acuerdo con las reglas de la sana crítica, en consideración de elementos, tales como, la solidez, claridad, exhaustividad, precisión, calidad de los fundamentos, idoneidad del perito y en atención de las demás pruebas que obren en el expediente. 
+
+De hecho, la Corte Constitucional en la sentencia T-269 de 2012, precisó que el juez puede apartarse de las conclusiones del dictamen pericial, porque no está atado a los resultados del mismo, pues cuenta con libertad al momento de efectuar la respetiva valoración probatoria; no obstante, esta debe realizarse en conjunto con las demás pruebas decretadas y aportadas.
+
+Ciertamente, en vista de que un segundo dictamen pericial no logró establecer con suficiencia el monto de los perjuicios materiales reclamados, el tribunal valoró en conjunto las demás pruebas que obraran en el expediente, concretamente, el avalúo catastral, expedido por la tesorería del municipio de El Paso, que fue allegado con oportunidad al proceso ordinario y que no fue tachado, objetado o controvertido de alguna manera.
+
+En este punto se observa que en el caso objeto de estudio, el tribunal, en aras de liquidar los perjuicios reclamados por la parte actora, hizo una interpretación razonada a la luz del ordenamiento jurídico de los artículos 193, 283 y 444 del CGP, si se tiene en cuenta que justificó su aplicación y precisó que, si bien, el artículo 444 ejusdem es una disposición especial de los procesos ejecutivos, aplicarlo resultaba adecuado para estimar la liquidación de la condena por concepto de perjuicios materiales ante la ausencia de la prueba pericial debidamente soportada que permitiera liquidar la condena en abstracto.
+
+Dicho de otro modo, el tribunal hizo una interpretación sistemática de las normas que consideró útiles para resolver la controversia sometida a su conocimiento y, en uso de la autonomía e independencia judicial que caracteriza la actividad de los operadores judiciales, liquidó la condena con base en una disposición normativa vigente que le permitiera, en algún modo, efectivizar la condena por el daño causado a la parte actora con la ocupación del inmueble, lo cual dista de constituir una vulneración de algún derecho fundamental.
+
+Resulta necesario señalar que las providencias que versan sobre la interpretación y aplicación del derecho, no pueden, en principio, ser objeto de control constitucional en sí mismas por vía de tutela, si en ellas no se configura uno de los requisitos de procedibilidad, producto de una actuación abiertamente caprichosa frente al orden jurídico por parte de la autoridad judicial, que genera la violación de derechos fundamentales8. 
+
+De manera que, la decisión adoptada por el Tribunal Administrativo del Cesar se encuentra razonada a la luz de las normas que rigen la materia, las circunstancias fácticas del caso sometido a su conocimiento y a la jurisprudencia aplicable.
+
+Finalmente, se anota que la Sala descartó el estudio del cargo por desconocimiento del precedente judicial de la sentencia del 27 de marzo de 2014 (Exp. 20912) de la Sección Tercera, Subsección B del Consejo de Estado, porque los presupuestos fácticos no se compadecen con los del sub lite, pues, tal como lo narró la parte actora en el escrito inicial, en ese caso se establecieron los requisitos para objetar por error grave un dictamen pericial y los eventos en que procede. Por su parte, en el caso objeto de estudio no se encontró configurado el error grave que alegó la entidad territorial demandada. Luego, no resulta aplicable.
+
+Sumado a lo anterior, la providencia que se alega como desconocida fue proferida en el marco de un proceso de controversias contractuales y en el que se alegaba la objeción por error grave respecto de un dictamen pericial dirigido a demostrar mayor tiempo de permanencia en la obra y el rompimiento de la ecuación económica del contrato, con lo cual es suficiente para desestimar la identidad de fáctica y jurídica para proceder con el estudio de fondo del defecto por desconocimiento del precedente judicial.
+
+En suma, no se encuentra acreditada la vulneración de los derechos fundamentales invocados por la parte actora, más allá de la inconformidad que le merece la conclusión a la que llegó la autoridad judicial demandada y que, en últimas, disminuye la pretensión indemnizatoria, circunstancia que desde ningún punto de vista constituye la configuración de algún defecto, por el contrario, tiene que ver con la interpretación hecha por la demandada de las normas y pruebas allegadas, lo cual condujo a que profiriera una decisión contraria a sus intereses.
+
+En consecuencia, se impone confirmar la providencia de primera instancia del 11 de septiembre de 2018, proferida por el Consejo de Estado, Sección Segunda, Subsección B, objeto de impugnación.
+
+En mérito de lo expuesto el Consejo de Estado, Sala de lo Contencioso Administrativo, Sección Cuarta, administrando justicia en nombre de la República y por autoridad de la ley,
+
+FALLA
+
+    1. Confirmar la sentencia del 11 de septiembre de 2018, proferida por el Consejo de Estado, Sección Segunda, Subsección B, objeto de impugnación.
+
+    2. Enviar el expediente a la Corte Constitucional para su eventual Revisión. 
+
+    3. Notificar a las partes por el medio más expedito posible.
+
+Cópiese, notifíquese y cúmplase.
+	
+La anterior providencia fue considerada y aprobada en sesión de la fecha.
+
+
+
+
+JULIO ROBERTO PIZA RODRÍGUEZ
+Presidente de la Sección
+
+
+
+
+STELLA JEANNETTE CARVAJAL BASTO
+
+
+
+
+MILTON CHAVES GARCÍA
+
+
+
+
+JORGE OCTAVIO RAMÍREZ RAMÍREZ

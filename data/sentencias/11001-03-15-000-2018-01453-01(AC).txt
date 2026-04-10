@@ -1,0 +1,203 @@
+﻿IMPROCEDENCIA DE LA ACCIÓN DE TUTELA CONTRA PROVIDENCIA JUDICIAL POR INCUMPLIMIENTO DEL REQUISITO DE SUBSIDIARIEDAD - Existencia de otro medio de defensa judicial / SOLICITUD DE ADICIÓN
+
+[L]a Sala estima necesario determinar si se cumple el requisito de subsidiariedad. (…) En criterio de la Sala, los demandantes contaron con otro medio de defensa judicial, esto es, la solicitud de adición prevista en el artículo 287 del Código General del Proceso, (…) ese medio de defensa era idóneo y eficaz, pues permitía que la parte actora reclamara el pronunciamiento del tribunal demandado sobre la supuesta ausencia de prueba de la culpa grave o dolo en la expedición del Acuerdo 042 de 2001. Es decir, las omisiones en cuanto al estudio de las inconformidades frente al análisis probatorio bien pudieron ser corregidas si la parte actora hubiera interpuesto la solicitud de adición, pero no lo hizo y no puede corregir esa situación mediante el ejercicio de la acción de tutela. (…) En ese contexto, la Sala revocará la sentencia impugnada y, en su lugar, declarará improcedente la tutela interpuesta.
+
+FUENTE FORMAL: CÓDIGO GENERAL DEL PROCESO - ARTÍCULO 287
+
+
+CONSEJO DE ESTADO
+
+SALA DE LO CONTENCIOSO ADMINISTRATIVO
+
+SECCIÓN CUARTA
+
+Consejero ponente: JULIO ROBERTO PIZA RODRÍGUEZ
+
+Bogotá, D.C., doce (12) de febrero de dos mil diecinueve (2019)
+
+Radicación número: 11001-03-15-000-2018-01453-01(AC)
+
+Actor: ORLANDO ALFONSO PIRANEQUE Y OTROS
+
+Demandado: TRIBUNAL ADMINISTRATIVO DE BOYACÁ
+
+
+
+La Sala decide la impugnación interpuesta por la parte actora contra la sentencia del 14 de junio de 2018, dictada por la Subsección B de la Sección Segunda del Consejo de Estado, que rechazó la tutela por improcedente. 
+
+ANTECEDENTES
+
+    1. Pretensiones 
+
+En ejercicio de la acción de tutela y por intermedio de apoderado judicial, los señores Orlando Alfonso Piraneque, Cesar Alberto González García, Martín Vicente Cárdenas Morales, Jesús Fonseca Sánchez, Pedro Julio Prieto Salas, Elver Cetina García, Mauricio Ávila Cruz, Luis Alberto Castro y José Cristo Alirio Sarmiento pidieron la protección de los derechos fundamentales al debido proceso y de acceso a la administración de justicia, que estimaron vulnerados por el Tribunal Administrativo de Boyacá. En consecuencia, formularon las siguientes pretensiones: 
+
+[…] como consecuencia se deje sin efectos la sentencia proferida por el Tribunal Administrativo de Boyacá de fecha 30 de noviembre de 2017 dentro del medio de control de repetición radicado con el No. 15001-33-33-003-2014-00235-02.
+
+Segunda. Como consecuencia de lo anterior, se ordene al Tribunal Administrativo de Boyacá emita una decisión que se ajuste a derecho, donde se haga un pronunciamiento de cada uno de los aspectos de conformidad plasmados por los apelantes, con apego al debido proceso y al acervo probatorio obrante en el proceso acorde con jurisprudencia del Consejo de Estado relacionada con el nexo de causalidad entre la conducta endilgada y el detrimento o daño ocasionado al Estado1.
+
+    2. Hechos
+
+Del expediente, la Sala destaca los siguientes hechos relevantes: 
+
+2.1. El señor Marcos Barón Rubio interpuso demanda de nulidad y restablecimiento del derecho contra los siguientes actos dictados por el municipio de Cómbita (Boyacá):
+
+    • Acuerdo 042 del 10 de diciembre de 2001, que suprimió ciertos cargos de la planta de personal del municipio de Cómbita, incluido el que ocupaba el señor Barón Rubio.
+
+    • Decreto 034 del 21 de diciembre de 2001, suscrito por el alcalde municipal de Cómbita (señor Oliverio Hernández Sarmiento), que adoptó el Acuerdo 042 de 2001, estableció la nueva planta de personal y dispuso nombramientos de personal.
+
+    • Oficio del 26 de diciembre de 2001, firmado por el alcalde municipal de Cómbita, que comunicó al señor Barón Rubio de la supresión del cargo que ocupaba.
+
+2.2. Mediante sentencia del 23 de mayo de 20112, el Juzgado Quinto Administrativo de Tunja inaplicó, por inconstitucional, el Acuerdo 42 de 2001 y declaró la nulidad del oficio del 26 de diciembre de 2001. A título de restablecimiento del derecho, el juzgado ordenó el reintegro del señor Barón Rubio y el pago de los emolumentos dejados de percibir durante la desvinculación. El juzgado estimó que hubo falta de competencia, por cuanto la competencia para modificar la planta de personal es exclusiva del alcalde municipal de Cómbita, de conformidad con el artículo 313 [numeral 7] de la Constitución Política.
+
+2.3. Por resoluciones 724 del 14 de noviembre de 2012 y 069 del 8 de febrero de 20133, el municipio de Cómbita cumplió la sentencia del 23 de mayo de 2011.
+
+2.4. El municipio de Cómbita interpuso demanda de repetición4 contra los señores Orlando Alfonso Piraneque (ex alcalde), Cesar Alberto González (concejal), Martín Vicente Cárdenas Morales (concejal), Jesús Fonseca Sánchez (concejal), Pedro Julio Prieto Salas (concejal), Elver Cetina García (concejal), Mauricio Ávila Cruz (concejal), Luis Alberto Castro (concejal) y José Cristo Alirio Sarmiento (concejal), por cuanto, en su criterio, son responsables a título de dolo por los perjuicios derivados de la condena impuesta por la sentencia del 23 de mayo de 2011, que ascendió a ($32.640.380).
+
+2.5. El Juzgado Tercero Administrativo de Tunja, mediante sentencia del 3 de noviembre de 20165, declaró que los demandados eran responsables por los perjuicios derivados de la declaratoria de nulidad del Acuerdo 042 de 2001 y el oficio del 26 de diciembre de 2001 y los condenó a restituir lo pagado por el municipio de Cómbita por razón de la sentencia del 23 de mayo de 2011.
+
+2.6. Los actores apelaron dicha decisión y el Tribunal Administrativo de Boyacá, por sentencia del 30 de noviembre de 20176, la confirmó y la modificó en el sentido de ordenar que el pago se realizara en el término de seis meses y que la suma correspondiente fuera actualizada. Para el tribunal, la conducta de los demandantes fue gravemente culposa, pues, de conformidad con el artículo 317 [numeral 7] de la Constitución Política, los alcaldes municipales son competentes para crear, suprimir o fusionar los empleos de sus dependencias.
+
+    3. Argumentos de la tutela
+
+Los demandantes alegaron que la sentencia del 30 de noviembre de 2017, dictada por el Tribunal Administrativo de Boyacá incurrió en los siguientes defectos7:
+
+3.1. Defecto procedimental, por cuanto el tribunal demandado omitió pronunciarse sobre dos aspectos expuestos en el recurso de apelación, a saber: (i) que fue desconocido el derecho de defensa, por cuanto los integrantes del Concejo Municipal de Cómbita no fueron vinculados al proceso de nulidad y restablecimiento del derecho, y (ii) que no hay prueba de la culpa grave.
+
+3.2. Defecto fáctico, puesto que valoraron indebidamente la certificación del 18 de octubre de 2013, que dio cuenta de las personas que eran concejales en el 2001. Que esa certificación no demuestra la culpa grave y ni siquiera evidencia quienes participaron en la discusión y aprobación del Acuerdo 042 de 2001. Que el tribunal demandado, al valorar dicha certificación, desconoce que la responsabilidad objetiva no procede en los procesos de repetición.
+
+3.3. Falta de motivación, toda vez que no se evidenció que los demandantes actuaron con culpa grave.
+
+    4. Intervención de la autoridad judicial demandada
+
+4.1. El Tribunal Administrativo de Boyacá8 se opuso a las pretensiones de la demanda de tutela y pidió que fuera declarada improcedente, toda vez que la sentencia cuestionada estuvo sustentada en las pruebas obrantes en el proceso de repetición y en las normas y precedente vigentes.
+
+5. Intervención de terceros con interés
+
+El municipio de Cómbita y el señor Oliverio Hernández Sarmiento no intervinieron, pese a que fueron notificados de la admisión de la demanda de tutela9.
+
+6. Sentencia impugnada
+
+La Subsección B de la Sección Segunda del Consejo de Estado, mediante sentencia del 14 de junio de 201810, rechazó la tutela por improcedente. En síntesis, consideró lo siguiente.
+
+6.1. Que la tutela no cumplió el requisito de subsidiariedad, pues los demandantes contaron con la solicitud de adición para reclamar que el tribunal demandado se pronunciara sobre la totalidad de los temas planteados en el recurso de apelación interpuesto contra sentencia del 3 de noviembre de 2016, proferida por el Juzgado Tercero Administrativo de Tunja.
+
+6.2. Que los alegatos referidos a la supuesta insuficiente probatoria frente a la conclusión de existencia culpa grave no puede estudiarse fondo, puesto que, en el proceso de repetición, la parte actora no realizó solicitudes probatorias adicionales para efecto de demostrar que dicha culpa no existió. Que, de hecho, en audiencia inicial del 1° de marzo de 2016, el señor José Cristo Alirio Sarmiento sostuvo que no era necesario tener como prueba las actas que daban cuenta de los cabildantes que participaron en la discusión y aprobación del Acuerdo 42 de 2001.
+
+7. Impugnación 
+
+El apoderado de la parte demandante impugnó la sentencia del 14 de junio de 201811. En concreto, adujo lo siguiente:
+
+7.1. Que el análisis no debió quedarse en el requisito de subsidiariedad, por cuanto, en todo caso, el a quo debía estudiar si en el proceso de repetición se demostró que los demandantes participaron en la discusión y aprobación del Acuerdo 42 de 2001. Que si bien pudo ser procedente la solicitud de adición, lo cierto es que no se demostró la culpa grave en el proceso de repetición y eso no puede ser desconocido por el juez de tutela.
+
+7.2. Que la decisión de primera instancia desconoce el artículo 164 del Código General del Proceso, que señala que toda decisión judicial debe fundarse en las pruebas regular y oportunamente allegadas al proceso. Que no puede dictarse una decisión condenatoria sin demorar suficientemente la existencia de dolo o culpa grave. Que el tribunal demandado desconoce que en el presente caso no es aplicable la responsabilidad objetiva.
+
+7.3. Que no existió omisión probatoria por parte del señor José Cristo Alirio Sarmiento, puesto que la carga de la prueba recaía en el municipio de Cómbita. 
+
+CONSIDERACIONES
+
+    1. La acción de tutela contra providencias judiciales 
+
+A partir del año 201212, la Sala Plena de lo Contencioso Administrativo de esta Corporación aceptó la procedencia de la acción de tutela contra providencias judiciales. Posteriormente, en la sentencia de unificación del 5 de agosto de 201413, se precisó que la acción de tutela, incluso, es procedente para cuestionar providencias judiciales dictadas por el Consejo de Estado, pues, de conformidad con el artículo 86 de la Constitución Política, ese mecanismo puede ejercerse contra cualquier autoridad pública.
+
+Para tal efecto, el juez de tutela debe verificar el cumplimiento de los requisitos generales (procesales o de procedibilidad) que fijó la Corte Constitucional, en la sentencia C-590 de 2005. Esto es: (i) la relevancia constitucional; (ii) el agotamiento de los medios ordinarios de defensa; (iii) la inmediatez; (iv) que si se trata de una irregularidad procesal, ésta debe tener un efecto decisivo o determinante; (v) que se identifiquen los hechos que generaron la vulneración y los derechos vulnerados, y que esa vulneración se hubiere alegado en el proceso judicial, y (vi) que no se cuestione una sentencia de tutela.
+
+Una vez la acción de tutela supere el estudio de las causales procesales, el juez puede conceder la protección, siempre que advierta la presencia de alguno de los siguientes defectos o vicios de fondo, que miran más hacia la prosperidad de la tutela: (i) defecto sustantivo, (ii) defecto fáctico, (iii) defecto procedimental absoluto, (iv) defecto orgánico, (v) error inducido, (vi) decisión sin motivación, (vii) desconocimiento del precedente y (viii) violación directa de la Constitución. 
+
+Las causales específicas que ha decantado la Corte Constitucional (y que se ha aplicado la mayoría de las autoridades judiciales) buscan que la tutela no se convierta en una instancia adicional para que las partes reabran discusiones jurídicas que son propias de los procesos ordinarios o expongan los argumentos que, por negligencia o decisión propia, dejaron de proponer oportunamente. 
+
+Ahora, tratándose de tutela contra providencias judiciales proferidas por el Consejo de Estado o por la Corte Suprema de Justicia, cuando ejercen funciones de órganos de cierre en las respectivas jurisdicciones, la Corte Constitucional ha establecido un requisito adicional, consistente en «la configuración de una anomalía de tal entidad que exija la imperiosa intervención del juez constitucional»14.
+
+2. Caso concreto
+
+2.1. Previo a cualquier pronunciamiento frente al fondo del asunto y de conformidad con la impugnación formulada por la parte actora, la Sala estima necesario determinar si se cumple el requisito de subsidiariedad. Si no se cumple, la tutela se declarará improcedente. De lo contrario, se estudiará el fondo del asunto, en los términos propuestos por los demandantes.
+
+2.1.1. La subsidiariedad consiste en impedir que la acción de tutela, que tiene un campo restrictivo de aplicación, se convierta en un mecanismo principal de protección de los derechos fundamentales, pues eso sería tanto como desconocer que la Constitución y la ley estipulan una serie de mecanismos judiciales igualmente eficaces e idóneos para garantizar el ejercicio pleno de los derechos.
+
+2.1.1.1. No en vano los artículos 86 de la Constitución Política y el 6, numeral 1, del Decreto 2591 de 1991 prevén como causal de improcedencia de la acción de tutela la existencia de otros medios de defensa para la protección de los derechos invocados. De manera que la acción de tutela sólo puede utilizarse cuando se han agotado los mecanismos de protección que el ordenamiento jurídico ha dispuesto para la protección idónea y eficaz de los derechos fundamentales. En ese sentido, la Corte Constitucional manifestó15:
+
+La acción de tutela ha sido concebida únicamente para dar solución eficiente a situaciones de hecho creadas por actos u omisiones que implican la transgresión o amenaza de un derecho fundamental, respecto de las cuales el sistema jurídico no tiene previsto otro mecanismo susceptible de ser invocado ante los jueces a objeto de lograr la protección del derecho. La tutela no puede converger con vías judiciales diversas por cuanto no es un mecanismo que sea factible de elegir según la discrecionalidad del interesado, para esquivar el que de modo específico ha regulado la ley; no se da la concurrencia entre éste y la acción de tutela porque siempre prevalece —con la excepción dicha— la acción ordinaria. La acción de tutela no es, por tanto, un medio alternativo, ni menos adicional o complementario para alcanzar el fin propuesto. Tampoco puede afirmarse que sea el último recurso al alcance del actor, ya que su naturaleza, según la Constitución, es la de único medio de protección, precisamente incorporado a la Corporación Autónoma Regional de Cundinamarca con el fin de llenar los vacíos que pudiera ofrecer el sistema jurídico para otorgar a las personas una plena protección de sus derechos esenciales (…). 
+
+2.1.1.2. Entonces, para que el juez estudie una solicitud de tutela, el interesado debe, por lo menos, probar que se agotó los recursos que tenía a su disposición, pues, de lo contrario, la tutela deviene improcedente. El requisito de subsidiariedad no solo involucra la interposición de los recursos que proceden, sino también que en éstos se cuestionen las decisiones que, en concreto, se atacan en la acción de tutela.
+
+2.2. En el sub lite, la parte actora cuestiona la sentencia del 30 de noviembre de 2017, dictada por el Tribunal Administrativo de Boyacá, que los encontró responsables por los perjuicios derivados de la condena impuesta al municipio de Cómbita en la sentencia del del 23 de mayo de 2011, dictada por el Juzgado Quinto Administrativo de Tunja.
+
+2.2.1. En la demanda de tutela, la parte actora dijo lo siguiente:
+
+Estamos frente a esta causal por cuanto el artículo 230 del CGP establece que el recurso de apelación tiene por objeto que el superior examine la cuestión decidida únicamente en lo relacionado con los reparos concretos formulados por el apelante, para que el superior revoque o reforme la decisión; así mismo el artículo 328 de la obra en cita señala que el juez de segunda instancia deberá pronunciarse solamente sobre los argumentos expuestos por el apelante, a lo cual debo señalar que respecto al recurso de apelación interpuesto por los ex concejales Mauricio Ávila Cruz y Cristo Alirio Sarmiento Alonso se sustentó en tres acápites así:
+
+    1. Que la expedición del acuerdo 042 de 2001 no fue la causa que generó la condena del Juzgado Quinto Administrativo haciendo su respectiva argumentación.
+
+    2. Que se les desconoció el derecho de defensa en el procedo (sic) de nulidad y restablecimiento del derecho en razón a que no se vincularon en dicho proceso para ejercer el derecho de defensa y que el municipio de Cómbita fue negligente en su defensa al no interponer recurso de apelación a dicha sentencia condenatoria.
+
+    3. La carencia de prueba que haya determinado que actuaron con culpa grave, sustentándose que no se encontró prueba alguna que determinara su participación en la expedición del acuerdo 042 de 2001 sino que la decisión del a quo había sido sustentada en una mera certificación expedida por el (sic) como concejales para el año 2001, estableciéndose una responsabilidad objetiva, por el solo hecho de haberse desempeñado como concejales en año 2001 sin individualizarse su grado de participación.
+
+El Tribunal señaló que el inconformismo con la decisión del primera instancia consistía en que si bien el acuerdo podía tener falencias, en el mismo solo se suprimió el cargo y que el retiro del señor Barón Rubio fue decisión exclusiva del alcalde y que en la decisión del retiro del funcionario, el Concejo no tuvo ningún tipo de injerencia, así mismo que no se vinculó al Concejo Municipal en el proceso 2002-1142 razón por la cual no tuvieron oportunidad de defender la legalidad del acuerdo.
+
+De lo anterior se determina, sin asomo de duda que el Tribunal no cumplió con el deber de pronunciarse sobre dos de los tres aspectos en que se sustentó el recurso de apelación aludidos anteriormente conforme lo establecen los artículo 320 y 328 del CGP para por lo menos señalar si los compartía o no, por lo cual es claro que se evidencia el defecto procedimental aludido por la Corte Constitucional16.
+
+2.2.2. Asimismo, en la impugnación, la parte demandante manifestó lo siguiente: 
+
+De conformidad con el artículo 287 del CG del P se tiene la oportunidad procesal para solicitar la adición de la sentencia y que aquellos asuntos, que fueron objeto de recurso y no hubo pronunciamiento, es el mecanismo idóneo para que el juez natural lo efectúe y que por lo tanto la acción de tutela no es el medio, ya que se convertiría en una tercera instancia, es razonable dicha conclusión, a pesar que con dicha posición, se pueden ver vulnerados derechos fundamentales.
+
+No comparto los argumentos esgrimidos por la sala, para negar el amparo constitucional a la vulneración del debido proceso, por inexistencia de pruebas que demostraran la participación y responsabilidad de mis poderdantes por las siguientes razones:
+
+Si bien señaló el Tribunal al desatar el recurso de apelación, que el debate se circunscriba a “establecer si se configuró el elemento subjetivo como requisito de prosperidad de la acción” no basta con decirlo, sino que debió analizar las pruebas minuciosamente para determinar si se encontraba demostrado plenamente cual había sido la participación de los concejales de la época de la expedición del acuerdo 042 de 2001, es decir haberse demostrado su participación en las sesiones en las que se aprobó el acuerdo, ya sea a través de las actas de asistencia, así mismo haberse determinado quienes votaron afirmativamente o negativamente y demás elementos que determinaran con certeza que concejales aprobaron el acuerdo, pruebas de las que carece el proceso, situación que se planteó en el recurso de apelación, por lo que no puede señalar la sala que no fue expuesta dicha situación, y que tan solo se hace ante el Juez Constitucional17.
+
+2.3. En criterio de la Sala, los demandantes contaron con otro medio de defensa judicial, esto es, la solicitud de adición prevista en el artículo 287 del Código General del Proceso, que al tenor dispone: 
+
+Cuando la sentencia omita resolver sobre cualquiera de los extremos de la litis o sobre cualquier otro punto que de conformidad con la ley debía ser objeto de pronunciamiento, deberá adicionarse por medio de sentencia complementaria, dentro de la ejecutoria, de oficio o a solicitud de parte presentada en la misma oportunidad.
+
+El juez de segunda instancia deberá complementar la sentencia del inferior siempre que la parte perjudicada con la omisión haya apelado; pero si dejó de resolver la demanda de reconvención o la de un proceso acumulado, le devolverá el expediente para que dicte sentencia complementaria.
+
+Los autos solo podrán adicionarse de oficio dentro del término de su ejecutoria, o a solicitud de parte presentada en el mismo término.
+
+Dentro del término de ejecutoria de la providencia que resuelva sobre la complementación podrá recurrirse también la providencia principal.
+
+2.3.1. En efecto, dicha norma prevé que la parte interesada puede solicitar la adición de la sentencia o auto que omita resolver sobre cualquiera de los extremos de la litis o sobre cualquier otro punto que de conformidad con la ley debía ser objeto de pronunciamiento y que esa solicitud debe formularse en el término de ejecutoria.
+
+2.3.2. En criterio de la Sala, ese medio de defensa era idóneo y eficaz, pues permitía que la parte actora reclamara el pronunciamiento del tribunal demandado sobre la supuesta ausencia de prueba de la culpa grave o dolo en la expedición del Acuerdo 042 de 2001. Es decir, las omisiones en cuanto al estudio de las inconformidades frente al análisis probatorio bien pudieron ser corregidas si la parte actora hubiera interpuesto la solicitud de adición, pero no lo hizo y no puede corregir esa situación mediante el ejercicio de la acción de tutela.
+
+2.4. Siendo así, la Sala concuerda con el a quo en que la solicitud de amparo presentada por la parte actora no es procedente, toda vez que, como se ve, no agotó el mecanismo idóneo para reclamar en el proceso ordinario la protección de los derechos fundamentes que ahora invoca como vulnerados. Se reitera, el carácter residual y subsidiario de la tutela impide que sea utilizada para remplazar los mecanismos ordinarios previstos para la protección de derechos ni para corregir las omisiones cometidas al no ejercer esos mecanismos.
+
+2.4.1. Sobre el particular, la Corte Constitucional, en la sentencia T-520 de 1992, explicó que la persona que «no ha hecho uso oportuno y adecuado de los medios procesales que la ley le ofrece para obtener el reconocimiento de sus derechos o prerrogativas se abandona voluntariamente a las consecuencias de los fallos que le son adversos. De su conducta omisiva no es responsable el Estado ni puede admitirse que la firmeza de los proveídos sobre los cuales el interesado no ejerció recurso constituya transgresión u ofensa a unos derechos que, pudiendo, no hizo valer en ocasión propicia. Es inútil, por tanto, apelar a la tutela, cual si se tratara de una instancia nueva y extraordinaria, con el propósito de resarcir los daños causados por el propio descuido procesal». 
+
+2.4.2. Siendo así, el juez de tutela no se encuentra habilitado para emitir un pronunciamiento sobre el fondo de los argumentos planteados por la parte actora en la tutela, pues no le corresponde decidir cuestiones que no fueron discutidas ante la autoridad judicial competente. Se insiste: esta acción constitucional no puede reemplazar los mecanismos ordinarios previstos en la ley para la defensa de los derechos. 
+
+2.5. En ese contexto, la Sala revocará la sentencia impugnada y, en su lugar, declarará improcedente la tutela interpuesta por los señores Orlando Alfonso Piraneque, Cesar Alberto González, Martín Vicente Cárdenas Morales, Jesús Fonseca Sánchez, Pedro Julio Prieto Salas, Elver Cetina García, Mauricio Ávila Cruz, Luis Alberto Castro y José Cristo Alirio Sarmiento.
+Por lo expuesto, el Consejo de Estado, Sala de lo Contencioso Administrativo, Sección Cuarta, administrando justicia en nombre de la República y por autoridad de la ley,
+
+FALLA
+
+    1. Confirmar la sentencia impugnada, en el sentido de declarar improcedente la acción de tutela interpuesta por los señores Orlando Alfonso Piraneque, Cesar Alberto González, Martín Vicente Cárdenas Morales, Jesús Fonseca Sánchez, Pedro Julio Prieto Salas, Elver Cetina García, Mauricio Ávila Cruz, Luis Alberto Castro y José Cristo Alirio Sarmiento
+
+    2. Notificar a las partes por el medio más expedito. 
+
+    3. Enviar el expediente a la Corte Constitucional para lo de su cargo y devolver el expediente ordinario allegado en calidad de préstamo. 
+
+Cópiese, notifíquese y cúmplase.
+
+La anterior providencia fue discutida y aprobada en sesión de la fecha.
+
+
+
+
+JULIO ROBERTO PIZA RODRÍGUEZ
+Presidente de la Sección
+
+
+
+
+STELLA JEANNETTE CARVAJAL BASTO
+Magistrada
+
+
+
+
+MILTON CHAVES GARCÍA
+Magistrado
+
+
+
+
+JORGE OCTAVIO RAMÍREZ RAMÍREZ
+Magistrado

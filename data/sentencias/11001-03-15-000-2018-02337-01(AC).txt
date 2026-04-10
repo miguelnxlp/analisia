@@ -1,0 +1,307 @@
+﻿TUTELA CONTRA PROVIDENCIA JUDICIAL / AUSENCIA DE DEFECTO FÁCTICO / DESCONOCIMIENTO DEL PRECEDENTE - No configuración / RESPONSABILIDAD DE LOS LLAMADOS EN GARANTÍA EN PROCESO DE REPARACIÓN DIRECTA / PRECEDENTE JUDICIAL - El funcionario judicial puede apartarse de su propio precedente si expone las razones por las que modifica su posición
+
+En el presente caso la Sala no advierte que se haya incurrido en los defectos que alega la parte actora, pues se tuvo en cuenta las normas que rigen la responsabilidad del Estado; las pruebas aportadas al expediente de las cuales se determinó la responsabilidad del Hospital Infantil Universitario de San José, por las lesiones en los miembros inferiores que recibió la menor .(…) Con fundamento en lo anterior, la Sala considera que en el caso sub examine la valoración probatoria realizada por el Tribunal Administrativo de Cundinamarca se encuentra debidamente sustentada y razonada y, en consecuencia, no es susceptible de ser calificada como un defecto fáctico (…) En cuanto al desconocimiento del precedente jurisprudencial, tal y como lo afirmó el a quo, la autoridad judicial accionada sustentó que en el caso bajo estudio no había identidad fáctica respecto de la sentencia de unificación de 28 de agosto de 2014, del Consejo de Estado y por su parte procedió a tomar como referente lo decidido por la Corte Suprema de Justicia en casos similares, por tratarse de una entidad regida por normas de derecho privado. (…) Con lo anterior, se desvirtúa el desconocimiento del precedente alegado, pues esta Sala ya ha reiterado que, el funcionario judicial puede apartarse de su propio precedente o del precedente fijado por el superior jerárquico, siempre que explique de manera expresa, amplia y suficiente las razones por las que modifica su posición, de ahí que al juez corresponde la carga argumentativa de la separación del caso resuelto con anterioridad.
+
+
+CONSEJO DE ESTADO
+
+SALA DE LO CONTENCIOSO ADMINISTRATIVO
+
+SECCIÓN CUARTA
+
+Consejero ponente: MILTON CHAVES GARCÍA
+
+Bogotá, D.C., veintiuno (21) de febrero de dos mil diecinueve (2019)
+
+Radicación número: 11001-03-15-000-2018-02337-01(AC)
+
+Actor: MAPFRE SEGUROS GENERALES DE COLOMBIA S.A.
+
+Demandado: TRIBUNAL ADMINISTRATIVO DE CUNDINAMARCA, SECCIÓN TERCERA, SUBSECCIÓN “A”
+
+
+
+La Sala decide la impugnación interpuesta por la Sociedad Mapfre Seguros Generales de Colombia contra la sentencia de 11 de septiembre de 2018, dictada por el Consejo de Estado, Sección Segunda, Subsección “B”, que negó las pretensiones de la acción de tutela. 
+
+ANTECEDENTES
+
+    1. Pretensiones
+
+La Sociedad Mapfre Seguros Generales de Colombia, mediante apoderado, promovió acción de tutela contra el Tribunal Administrativo de Cundinamarca, Sección Tercera, Subsección “A”, porque estimó vulnerados el derecho fundamental al debido proceso. En consecuencia, formuló las siguientes pretensiones: 
+
+“PRIMERO: Concederá al amparo de tutela solicitado por MAPFRE SEGUROS GENERALES DE COLOMBIA S.A., compañía con domicilio en Bogotá representada por JAIRO RINCON ACHURY, para que sean TASADAS las condenas a PERJUICIOS MORALES, A LA SALUD Y A LA VIDA EN RELACIÓN conforme lo regla el artículo 10º del CPACA y las SENTENCIAS DE UNIFICACIÓN JURISPRUDENCIAL, con las connotaciones jurídicas que el precedente implica, mediante las cuales la Sección Tercera del Consejo de Estado Colombiano, precisó la tipología del daño material, y los topes indemnizatorios, de acuerdo con el hecho dañino, y el grado de consanguinidad y de relaciones afectivas entre víctimas directas e indirectas en su caso contenidas en: Exp. 26.251, Exp32988, Exp. 27709, Exp. 31172, Exp. 36149Exp. 28804, Exp. 31170, Exp. 28832.
+
+SEGUNDO: Ordenar al TRIBUNAL ADMINSTRATIVO DE CUNDINAMARCA SECCIÓN TERCERA SUBSECCIÓN “A”, que dentro de los términos de ley, profiera una decisión ajustada a derecho, en la que se aplique el precedente jurisprudencial para la tasación de perjuicios.
+
+TERCERO: Ordenar al TRIBUNAL ADMINISTRATIVO DE CUNDINAMARCA, SECCIÓN TERCERA SUBSECCIÓN “A”, que dentro de los términos de ley, proceda a pronunciarse de las excepciones de meritó propuestas en especial las denominas LIMITE DE COBERTURA PARA EL PAGO DE PERJUICIOS EXTRAPATRIMONIALES Y DEDUCIBLES (…).
+
+En subsidio, de la anterior petición, procederá el JUEZ CONSTITUCIONAL  a sustituir íntegramente las providencias atacadas”1. (Sic para todo)
+
+    2. Hechos
+
+Se advierten como hechos relevantes, los siguientes:
+
+2.1. La menor Ana Sofía Ruíz Galeano nació el 28 de junio de 2011, en el Hospital Infantil Universitario de San José de Bogotá. El 4 de julio de 2011, presentó dificultad respiratoria, por lo que en el hospital procedieron a realizarle maniobras de reanimación, procedimiento que le causó unas lesiones físicas, concretamente quemaduras en los pies de la menor.
+
+2.2 Los padres de Ana Sofía Ruíz Galeano en nombre propio y en representación de ella, junto con la abuela de la menor presentaron demanda de reparación directa contra la Nación, Ministerio de Salud y de la Protección Social, la Superintendencia Nacional de Salud, Secretaría de Salud Distrital y Hospital Universitario de San José, con el fin de que se les declarara administrativamente responsables por las lesiones de la menor y, como consecuencia, se les condenara al pago de perjuicios morales y materiales – lucro cesante, daño a la salud, daño a la vida en relación -, y se ordenara tomar las medidas de rehabilitación necesarias para la recuperación.
+
+2.3. El proceso correspondió por competencia al Juzgado 38 Administrativo de Bogotá, que en auto de 5 de septiembre de 2013, admitió la demanda y mediante proveído de 15 de julio de 2014, aceptó el llamamiento en garantía solicitado por la Fundación Hospital Universitario de San José frente a la Asociación Gremial Criticall Uci Group y a la compañía de seguros Mapfre Seguros S.A. 
+
+2.4. Mediante sentencia de 21 de marzo de 2017, el Juzgado 38 Administrativo de Bogotá, negó las pretensiones de la demanda, al considerar que no se acreditó la falla médica y no era viable imputar responsabilidad al hospital demandado.
+
+2.5. Contra la anterior decisión la parte actora interpuso recurso de apelación, el cual fue resuelto por el Tribunal Administrativo de Cundinamarca, Sección Tercera, Subsección “A”, en sentencia de 28 de junio de 2018, en la que revocó el fallo de primera instancia y condenó al Hospital Infantil Universitario de San José a pagar los perjuicios morales, a la salud y a la vida en relación ocasionados, igualmente condenó a Mapfre Seguros Generales de Colombia a reembolsar al Hospital el monto que pague de la condena, el cual no podrá superar el límite máximo asegurado y pactado en la póliza nro. 2202212000138.
+
+    3. Argumentos de Tutela
+
+A juicio de la actora, el Tribunal demandado en la providencia accionada, no se pronunció sobre la excepción que denominó “Limite de cobertura para el pago de perjuicios extrapatrimoniales” y no tuvo en cuenta el límite de cobertura en los perjuicios extrapatrimoniales y la tasación de los mismos, conforme a la Sentencia de Unificación del Consejo de Estado en Sala Plena del 28 de agosto de 2014 (exp. 50001-23-15-000-1999-00326-01). Por lo anterior, El Tribunal accionado incurrió en defectos fáctico y sustantivo.
+
+Manifestó que se desconoció el dictamen pericial practicado por la Junta Regional de Calificación de Invalidez de Bogotá, al momento de tasar los perjuicios, razón por la cual consideró que el Tribunal se apartó del deber de aplicación uniforme de las normas y la jurisprudencia señalada en el artículo 10 del CPACA.
+
+Indicó que el fallador desconoció el límite de cobertura para el pago de perjuicios extrapatrimoniales, porque en la póliza, se acordó conceder como sublímite el 30% del valor asegurado.
+
+Señaló que se interpretó de manera errada la facultad que tiene el Juez al momento de tasar los perjuicios, por lo que extralimitó al momento de determinar los perjuicios reconocidos, por el doble de lo que se debió reconocer.
+
+    4. Intervenciones 
+
+4.1 Tribunal Administrativo de Cundinamarca – Sección Segunda – Subsección “A”-2
+
+El Magistrado Ponente de la providencia acusada solicitó declarar improcedente la acción de tutela, porque no vulneró los derechos reclamados por la parte actora. Además, afirmó que contaba con el mecanismo de solicitud de adición, corrección o aclaración de la sentencia para plantear las inconformidades expuestas en la presente acción de tutela.
+
+Indicó que la decisión recurrida se profirió con fundamento en las normas que rigen el caso, las pruebas aportadas al proceso y la jurisprudencia que frente al tema se ha desarrollado, garantizando el debido proceso a las partes.
+
+4.3 Hospital Universitario de San José 3
+
+La Representante Legal de la Fundación Hospital Universitario de San José, compartió los argumentos de la acción de tutela, porque la providencia atacada debió confirmar la decisión de primera instancia que negó las pretensiones de la demanda.
+
+Por último, solicitó que se acumulara la acción de tutela junto con la que interpuso la Asociación Gremial Criticall Uci Group, en contra de la misma providencia judicial, objeto de la presente acción; la cual se encuentra en el Consejo de Estado, en el despacho del Consejero Ponente Oswaldo Giraldo López, con número de radicado 11001-03-15-000-2018-02480-00. 
+
+4.3. Alcaldía Mayor de Bogotá D.C.4
+
+La Directora Jurídica de la Secretaría de Gobierno de la Alcaldía Mayor de Bogotá D.C., solicitó su desvinculación por falta de legitimación en la causa por pasiva.
+
+4.4 Superintendencia Nacional de Salud5
+
+El Jefe de la Oficina Asesora Jurídica de la Superintendencia Nacional de Salud pidió su desvinculación de la acción de tutela, al considerar que existe falta de legitimación en la causa por pasiva, pues los derechos que se alegan como vulnerados no devienen de una acción u omisión atribuible a la entidad que representa.
+
+4.5 El apoderado de la señora Yaqueline Galeano, quien actúa en nombre propio y en representación de la menor Ana Sofía Ruiz Galeano, el señor Carlos Arturo Ruiz Muñoz y la señora Cleófila Galeano Pardo, solicitó se declare improcedente la acción de tutela, porque no cumple con los requisitos de procedibilidad señalados en la sentencia C-590 de 2005 y adicionalmente lo que se busca es una tercera instancia.6
+
+    5. Sentencia impugnada 
+
+El Consejo de Estado, Sección Segunda, Subsección “B”, mediante sentencia de 11 de septiembre de 20187, negó la acción de tutela, por las siguientes razones:
+
+Indicó que si bien el demandado no hizo referencia en la providencia accionada sobre cada una de las excepciones, las cuales versan sobre el fondo del asunto y las sumas que eventualmente corresponderían al Hospital a pagar en caso de llegar a ser condenado, hizo un adecuado pronunciamiento porque determinó que de la condena impuesta, le correspondería a Mapfre Seguros reembolsar el monto pagado, sin superar el límite asegurado. 
+
+Señaló que se tuvo en cuenta el dictamen proferido por la Junta Regional de Calificación de Invalidez de Bogotá, porque en la condena se determinó que aunque el dictamen ubicó a la menor en “situación de incapacidad permanente parcial”, este no adquirió firmeza probatoria, adicionalmente ordenó una nueva Junta de Calificación de Invalidez con la finalidad de determinar la liquidación de los perjuicios, en consecuencia quedo demostrado que el tribunal realizó un estudio razonable del dictamen.
+
+Por último, indicó que no se desconoció el precedente judicial sobre las sentencia de unificación de 28 de agosto de 2014 del Consejo de Estado, referente al límite de tasación porque sustentó sus argumentos para apartarse del precedente de esta corporación y acoger la de la Corte Suprema de Justicia el tratarse de una institución de carácter privado, el Hospital Universitario de San José, en el marco de su autonomía. 
+
+    5. Impugnación 
+
+La Sociedad Mapfre Seguros Generales de Colombia impugnó el fallo de primera instancia, pues aseguró que la autoridad judicial accionada se apartó del desarrollo jurisprudencial sobre la forma como deben ser impartidas las condenas, dejando además, de lado las excepciones propuestas por Mapfre sobre las cuales no hubo pronunciamiento expreso.
+
+Que pese a que en la sentencia se aclaró que la condena no podía superar el límite máximo asegurado, frente al deducible no se hizo ningún pronunciamiento, “cuando en el mismo se había argumentado que el contrato de seguro suscrito, estableció una suma del valor de cada siniestro que siempre estaría a cargo del asegurado, para este evento un deducible del 10% mínimo $10.000.000.oo, por lo que los médicos tratantes que no tuviesen póliza de seguro individual ni contrato de trabajo con la llamante en garantía, se les aplicaría el deducible del 10% mínimo $25.000.000.oo.”
+
+Indicó que el demandado, no estudio el contrato de seguro conforme a los artículos 1048 a 1050 del Código de Comercio, razón por la cual no tuvo en cuenta el deducible sino el límite máximo de la cobertura en la condena que le fue impuesta.
+
+Que dentro del proceso de reparación directa se acreditó que se mantuvo con vida a la menor, que las lesiones fueron producto de factores externos y que el porcentaje de pérdida de la capacidad se fijó en el 24.44%, razón por la que considera que la autoridad judicial debió ponderar el valor de los perjuicios, partiendo de las tasaciones efectuadas para casos similares o conexos, bien fueran del Consejo de estado más no acoger el de la Corte Suprema – Sala Civil, atendiendo el fuero de atracción que adujo el fallador en su providencia.
+
+CONSIDERACIONES 
+
+Cuestión previa
+
+El apoderado judicial de quienes actuaron como demandantes en el proceso de reparación directa señaló que en el presente caso existía temeridad, porque la parte actora había promovido otra acción de tutela, ante el Consejo de Estado, con radicado nro. 11001-03-15-000-2018-02480-01, con identidad de partes, hechos y pretensiones.
+
+De acuerdo con el artículo 38 del Decreto 2591 de 1991, la actuación temeraria ocurre cuando “sin motivo expresamente justificado, la misma acción de tutela [es] presentada por la misma persona o su representante ante varios jueces o tribunales (…)”. La sanción para esa conducta es el rechazo o decisión desfavorable de todas las solicitudes.
+
+Frente al particular, la Corte Constitucional ha señalado que se configura la actuación temeraria cuando concurren los siguientes requisitos: (i) Identidad de partes; (ii) Identidad de hechos; (iii) Identidad de pretensiones; y, (iv) Ausencia de justificación frente al ejercicio de la nueva acción de tutela8.
+
+Se advierte entonces que, la actuación temeraria se predica en los eventos en que, sin motivo justificado, una misma persona presenta acción de tutela ante varios despachos judiciales de manera sucesiva con base en los mismos hechos y para obtener la protección de los mismos derechos.
+
+El fundamento de la norma que sanciona la temeridad se encuentra en los artículos 83 y 95 de la Constitución Política, que, de un lado, obligan a los particulares y a las autoridades públicas a actuar con base en el principio de buena fe y, de otro lado, instituyen como deber de las personas el de "respetar los derechos ajenos y no abusar de los propios" y "colaborar en el buen funcionamiento de la administración de la justicia".
+
+En el caso bajo estudio, advierte la Sala que si bien en la acción de tutela referida se buscaba dejar sin efectos de la sentencia de 28 de junio de 2018, proferida por el Tribunal Administrativo de Cundinamarca, Sección Tercera, Subsección A, las partes no guardan identidad, toda vez que, en esa oportunidad fungió como actoras la Fundación Hospital Infantil Universitario San José y la Asociación Gremial Critical II UCI Group y en la presente acción de tutela, quien reclama la protección de los derechos fundamentales es la Sociedad Mapfre Seguros Generales de Colombia.
+
+De manera que, no concurren los presupuestos para considerar que la presente acción de tutela constituye una actuación temeraria, razón por la cual la Sala procederá a hacer el estudio del caso.
+
+    1. La acción de tutela – generalidades
+
+La acción de tutela está consagrada en el artículo 86 de la Constitución Política, reglamentado por el Decreto 2591 de 1991, que en el artículo 1° establece: «Toda persona tendrá acción de tutela para reclamar ante los jueces, en todo momento y lugar, mediante un procedimiento preferente y sumario, por sí misma o por quien actúe en su nombre, la protección inmediata de sus derechos constitucionales fundamentales, cuando quiera que estos resulten vulnerados o amenazados por la acción o la omisión de cualquier autoridad pública o de los particulares en los casos que señala este decreto».
+
+Esta acción procede cuando el afectado no disponga de otro medio de defensa judicial, salvo que se utilice como mecanismo transitorio para evitar un perjuicio irremediable.
+
+    2. De la acción de tutela contra providencias judiciales
+
+La acción de tutela es un mecanismo judicial cuyo objeto es la protección de los derechos fundamentales amenazados o vulnerados por la acción u omisión de cualquier autoridad pública o por un particular, en el último caso, cuando así lo permita expresamente la ley.
+
+La tutela procede cuando el interesado no dispone de otro medio de defensa, salvo que se utilice como mecanismo transitorio para evitar un perjuicio irremediable. En todo caso, el otro mecanismo de defensa debe ser eficaz para proteger el derecho fundamental vulnerado o amenazado, pues, de lo contrario, el juez de tutela deberá examinar si existe perjuicio irremediable y, de existir, concederá el amparo impetrado como mecanismo transitorio, siempre que esté plenamente acreditada la razón para conceder la tutela.
+
+A partir del año 20129, la Sala Plena de lo Contencioso Administrativo de esta Corporación aceptó la procedencia de la acción de tutela contra providencias judiciales. De hecho, en la sentencia de unificación del 5 de agosto de 201410, se precisó que la acción de tutela, incluso, es procedente para cuestionar providencias judiciales dictadas por el Consejo de Estado, pues, de conformidad con el artículo 86 de la Constitución Política, ese mecanismo puede ejercerse contra cualquier autoridad pública.
+
+Para tal efecto, el juez de tutela debe verificar el cumplimiento de los requisitos generales (procesales o de procedibilidad) que fijó la Corte Constitucional, en la sentencia C-590 de 2005. Esto es, la relevancia constitucional, el agotamiento de los medios ordinarios de defensa, la inmediatez y que no se esté cuestionando una sentencia de tutela. Además, debe examinar si el demandante identificó y sustentó la causal específica de procedibilidad y expuso las razones que sustentan la violación o amenaza de los derechos fundamentales. No son suficientes las simples inconformidades frente a las decisiones tomadas por los jueces de instancia, sino que el interesado debe demostrar que la providencia cuestionada vulneró o dejó en situación de amenaza derechos fundamentales.
+
+Una vez la acción de tutela supere el estudio de las causales procesales, el juez puede conceder la protección, siempre que advierta la presencia de alguno de los siguientes defectos o vicios de fondo, que miran más hacia la prosperidad de la tutela: a) defecto sustantivo, b) defecto fáctico, c) defecto procedimental absoluto, d) defecto orgánico, e) error inducido, f) decisión sin motivación, g) desconocimiento del precedente y h) violación directa de la Constitución.
+
+Las causales específicas que ha decantado la Corte Constitucional (y que han venido aplicando la mayoría de las autoridades judiciales) buscan que la tutela no se convierta en una instancia adicional para que las partes reabran discusiones jurídicas que son propias de los procesos ordinarios o expongan los argumentos que, por negligencia o decisión propia, dejaron de proponer oportunamente.
+
+La tutela no puede convertirse en la instancia adicional de los procesos judiciales, pues los principios de seguridad jurídica y de coherencia del ordenamiento jurídico no permiten la revisión permanente y a perpetuidad de las decisiones de los jueces y, por tanto, no puede admitirse, sin mayores excepciones, la procedencia de la tutela contra providencias judiciales.
+
+Es de esa manera que se estudia una providencia judicial mediante el mecanismo excepcional de la acción de tutela.
+
+    3. Problema jurídico
+
+Consiste en determinar si las autoridades judiciales accionadas incurrieron en los defectos alegados por la parte actora, al acceder a las pretensiones de la demanda de reparación directa interpuesta por Yaqueline Galeano  otros contra la Nación – Ministerio de Salud y Protección Social, la Superintendencia Nacional de Salud, el Distrito Capital – Secretaría Distrital de Salud y Hospital Infantil Universitario San José, en donde se llamó en garantía Mapfre Seguros Generales de Colombia S.A.
+
+    4. Del caso concreto
+
+El apoderado General de Mapfre Seguros Generales de Colombia S.A. interpuso la presente acción de tutela, con el fin de que se deje sin efectos la sentencia de 28 de junio de 2018, en la cual el Tribunal Administrativo de Cundinamarca, Sección Tercera, Subsección A, resolvió:
+
+“PRIMERO: REVOCAR la sentencia de primera instancia, proferida el veintiuno (21) de marzo de dos mil diecisiete (2017) por el Juzgado Treinta y Ocho (38) Administrativo Oral del Circuito Judicial de Bogotá, mediante la cual denegó las pretensiones de la demanda, por las razones expuestas en la presente providencia.
+
+SEGUNDO: Declárase judicialmente responsable al HOSPITAL INFANTIL UNIVERSITARIO DE SAN JOSÉ, por los perjuicios causados a la parte actora, con ocasión de la atención médica – hospitalaria, recibida por la menor ANA SOFÍA RUÍZ GALEANO.
+
+TERCERO: Como consecuencia de la declaración anterior, condénese al HOSPITAL INFANTIL UNIVERSITARIO DE SAN JOSÉ a indemnizar a los demandantes, así:
+
+    A. PERJUICIOS MORALES
+
+    • A favor de la víctima directa ANA SOFÍA RUÍZ GALEANO y a sus padres YAQUELINE GALEANO Y CARLOS ARTURO RUÍZ MUÑOZ, un monto equivalente a doscientos salarios mínimos legales vigentes (200 smlmv) para cada uno de ellos.
+    • A favor de CLEOFILA GALEANO PARDO, en su calidad de abuela materna de la víctima, el equivalente a cien (100) salarios mínimos legales mensuales vigentes.
+
+    B. PERJUICIOS A LA SALUD
+
+    • A favor de la víctima directa ANA SOFÍA RUÍZ GALEANO, un monto equivalente a cien salarios mínimos legales mensuales vigentes (100 smlmv).
+
+    C. PERJUICIOS A LA VIDA DE RELACIÓN 
+
+    • A favor de los señores YAQUELINE GALEANO Y CARLOS ARTURO RUÍZ MUÑOZ (padres de la víctima directa), un monto equivalente a cien salarios mínimos legales mensuales vigentes (100 smlmv) para cada uno de ellos.
+    • A favor de CLEOFILA GALEANO PARDO, en su calidad de abuela materna de la víctima, el equivalente a cien (100) salarios mínimos legales mensuales vigentes.
+
+CUARTO: Para dar cumplimiento a la condena impuesta en el numeral anterior, se fija como plazo el de sesenta (60) días hábiles contados a partir de la notificación de esta providencia.
+
+QUINTO: Condenar al HOSPITAL INFANTIL UNIVERSITARIO DE SAN JOSÉ, a reconocer como MEDIDAS DE RESARCIMIENTO PLENO DEL DAÑO – REHABILITACIÓN, las siguientes:
+
+    • Proveer a los demandantes de tratamientos psicológicos, que permitan la superación de las secuelas que les hubiere dejado las lesiones sufridas por ANA SOFÍA RUÍZ GALEANO, por las razones expuestas en la parte considerativa.
+    • Proveer a la menor de todos los tratamientos médicos; fisioterapéuticos y elementos, como prótesis, para lograr el estado de indemnidad de la misma, en los términos señalados en la parte considerativa.
+
+SEXTO: Condenar en ABSTRACTO al HOSPITAL INFANTIL UNIVERSITARIO DE SAN JOSÉ, a pagar a Ana Sofía Ruíz Galeano los perjuicios materiales en la modalidad de lucro cesante futuro, causados como consecuencia de las lesiones sufridas por la misma, durante la atención médica recibida en el citado Hospital. La suma que debe pagarse, deberá concretarse en incidente separado, teniendo en cuenta lo expuesto para su reconocimiento en la parte motiva de esta sentencia.
+
+SÉPTIMO: Negar las demás pretensiones de la demanda.
+
+OCTAVO: Condénese a ASEGURADORA MAPFRE SEGUROS GENERALES DE COLOMBIA (MAPFRE SEGUROS) a pagar el valor de la condena, en lo atinente al monto que esté contenido en la póliza No. 2202212000138 y que fuera pactada en el respectivo contrato de seguro y que en efecto no podrá superar el límite máximo asegurado y pactado en la respectiva póliza.
+
+NOVENO: Condénese a la ASOCIACIÓN GREMIAL CRITICALL UCI GROUP a rembolsar al Hospital Infantil Universitario de San José, el monto que pague en esta condena, descontando, como se indicó, el valor asegurado que en virtud de la presente condena, reembolse MAPFRE SEGUROS GENERALES DE COLOMBIA, al Hospital Infantil Universitario de San José.”
+
+La parte actora indicó que en la sentencia acusada se incurrió en defecto fáctico, por indebida valoración de las pruebas aportadas al proceso, con las cuales asegura se acreditaba que las lesiones padecidas por la menor Ana Sofía Ruíz Galeano fueron consecuencia de hechos externos a la responsabilidad del hospital. 
+
+Aseguró que se incurrió en desconocimiento del precedente al proferir la condena, sin tener en cuenta la jurisprudencia desarrollada por el Consejo de Estado y por su parte adoptar el de la Corte Suprema de Justicia – Sala Civil, por fuero de atracción, en casos análogos. 
+
+Además, alegó incongruencia en la sentencia, porque no se analizaron las excepciones propuestas, sobre los límites en el pago a cargo de Mapfre Seguros, en caso de llegarse a condenar al hospital, teniendo en cuenta el contrato de seguro suscrito.
+
+La Sala revisará el contenido de la sentencia acusada, para luego proceder al análisis de cada uno de los cargos formulados por la actora.
+
+        4.1. Contenido de la sentencia acusada
+
+Los problemas jurídicos planteados en la sentencia objeto de reproche fueron los siguientes:
+
+“(…) (i) si durante la atención médica prestada a la menor, se causó el daño antijurídico alegado; esto es, si las lesiones de Ana Sofía Ruíz Galeano, ocurrieron como consecuencia de una falla en el servicio, atribuible a los sujetos que conforman la parte demandada; (ii) sí efectivamente se presente, como lo afirma la parte actora, una indebida valoración probatoria, por parte del Juez de Primera Instancia.
+
+De manera qué de encontrarse establecida la responsabilidad en el presente caso, por el daño antijurídico imputado en la demanda, la Sala entraría a estudiar, si ¿se encuentra demostrados los perjuicios causados a los demandantes?
+
+Por lo anterior, entrará la Sala en primer lugar a determinar, lo relacionado con las presuntas irregularidades presentadas, en criterio del demandante, durante la prestación del servicio médico dado a la menor Ana Sofía Ruíz Galeano, específicamente el 4 de julio de 2011, de donde resultó lesionada.”
+
+Luego de relacionar las pruebas aportadas al expediente, procedió a analizar la responsabilidad de las entidades públicas demandadas, del cual concluyó que la parte demandante no acreditó el incumplimiento de sus labores, frente a la atención médica prestada a la menor, por lo que indicó que negaría las pretensiones de la demanda respecto del Ministerio de Salud y Protección Social, la Superintendencia Nacional de Salud y la Secretaría Distrital de Salud.
+
+Como la demanda se dirigió igualmente, contra el Hospital Infantil Universitario de San José, entidad de carácter privado, procedió a analizar la responsabilidad frente a los hechos, usando la figura del fuero de atracción.
+
+Frente a la existencia del daño, indicó:
+
+“En consecuencia, lo que está demostrado, es que durante el proceso de reanimación del paro cardio – respiratorio, la menor Ana Sofía Ruíz  Galeano sufrió unas lesiones en sus miembros inferiores y, en razón de las mismas, fue necesaria la amputación de varios de sus falanges de los pies. Y no existe tampoco un medio de prueba directo, que permita inferir que ese tipo de lesión es frecuente o previsible en el procedimiento seguido a la menor, además no hay literatura médica que lo apoye; como tampoco, se presentó ninguna prueba técnica que así lo acreditara.
+
+Por lo que el incumplimiento de la carga probatoria que tenía el Hospital demandado, de demostrar las razones de la lesión de la menor comprometen como se indicó, su responsabilidad a título de culpa, en los procedimientos realizados a la menor, en razón a que no se logró demostrar en sede judicial, que las ´quemaduras´ de Ana Sofía, fueran una consecuencia secundaria de los problemas de salud o de la condición propia de la menor, sino que lo que ocurrió primero, fue lo plasmado por el médico tratante, en la Historia Clínica, el 4 de julio de 2011.”
+
+Respecto al nexo de causalidad, concluyó:
+
+“El nexo causal está probado en el caso concreto, en razón a que es evidente, la prestación del servicio de salud, irregular, deficiente y lesiva, en la calidad exigible por la Ley y que, compromete la responsabilidad civil del Hospital Infantil Universitario de San José, lo que condujo a un resultado desproporcionado si se tiene en cuenta que, según los antecedentes médicos, lo normal era que cualquier padecimiento, estuviera relacionado con los problemas cardiacos y respiratorios sufridos por la menor, pero no, con la pérdida por amputación de parte de los miembros inferiores de Ana Sofía Ruíz Galeano.
+
+Lo anterior aunado al hecho, que en el presente caso, los conceptos técnicos allegados y los testimonios, están apoyados en las aclaraciones hechas por el ente hospitalario a la propia historia clínica y por otro lado, a diagnósticos que nunca fueron consignados en la misma o explicados a los padres de la menor (concepto científico emitido por la Secretaría de Salud, en diciembre de 2013 – folio 535 c.1) – (informe presentado por el Hospital Infantil Universitario de San José, en diciembre 6 de 2013ª la Secretaría Distrital de Salud, lo siguiente – Folio 497 c.1) – (Auto 0178 de fecha 3 de febrero de 2014, proferido dentro de la investigación preliminar No. 171012/13, por parte de la Secretaría de Salud – Folio 536 c.1).
+
+De manera que en el presente caso, se encuentra probado que el daño, no se presentó debido a las condiciones de la paciente, sino a la existencia de una irregularidad en la prestación del servicio médico; ello por cuanto, se han demostrado por el demandante, las equivocaciones en las actividades desplegadas por el Hospital demandado.”
+
+Con base en lo anterior, reconoció como perjuicios a favor de los demandantes y en contra del hospital, los siguientes: perjuicios materiales, en la modalidad de lucro cesante futuro; perjuicios morales; perjuicio a la salud y a la vida en relación; y, medidas de resarcimiento pleno del daño – rehabilitación-. Frente a ello dispuso:
+
+“Con el objeto de decidir lo correspondiente a la liquidación de perjuicios en el presente caso, la Sala, continúa con su coherencia, razón por la cual el estudio de la solicitud de perjuicios, se realizará con fundamento en la línea jurisprudencial que tiene establecida la jurisdicción ordinaria para el efecto.
+
+En este orden de ideas, la Sala no estará limitada a las sentencias de unificación de la Jurisdicción de lo Contencioso Administrativo y por ende, acudirá a las reglas fijadas por la jurisdicción ordinaria en esta materia.
+
+En relación con la responsabilidad de los llamados en garantía, concretamente con Mapfre Seguros, accionante en la tutela de la referencia, indicó:
+
+“En el presente caso, se encuentra demostrada la existencia de un contrato de seguro, vigente para la fecha de los hechos, para el cubrimiento: (i) RC acto médico – clínicas; (ii) responsabilidad civil acto médico – aux o dependiente; (iii) asistencia médica emergencia. En consecuencia, es claro que para la época de los hechos (4 de julio de 2011) y la fecha de notificación de la demanda, el contrato de seguro se encontraba vigente.
+
+Igualmente, del contenido de la Póliza, cuya copia se aportó al proceso junto con sus respectivas condiciones generales, se desprende la circunstancia de hecho, que motivó la demanda de reparación directa, se encuentra amparada por el mencionado contrato de seguro y que ha referido la propia aseguradora, correspondiente a la Póliza No. 2202212000138, aportada con la contestación del llamamiento en garantía, en virtud de la renovación propia del contrato de seguro.
+
+Por otro lado, la Póliza cubre, las actividades del asegurado como propietario y operador de la institución médica, conocida como ´fundación Hospitalaria san José” (Folio 73 c. 2 Llamamiento en Garantía)
+
+En consecuencia, está debidamente acreditado el derecho, a favor del Hospital Infantil Universitario San José, el monto que pague en esta condena, y que en efecto no podrá superar el límite máximo asegurado y pactado en la respectiva póliza.”
+
+        4.2. Análisis de los defectos invocados en la sentencia
+
+Frente a la existencia del defecto fáctico, encuentra la Sala que la autoridad judicial accionada valoró en debida forma todas las pruebas aportadas al proceso, del contenido de las mismas, pudo determinar que el hospital accionado no probó que las lesiones sufridas por la menor fueran consecuencia de hechos externos a la prestación del servicio. 
+
+Además, advirtió que las observaciones y aclaraciones que se hicieron a la historia clínica de la menor en el año 2018, no eran prueba fidedigna de lo ocurrido, pues no se guardó los protocolos para ello y las lesiones ocurrieron en el año 2011; de lo cual se advierte que el juez uso las reglas de la sana critica, llegó a conclusiones que son razonables y hacen parte de los principios de autonomía e independencia que tienen los jueces al decidir un asunto.
+
+En el presente caso la Sala no advierte que se haya incurrido en los defectos que alega la parte actora, pues se tuvo en cuenta las normas que rigen la responsabilidad del Estado; las pruebas aportadas al expediente de las cuales se determinó la responsabilidad del Hospital Infantil Universitario de San José, por las lesiones en los miembros inferiores que recibió la menor Ana Sofía Ruíz Galeano.
+
+Con fundamento en lo anterior, la Sala considera que en el caso sub examine la valoración probatoria realizada por el Tribunal Administrativo del Cundinamarca se encuentra debidamente sustentada y razonada y, en consecuencia, no es susceptible de ser calificada como un defecto fáctico como pretende la actora, por cuanto la decisión de declarar administrativamente al Hospital Infantil Universitario de San José, tuvo como fundamento las de pruebas que fueron allegadas y practicadas en el trámite del proceso ordinario.
+
+En cuanto al desconocimiento del precedente jurisprudencial, tal y como lo afirmó el a quo, la autoridad judicial accionada sustentó que en el caso bajo estudio no había identidad fáctica respecto de la sentencia de unificación de 28 de agosto de 2014, del Consejo de Estado y por su parte procedió a tomar como referente lo decidido por la Corte Suprema de Justicia en casos similares, por tratarse de una entidad regida por normas de derecho privado.
+
+En efecto, se evidencia que en la sentencia de 28 de agosto de 2014, en la cual se fijaron reglas de unificación frente al reconocimiento de perjuicios inmateriales, no se trató de una condena contra una entidad de derecho privado, ni sobre la que se haya dado aplicación al fuero de atracción, pues la demandada era una entidad pública11, luego no existe la identidad fáctica que exige la aplicación de ese precedente.
+
+En todo caso, la misma providencia de unificación del Consejo de Estado precisó que “en casos excepcionales, como los de graves violaciones a los derechos humanos, entre otros, podrá otorgarse una indemnización mayor de la señalada en todos los eventos anteriores, cuando existan circunstancias debidamente probadas de una mayor intensidad y gravedad del daño moral sin que en tales casos el monto total de la indemnización pueda superar el triple de los montos indemnizatorios antes señalados. Este quantum deberá motivarse por el juez y ser proporcional a la intensidad del daño.”
+
+Con lo anterior, se desvirtúa el desconocimiento del precedente alegado, pues esta Sala ya ha reiterado que, el funcionario judicial puede apartarse de su propio precedente o del precedente fijado por el superior jerárquico, siempre que explique de manera expresa, amplia y suficiente las razones por las que modifica su posición, de ahí que al juez corresponde la carga argumentativa de la separación del caso resuelto con anterioridad.
+
+Es necesario tener en cuenta, adicionalmente, que la simple discrepancia sobre la interpretación que pueda surgir en el debate jurídico y probatorio en un caso no puede constituir por sí misma una irregularidad o defecto que amerite infirmar la decisión judicial mediante acción de tutela. Ello debido a que, de proceder así, implicaría “admitir la superioridad en el criterio valorativo del juez constitucional respecto del juez ordinario, con clara restricción del principio de autonomía judicial. Cuando se está frente a interpretaciones diversas y razonables, el juez del conocimiento debe establecer, siguiendo la sana crítica, cuál es la que mejor se ajusta al caso analizado12”.
+
+Por lo anterior, considera la Sala que no se incurrió en los defectos alegados, toda vez que se decidió de acuerdo con las normas que rigen la Jurisdicción de lo Contencioso Administrativo, el hecho de que la decisión le fuera desfavorable a la parte actora, no significa que se haya vulnerado el debido proceso o algún derecho fundamental.
+
+En cuanto al alegato formulado, consistente en incongruencia de la sentencia, porque no se efectuó ningún pronunciamiento acerca de las excepciones propuestas por la llamada en garantía Mapfre Seguros, referente a los límites de la indemnización que le corresponde cubrir, advierte la Sala que la parte actora contaba con otro mecanismo de defensa judicial, consistente en la adición de la sentencia, pues no es viable, que el juez de tutela entre a pronunciarse sobre un asunto que corresponde directamente al juez natural.
+
+En el sub lite, no se advierte entonces que el Tribunal Administrativo de Cundinamarca Sección Segunda, Subsección “A”, haya adoptado una decisión arbitraria o caprichosa, ni trasgresoras de los derechos fundamentales cuyo amparo aquí se reclama, luego, corresponde a la Sala negar el amparo solicitado. 
+
+En efecto, en el presente caso la demanda de tutela tiene como fin dejar sin efectos una decisión que fue adoptada conforme con los parámetros legales y jurisprudenciales. 
+Así las cosas, se confirmará la sentencia de 11 de septiembre de 2018, proferida por el Consejo de Estado, Sección Segunda, Subsección “B”, que negó las pretensiones de la acción de tutela interpuesta por Mapfre Seguros de Colombia contra el Tribunal Administrativo de Cundinamarca Sección Segunda, Subsección “A”.
+
+Por lo expuesto, el Consejo de Estado, Sala de lo Contencioso Administrativo, Sección Cuarta, administrando justicia en nombre de la República y por autoridad de la ley,
+
+FALLA
+
+1. Confirmar la sentencia de 11 de septiembre de 2018, proferida por el Consejo de Estado, Sección Segunda, Subsección “B”, acorde con los argumentos expuestos en la parte considerativa.
+
+2. Notificar la presente decisión a los interesados, por telegrama o por cualquier otro medio expedito.
+
+3. Enviar el expediente a la Corte Constitucional para su eventual revisión.
+
+Cópiese, notifíquese y cúmplase.
+
+La anterior providencia fue considerada y aprobada en la sesión de la fecha.
+
+
+
+
+JULIO ROBERTO PIZA RODRÍGUEZ
+Presidente de la Sección	
+
+
+
+
+STELLA JEANNETTE CARVAJAL BASTO
+
+
+
+
+MILTON CHAVES GARCÍA
+
+
+
+
+JORGE OCTAVIO RAMÍREZ RAMÍREZ
